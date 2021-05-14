@@ -64,6 +64,8 @@ Firefox Stylesheets intended for my Personal use
 
 ## STYLING ADDONS
 
+Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of extension, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'.
+
 ### AutoTabDiscard
 ![AutoTabDiscard](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_AutoTabDiscard.png)
 

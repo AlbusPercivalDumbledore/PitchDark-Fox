@@ -3,6 +3,15 @@ Firefox Stylesheets intended for my Personal use
 
 ![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/pitchdarkfox.gif)
 
+### NOTE
+This is a collection of stylesheets that I've cobbled together, after Proton Update broke my earlier stylesheet. This isn't a 'release' of theme for firefox, for some reasons:
+
+1. Much of it is based on others' hardwork. See Credits
+2. It was always meant for personal use. So, I've hidden many elements which many people would find useful; tweaked height/width of menus, etc to my own liking
+3. I've been working on these stylesheets on my main profile, which is heavily modified. I'm not sure if everything in it would work as intended on a different profile, different resolution, different OS.
+4. I don't have a programming background. I only have a working knowledge of css, acquired mostly through trial and error. Hence, while I can make it work for myself, I won't have any clue if it doesn't work for you.
+5. Due to 4, I haven't followed CSS Best Practices while putting together these stylesheets. Ex, I couldn't for the life of me figure out how to make some of my rules apply to about-addons. So, I ended up using universal selector (*) 
+
 ## CREDITS
 
 1. [**MrOtherGuy's firefox-csshacks**](https://github.com/MrOtherGuy/firefox-csshacks) for One-Liner, about:addons column view, multi-row urlbar dropdown results, and numerous other minor tweaks

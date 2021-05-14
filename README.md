@@ -102,54 +102,68 @@ Scripts Required:
 
 All the stylesheets and folders included in this repo need to be placed directly inside chrome folder in firefox profile.
 
+Rules from TreeStyleTabs-TextArea.css (inside Extensions folder) need to be copied, and pasted in text area provided by TreeStyleTabs Addon in about:preferences. 
+
 ## STYLING ADDONS
 
 Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of extension, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'. Addons I've styled:
 
-### AutoTabDiscard
+### Auto Tab Discard
 https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/
 
 ![AutoTabDiscard](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_AutoTabDiscard.png)
 
-### ClearURLs
+### Bitwarden Password Manager
+https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
+
+### Bypass Paywalls Clean
+https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-clean/
+
+### Clear URLs
 https://addons.mozilla.org/en-US/firefox/addon/clearurls/
 
 ![ClearURLs](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_ClearURLs.png)
 
-### CookieAutoDelete
+### Cookie Auto-Delete
 https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/
 
 ![CookieAutoDelete](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_CookieAutoDelete.png)
 
-### DarkReader
+### Dark Reader
 https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 
 ![DarkReader](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_DarkReader.png)
 
-### EnhancerForYoutube
+### Enhancer For Youtube
 https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
 
 ![EnhancerForYoutube](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_EnhancerForYoutube.png)
 
-### LocalCDN
+### Local CDN
 https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/
 
 ![LocalCDN](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_LocalCDN.png)
 
-### MultiAccountContainer
+### Multi Account Container
 https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
 ![MultiAccountContainer](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_MultiAccountContainer.png)
 
-### NotesByMozilla
+### Notes By Mozilla
 https://addons.mozilla.org/en-US/firefox/addon/notes-by-firefox/
 
 ![NotesByMozilla](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_NotesByMozilla.png)
 
-### SaveWebPasPNG
+### Save WebP as PNG
 https://addons.mozilla.org/en-US/firefox/addon/save-webp-as-png-or-jpeg/
 
 ![SaveWebPasPNG](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_SaveWebPasPNG.png)
+
+### Set Tabs Aside
+https://addons.mozilla.org/en-GB/firefox/addon/tabs-aside/
+
+### Temporary Containers
+https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/
 
 ### TranslateWebPages
 https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/

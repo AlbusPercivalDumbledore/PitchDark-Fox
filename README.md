@@ -6,7 +6,7 @@ Firefox Stylesheets intended for my Personal use
 ### NOTE
 This is a collection of stylesheets that I've cobbled together, after Proton Update broke my earlier stylesheet. This isn't a 'release' of theme for firefox, for some reasons:
 
-1. Much of it is based on others' hardwork. See Credits
+1. Much of it is based on others' hardwork. [**See Credits**](https://github.com/im-hm/PitchDark-Fox/blob/main/README.md#credits)
 2. It was always meant for personal use. So, I've hidden many elements which many people would find useful; tweaked height/width of menus, etc to my own liking
 3. I've been working on these stylesheets on my main profile, which is heavily modified. I'm not sure if everything in it would work as intended on a different profile, different resolution, different OS.
 4. I don't have a programming background. I only have a working knowledge of css, acquired mostly through trial and error. Hence, while I can make it work for myself, I won't have any clue if it doesn't work for you.
@@ -20,56 +20,78 @@ This is a collection of stylesheets that I've cobbled together, after Proton Upd
 4. [**PROxZIMA's Sweet_Pop**](https://github.com/PROxZIMA/Firefox-Theme/) inspired the use of gradient line below Navigation Toolbox. Their code for styling library helped me achieve dark mode for libray view.
 5. u/dilfool2nice's [**Firefox BlueMoon**](https://github.com/GrosBourrin/FIREFOX-BLUE-MOON/) helped me style ctrl+tab preview, inspired use of gif in About Firefox dialog.
 
-### AboutFirefox
+## PREVIEW
+
+### About Firefox Dialog
 ![AboutFirefox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AboutFirefox.png)
 
-### AllTabsView
+### All-Tabs View
 ![AllTabsView](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AllTabsView.png)
 
-### ClearAllHistoryDialog
+### Clear All History Dialog
 ![ClearAllHistoryDialog](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/ClearAllHistoryDialog.png)
 
-### CloseWindowDialog
+### Close Window Dialog
 ![CloseWindowDialog](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/CloseWindowDialog.png)
 
-### ContextMenus
+### Context Menus
 ![ContextMenus](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/ContextMenus.png)
 
-### CreateProfile
+### Create Profile
 ![CreateProfile](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/CreateProfile.png)
 
-### CtrlTabView
+### Ctrl+Tab View
 ![CtrlTabView](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/Ctrl%2BTabView.png)
 
-### DownloadsView
+### Downloads View
 ![DownloadsView](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/DownloadsView.png)
 
-### EditBookmark
+### Edit Bookmark
 ![EditBookmark](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/EditBookmark.png)
 
 ### Library
 ![Library](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/Library.png)
 
-### NewPrivateWindowPage
+### New Private Window Page
 ![NewPrivateWindowPage](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/NewPrivateWindowPage.png)
 
-### NewTabPage
+### New Tab Page
 ![NewTabPage](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/NewTabPage.png)
 
-### PDFViewer
+### PDF Viewer
 ![PDFViewer](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/PDFViewer.png)
 
-### PageInfo
+### Page Info
 ![PageInfo](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/PageInfo.png)
 
-### PrintDialog
+### Print Dialog
 ![PrintDialog](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/PrintDialog.png)
 
-### SaveFileDialog
+### Save File Dialog
 ![SaveFileDialog](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/SaveFileDialog.png)
 
-### TrackingProtectionPopup
+### Tracking Protection Popup
 ![TrackingProtectionPopup](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/TrackingProtectionPopup.png)
+
+## USAGE
+
+The best use anyone can make of these stylesheets would be to look for individual code snippets for styling an individual component, and using it for creating one's own style.
+
+### Using the stylesheets as they are:
+
+For using as they are, these stylesheets require:
+
+1. Dark Magic Theme https://addons.mozilla.org/en-US/firefox/addon/nicothin-dark-magic/
+2. Certain Scripts from [**u/MotherStylus's repository**](https://github.com/aminomancer/uc.css.js):
+3. Scrips need to be loaded with [**fx-autoconfig**](https://github.com/MrOtherGuy/fx-autoconfig), as detailed in above repository
+4. chrome.manifest from u/MotherStylus's repository - for restoring Pre-Proton icons - since I've scaled down toolbarbuttons, and new thinner icons look horrible when scaled.
+
+Scripts Required:
+
+1. [**userChrome_as_css_module.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/userChrome_as_css_module.uc.js) for styling tooltips
+2. [**atoolboxButton.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/atoolboxButton.uc.js) - as I've hidden 'Inspect Element' from context-menu
+3. [**searchSelectionShortcut.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/searchSelectionShortcut.uc.js) - as I've hidden 'Search *InsertSearchEngineName* with' from context menu
+4. [**restoreTabSoundButton.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/restoreTabSoundButton.uc.js) - as I've hidden 'Playing' Label from tabs playing media
 
 ## STYLING ADDONS
 

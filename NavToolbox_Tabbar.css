@@ -146,10 +146,15 @@
   min-width: 465px !important;
 }
 
-#main-window:not([sizemode="maximized"]) .tabbrowser-tab,
 #main-window:not([sizemode="maximized"]) #urlbar {
   min-width: 0px !important;
 }
+
+#main-window:not([sizemode="maximized"]) .tabbrowser-tab {
+  min-width: 150px !important;
+}
+
+
 
 /*+++++ Numbering the Tab +++++*/
 

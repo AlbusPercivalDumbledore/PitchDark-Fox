@@ -95,7 +95,7 @@ For using as they are, these stylesheets require:
 Scripts Required:
 
 1. [**userChrome_as_css_module.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/userChrome_as_css_module.uc.js) for styling tooltips
-2. [**allTabsMenuExpansionPack.uc.js](https://github.com/aminomancer/uc.css.js/blob/master/script/allTabsMenuExpansionPack.uc.js) 
+2. [**allTabsMenuExpansionPack.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/allTabsMenuExpansionPack.uc.js) 
 3. [**atoolboxButton.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/atoolboxButton.uc.js) - as I've hidden 'Inspect Element' from context-menu
 4. [**searchSelectionShortcut.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/searchSelectionShortcut.uc.js) - as I've hidden 'Search *InsertSearchEngineName* with' from context menu
 5. [**restoreTabSoundButton.uc.js**](https://github.com/aminomancer/uc.css.js/blob/master/script/restoreTabSoundButton.uc.js) - as I've hidden 'Playing' Label from tabs playing media

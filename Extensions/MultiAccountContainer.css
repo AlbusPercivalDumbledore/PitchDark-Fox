@@ -1,0 +1,199 @@
+/*------ MULTI-ACCOUNTS CONTAINER EXTENSION ------*/
+@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/)
+{
+  html,
+  body,
+  .delete-container {
+    background-color: #000 !important;
+    font-size: 0.9rem !important;
+    font-family: "Fira Sans" !important;
+    width: auto !important;
+  }
+
+  .title,
+  hr {
+    display: none !important;
+  }
+
+  h3,
+  legend {
+    color: #fff !important;
+  }
+
+  span:not(#current-container),
+  #container-info-movetabs,
+  .container-info-tab-title,
+  .truncate-text {
+    color: #ccc !important;
+  }
+
+  hr,
+  #manage-containers-link,
+  #edit-container-panel-name-input,
+  .delete-container {
+    border-color: #181818 !important;
+  }
+
+  #container-picker-panel {
+    background: #000 !important;
+    margin-top: 10px !important;
+    width: 130px !important;
+    margin-bottom: -30px !important;
+  }
+
+  #manage-containers-link,
+  .cancel-button,
+  #deny,
+  #delete-container-button {
+    background-color: #000 !important;
+    color: #ccc !important;
+  }
+
+  #manage-containers-link:hover,
+  .cancel-button:hover,
+  .hover-highlight:focus,
+  #deny:hover,
+  #delete-container-button:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .menu-item:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .onboarding-title {
+    color: #fff !important;
+  }
+
+  .cancel-button,
+  .grey-button,
+  .half-onboarding-button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #212121 !important;
+  }
+
+  .achievement-panel p,
+  .onboarding p,
+  .container-options .options-label {
+    color: #ccc !important;
+  }
+
+  .radio-choice > .radio-container > [type="radio"]:checked + label {
+    background-color: #000 !important;
+  }
+
+  .btn-return.arrow-left {
+    background-color: transparent !important;
+  }
+
+  .info-icon,
+  .menu:not(#identities-list):not(#picker-identities-list):not(#edit-sites-assigned)
+    .menu-icon,
+  .menu-arrow > img,
+  .btn-return.arrow-left {
+    filter: invert(80%);
+  }
+
+  .bottom-btn {
+    background-color: #000 !important;
+    border: solid 1px #181818 !important;
+  }
+
+  .hover-highlight:hover,
+  .hover-highlight:focus {
+    background: #181818 !important;
+    color: #fff;
+  }
+
+  .hover-highlight:hover .truncate-text::after,
+  .hover-highlight:focus .truncate-text::after {
+    background: transparent !important;
+    mask-image: none !important;
+  }
+
+  .truncate-text::after {
+    background: #4a4a4a;
+    mask-image: linear-gradient(to right, transparent, #4a4a4a 70%);
+    display: none !important;
+  }
+
+  .trash-button {
+    transform: scale(0.6) !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/options.html)
+{
+  body,
+  html {
+    background-color: #1b1b1b !important;
+  }
+
+  /* Checkbox coloring */
+  input[type="checkbox"] {
+    -moz-appearance: none !important;
+    border: 1px solid #181818 !important;
+    background-color: #000 !important;
+    transition: color 0.3s;
+    width: 12px;
+    height: 12px;
+    vertical-align: bottom !important;
+  }
+
+  input[type="checkbox"]:not([disabled]):hover {
+    box-shadow: 0 0 4px #000 !important;
+    border-color: #181818 !important;
+  }
+
+  input[type="checkbox"]:checked {
+    background: #000
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="2 3 12 12" ><path fill="rgb(200,200,200)" d="M 13.09,2.87 C 13.09,2.87 6.00,11.00 6.00,11.00 6.00,11.00 2.00,9.00 2.00,9.00 4.25,12.81 7.00,14.00 7.00,14.00 9.24,10.42 12.04,7.39 13.09,2.87 Z" /></svg>')
+      no-repeat center center !important;
+  }
+
+  /* Select boxes coloring */
+  select {
+    -moz-appearance: none !important;
+    background: #000
+      url("data:image/svg+xml;charset=utf-8,%3Csvg width='11' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M434.574 488L430.5 492.147 426.428 488 425 489.399 430.5 494.999 436 489.399z' transform='translate(-425 -488)' fill='%23cccccc' fill-rule='evenodd'/%3E%3C/svg%3E")
+      no-repeat calc(100% - 5px) 50% !important;
+    border: none !important;
+    padding: 3px 15px 3px 3px;
+    margin: 0 5px !important;
+    color: #ccc !important;
+  }
+
+  select:hover {
+    background: #181818
+      url("data:image/svg+xml;charset=utf-8,%3Csvg width='11' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M434.574 488L430.5 492.147 426.428 488 425 489.399 430.5 494.999 436 489.399z' transform='translate(-425 -488)' fill='%23cccccc' fill-rule='evenodd'/%3E%3C/svg%3E")
+      no-repeat calc(100% - 5px) 50% !important;
+    color: #fff !important;
+  }
+
+  select .menulist-dropmarker {
+    display: none;
+  }
+
+  button {
+    -moz-appearance: none !important;
+    background-color: #000;
+    padding: 3px 6px;
+    color: #ccc;
+    border-color: transparent !important;
+  }
+
+  button:hover {
+    background-color: #181818;
+    color: #fff;
+  }
+}
+
+@-moz-document url-prefix(http) {
+  .container-notification {
+    background-color: #000 !important;
+    color: #0c0 !important;
+  }
+}

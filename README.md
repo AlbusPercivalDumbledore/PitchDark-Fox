@@ -15,7 +15,7 @@ This is a collection of stylesheets that I've cobbled together, after Proton Upd
 ## CREDITS
 
 1. [**MrOtherGuy's firefox-csshacks**](https://github.com/MrOtherGuy/firefox-csshacks) for One-Liner, about:addons column view, multi-row urlbar dropdown results, and numerous other minor tweaks
-2. u/MotherStylus has helped with styling many problematic elements over at [**r/firefoxcss**](https://reddit.com/r/firefoxcss). His gems of scripts at his [**duskFox repository**](https://github.com/aminomancer/uc.css.js) have helped me extend functionaly, style tooltips. I've also stolen many rules from his repo.
+2. u/MotherStylus has helped with styling many problematic elements over at [**r/firefoxcss**](https://reddit.com/r/firefoxcss). His gems of scripts at his [**duskFox repository**](https://github.com/aminomancer/uc.css.js) have helped me extend functionality, style tooltips. I've also stolen many rules from his repo.
 3. [**Izheil's Quantum Nox**](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme/) for introducing me to the realm of add-on themes. Their themes for uMatrix, uBlock Origin, and Containers form the base for my own themes. 
 4. [**PROxZIMA's Sweet_Pop**](https://github.com/PROxZIMA/Firefox-Theme/) inspired the use of gradient line below Navigation Toolbox. Their code for styling library helped me achieve dark mode for libray view.
 5. u/dilfool2nice's [**Firefox BlueMoon**](https://github.com/GrosBourrin/FIREFOX-BLUE-MOON/) helped me style ctrl+tab preview, inspired use of gif in About Firefox dialog.

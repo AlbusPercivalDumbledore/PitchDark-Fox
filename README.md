@@ -1,5 +1,5 @@
 # PitchDark-Fox
-Firefox Stylesheets intended for my Personal use
+Firefox Stylesheets intended for my Personal use. Sharing them since I've benefitted immensely from others sharing their own work.
 
 ![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/pitchdarkfox.gif)
 
@@ -82,9 +82,9 @@ The best use anyone can make of these stylesheets would be to look for individua
 For using as they are, these stylesheets require:
 
 1. Dark Magic Theme https://addons.mozilla.org/en-US/firefox/addon/nicothin-dark-magic/
-2. Certain Scripts from [**u/MotherStylus's repository**](https://github.com/aminomancer/uc.css.js):
+2. Certain Scripts from [**u/MotherStylus's repository**](https://github.com/aminomancer/uc.css.js)
 3. Scrips need to be loaded with [**fx-autoconfig**](https://github.com/MrOtherGuy/fx-autoconfig), as detailed in above repository
-4. chrome.manifest from u/MotherStylus's repository - for restoring Pre-Proton icons - since I've scaled down toolbarbuttons, and new thinner icons look horrible when scaled.
+4. [**chrome.manifest**](https://github.com/aminomancer/uc.css.js/tree/master/utils) from u/MotherStylus's repository - for restoring Pre-Proton icons - since I've scaled down toolbarbuttons, and new thinner icons look horrible when scaled.
 
 Scripts Required:
 
@@ -95,7 +95,7 @@ Scripts Required:
 
 ## STYLING ADDONS
 
-Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of extension, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'.
+Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of extension, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'. Addons I've styled:
 
 ### AutoTabDiscard
 https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/

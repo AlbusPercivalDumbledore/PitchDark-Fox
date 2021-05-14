@@ -1,6 +1,8 @@
 # PitchDark-Fox
 Firefox Stylesheets intended for my Personal use
 
+![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/pitchdarkfox.gif)
+
 ### AboutFirefox
 ![AboutFirefox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AboutFirefox.png)
 

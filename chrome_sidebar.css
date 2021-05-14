@@ -1,0 +1,224 @@
+/*+++++ Change background color of sidebar button, when it is active (remove the hideos circle around it) +++++*/
+
+#sidebar-button[checked] > .toolbarbutton-icon {
+  background-color: inherit !important;
+}
+
+/*+++++ Change color of sidebar border +++++*/
+.sidebar-splitter {
+  border-color: #181818 !important;
+}
+
+/*+++++ Change Color of Folders (Make Folders Invisible) +++++*/
+
+.bookmark-item[container] {
+  fill: #000 !important;
+}
+
+.folder-icon {
+  fill: #000 !important;
+}
+
+/*+++++ SIDEBAR +++++*/
+
+toolbarbutton.tabbable {
+  -moz-user-focus: normal !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+  font-variant-caps: petite-caps !important;
+}
+
+#sidebar-header {
+  font-size: 1.15rem !important;
+  font-family: "Fira Sans" !important;
+  margin-left: -10px !important;
+}
+
+#sidebar-box > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  opacity: 1 !important;
+  transform: scale(0.75) !important;
+  margin-top: -3px !important;
+  margin-right: -5px !important;
+}
+
+#sidebar-close {
+  visibility: collapse !important;
+}
+
+#sidebar-search-container #search-box {
+  -moz-appearance: none !important;
+  background-color: #000 !important;
+  color: white !important;
+  margin-top: -5px !important;
+  margin-bottom: -5px !important;
+}
+
+#sidebar-search-container html|*.textbox-input {
+  background-color: red !important;
+  color: white !important;
+}
+
+#sidebar-header,
+#sidebar-search-container,
+#bookmarks-view-children,
+#historyTree {
+  color: #fff !important;
+  background-color: #000 !important;
+  -moz-appearance: none !important;
+  border-color: transparent !important;
+}
+
+#sidebarMenu-popup .subviewbutton {
+  min-width: 190px;
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+}
+
+#sidebar-switcher-target:hover:-moz-lwtheme {
+  background: hsla(240, 5%, 5%, 0.1);
+  outline: none !important;
+}
+
+/*Hide icons of folders in Bookmarks Sidebar*/
+
+treechildren::-moz-tree-image(container) {
+  list-style-image: none !important;
+}
+
+treechildren::-moz-tree-row(selected) {
+  background-color: #000 !important;
+  outline: 0px solid rgb(27, 27, 27) !important;
+}
+
+treechildren::-moz-tree-row {
+  margin-left: -10px !important;
+}
+
+treechildren::-moz-tree-row(hover) {
+  background-color: #000 !important;
+  color: inherit !important;
+  outline: 0px solid rgb(27, 27, 27) !important;
+}
+
+treechildren::-moz-tree-image {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+treechildren::-moz-tree-cell-text {
+  color: rgb(221, 226, 234) !important;
+}
+
+treechildren::-moz-tree-cell-text(container),
+treechildren::-moz-tree-cell-text(folder) {
+  color: #fff !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(leaf),
+.sidebar-placesTreechildren::-moz-tree-image(leaf) {
+  display: none !important;
+}
+
+.sidebar-panel treechildren::-moz-tree-row(selected),
+.sidebar-panel treechildren::-moz-tree-cell(selected) {
+  /* background-color: var(--places-cell-focus-bgcolor) !important;*/
+  outline: none !important;
+  border: none !important;
+}
+
+.sidebar-panel treechildren::-moz-tree-row(hover),
+.sidebar-panel treechildren::-moz-tree-cell(hover),
+.sidebar-panel treechildren::-moz-tree-row(selected, hover),
+.sidebar-panel treechildren::-moz-tree-cell(selected, hover) {
+  outline: none !important;
+}
+
+/*This Changes size of Twisty icons in sidebar*/
+
+treechildren::-moz-tree-twisty {
+  width: 7px !important;
+  height: auto !important;
+  padding-inline: 3px !important;
+  margin-right: -15px !important;
+  margin-top: -3px !important;
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='7' height='7' viewBox='0 0 12 12'><path d='M3.75 11.5a1 1 0 01-.75-.29 1 1 0 010-1.42L6.84 6 3 2.21A1 1 0 014.46.79L9 5.29a1 1 0 010 1.42l-4.5 4.5a1 1 0 01-.75.29z' fill='context-fill'/></svg>") !important;
+}
+
+treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty(closed) {
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='7' height='7' viewBox='0 0 12 12'><path d='M8.25 11.5a1 1 0 00.75-.29 1 1 0 000-1.42L5.16 6 9 2.21A1 1 0 007.54.79L3 5.29a1 1 0 000 1.42l4.5 4.5a1 1 0 00.75.29z' fill='context-fill'/></svg>") !important;
+  margin-right: -15px !important;
+  margin-top: -3px !important;
+}
+
+treechildren::-moz-tree-twisty(open) {
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='7' height='7' viewBox='0 0 12 12'><path d='M11.5 3.75a1 1 0 00-.29-.75 1 1 0 00-1.42 0L6 6.84 2.21 3A1 1 0 00.79 4.46L5.29 9a1 1 0 001.42 0l4.5-4.5a1 1 0 00.29-.75z' fill='context-fill'/></svg>") !important;
+  margin-right: -15px !important;
+  margin-top: -3px !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-indentation {
+  width: 10px !important;
+}
+
+#bookmarks-view-children:-moz-tree-image {
+  margin-left: 0px !important;
+}
+
+.sidebar-placesTree treechildren::-moz-tree-row {
+  min-height: 23px !important;
+  height: 23px !important;
+}
+
+.sidebar-placesTree treechildren::-moz-tree-cell-text {
+  font-size: 1.1rem !important;
+  font-family: "Fira Sans" !important;
+}
+
+.sidebar-placesTree treechildren::-moz-tree-cell-image {
+  list-style-image: none !important;
+}
+
+#sidebar-switcher-target:-moz-focusring:not(:hover, [open]),
+#sidebar-close:-moz-focusring:not(:hover, [open]) {
+  outline: none !important;
+}
+
+.panel-subview-body {
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  scrollbar-width: thin !important;
+}
+
+#permList,
+scrollbar {
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  scrollbar-width: thin !important;
+}
+
+#bookmarksPanel,
+#history-panel {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+/* Bookmarks sidebar: change hover color */
+#bookmarks-view treechildren::-moz-tree-cell(hover),
+#bookmarks-view treechildren::-moz-tree-cell(selected) {
+  background-color: #000 !important;
+}
+
+#viewButton {
+  font-family: "Fira Sans" !important;
+  font-size: 0.9rem !important;
+}
+
+.content-container,
+.content-header,
+.content-scrollable {
+  background: black !important;
+  font-family: "Fira Sans" !important;
+  font-size: 0.9rem !important;
+}
+
+.button.sync-prefs {
+  font-family: "Fira Sans" !important;
+}

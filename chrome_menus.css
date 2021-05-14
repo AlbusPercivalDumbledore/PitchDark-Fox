@@ -1,0 +1,379 @@
+/*+++++ ALL TABS VIEW +++++*/
+
+#customizationui-widget-multiview panelview:not([extension]) {
+  min-width: 22.35em !important;
+  max-width: 90em !important;
+}
+
+#allTabsMenu-allTabsViewTabs {
+  --moz-appearance: none !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1rem !important;
+  min-width: 40em !important;
+  max-width: 40em !important;
+  padding: 5px !important;
+}
+
+.all-tabs-item[selected] {
+  box-shadow: none !important;
+  color: #fff !important;
+  background-color: #181818 !important;
+  font-weight: normal !important;
+}
+
+.all-tabs-item {
+  font-size: 1rem !important;
+  height: 25px !important;
+}
+
+#allTabsMenu-undoCloseTab,
+#allTabsMenu-searchTabs,
+#allTabsMenu-containerTabsButton {
+  font-family: "Fira Sans" !important;
+  font-size: 1rem !important;
+}
+
+#allTabsMenu-searchTabs {
+  margin-top: 5px !important;
+}
+
+.all-tabs-button::before {
+  content: counter(nth-tab) " " !important;
+  counter-increment: nth-tab !important;
+  display: block !important;
+  margin-right: 5px !important;
+  width: 20px !important;
+  margin-left: 5px !important;
+}
+
+.all-tabs-item:first-child {
+  counter-reset: nth-tab 0 !important;
+}
+
+/*+++++ Downloads Menu +++++*/
+
+#downloadsHistory {
+  background-color: #000 !important;
+  padding-inline: 14px !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+}
+
+#downloadsListBox > richlistitem {
+  border-bottom: 1px solid var(--panel-separator-color) !important;
+  color: #fff !important;
+  background: #000 !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+  max-height: 63px !important;
+  margin-right: -7px !important;
+  margin: 0 !important;
+  margin-left: -10px !important;
+}
+
+#downloadsListBox > richlistitem:not([selected]) button {
+  -moz-user-focus: none;
+  display: none !important;
+}
+
+#downloadsRichListBox > richlistitem[selected] {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9) 0px,
+      transparent 0px
+    ),
+    linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, transparent 0px),
+    linear-gradient(to left, rgba(255, 255, 255, 0.5) 0px, transparent 0px),
+    linear-gradient(to top, rgba(255, 255, 255, 0.4) 0px, transparent 0px),
+    linear-gradient(to bottom, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)) !important;
+  border-radius: 0px !important;
+  outline: 0px solid rgb(124, 163, 206) !important;
+}
+
+.downloadBlockedBadge {
+  margin: 0 5px !important;
+  background: url("chrome://browser/skin/downloads/download-blocked.svg") top
+    right / 16px no-repeat !important;
+}
+
+.downloadBlockedBadge:-moz-locale-dir(rtl) {
+  background-position-x: left !important;
+}
+
+#downloadsListBox
+  > richlistitem[verdict="PotentiallyUnwanted"]
+  .downloadBlockedBadge {
+  background-image: url("chrome://browser/skin/warning.svg") !important;
+}
+
+#downloadsListEmptyDescription {
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+}
+
+#emptyDownloads {
+  font-family: "Fira Sans" !important;
+  font-size: 1.15rem !important;
+}
+
+#downloadsPanel-multiView > .panel-viewcontainer,
+#downloadsPanel-multiView > .panel-viewcontainer > .panel-viewstack {
+  max-width: 250px !important;
+}
+
+.downloadTypeIcon {
+  margin: 5px !important;
+  width: 0px !important;
+  height: 0px !important;
+  margin-top: 0px !important;
+}
+
+.downloadButton {
+  appearance: none;
+  margin: 0 !important;
+  border: none !important;
+  background: transparent;
+  padding: 0 !important;
+  color: inherit !important;
+  transform: scale(0.9) !important;
+  opacity: 0.7 !important;
+}
+
+button.downloadButton {
+  min-width: 0px !important;
+  height: 32px;
+}
+
+.downloadButton .button-box {
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
+}
+
+.downloadIconCancel > .button-box > .button-icon {
+  list-style-image: url("Icons/close.svg") !important;
+  transform: scale(0.7) !important;
+}
+
+.downloadIconRetry > .button-box > .button-icon {
+  list-style-image: url("Icons/reload.svg") !important;
+  transform: scale(0.9) !important;
+}
+
+#downloadsListBox > richlistitem > toolbarseparator {
+  margin: 10px 0 !important;
+  display: none !important;
+}
+
+#downloadsSummaryDetails,
+.downloadDetails {
+  font-size: 1.2rem !important;
+  opacity: var(--downloads-item-details-opacity) !important;
+  margin: 4px 0 calc(1em / var(--downloads-item-font-size-factor) - 1em) !important;
+  color: gray !important;
+  font-variant: all-small-caps !important;
+  margin-bottom: -1px !important;
+  margin-top: 2px !important;
+}
+
+#downloadsListBox {
+  background: transparent;
+  color: inherit;
+  appearance: none;
+  margin-left: 5px !important;
+}
+
+.downloadProgress {
+  height: 2px !important;
+  background-color: blue !important;
+  border: 0px !important;
+}
+
+.downloadProgress:not([value="0"])::-moz-progress-bar {
+  margin: 0px !important;
+  height: 2px !important;
+}
+
+.downloadProgress::-moz-progress-bar {
+  background-color: red !important;
+}
+
+.downloadProgress[paused]::-moz-progress-bar {
+  background-color: #404040;
+}
+
+#downloadsFooterButtons {
+  border-top: none !important;
+}
+
+.downloadContainer {
+  margin-inline-end: -55px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+/*+++++ HAMBURGER MENU +++++*/
+
+#appMenu-protonMainView {
+  width: 18em !important;
+}
+
+.panel-subview-body {
+  font-size: 1rem !important;
+  font-family: "Fira Sans" !important;
+}
+
+#appMenu-fxa-status2[fxastatus] > #appMenu-fxa-label2 {
+  padding-block: 5px !important;
+  -moz-box-flex: 1;
+  margin-top: 5px !important;
+}
+
+#appMenu-fxa-status2[fxastatus]
+  > #appMenu-fxa-label2
+  > vbox
+  > #appMenu-header-description,
+#appMenu-fxa-text {
+  font-weight: normal !important;
+}
+
+.panel-header > h1 {
+  font-size: 1.15rem !important;
+}
+
+.panel-header > .subviewbutton-back {
+  transform: scale(0.7) !important;
+}
+
+.subviewbutton[shortcut]::after {
+  content: attr(shortcut);
+  display: -moz-box;
+  /* color: #64B5F6 !important;*/
+  font-size: 1rem !important;
+}
+
+#appMenu-new-tab-button2,
+#appMenu-new-window-button2,
+#appMenu-new-private-window-button2,
+#appMenu-bookmarks-button,
+#appMenu-history-button,
+#appMenu-passwords-button,
+#appMenu-extensions-themes-button,
+#appMenu-print-button2,
+#appMenu-save-file-button2,
+#appMenu-find-button2,
+#appMenu-proton-update-banner,
+#appMenu-new-private-window-button2 + toolbarseparator,
+#appMenu-downloads-button,
+#appMenu-extensions-themes-button + toolbarseparator {
+  display: none !important;
+}
+
+/*+++++ Overflow Menu +++++*/
+
+/*Overflow Box on Nav Bar*/
+
+.panel-header > label > span {
+  font-family: "Fira Sans" !important;
+  font-size: 1.05rem !important;
+}
+
+#widget-overflow-mainView {
+  min-width: 20em !important;
+  max-width: 20em !important;
+  margin: 6px !important;
+}
+
+#PanelUI-webext-cookieautodelete_kennydo_com-browser-action-view,
+#PanelUI-webext-user-agent-switcher_ninetailed_ninja-browser-action-view {
+  width: 20em !important;
+}
+
+.widget-overflow-list .toolbarbutton {
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+}
+
+#overflowMenu-customize-button {
+  display: none !important;
+}
+
+.cui-widget-panel,
+#widget-overflow {
+  font-family: "Fira Sans" !important;
+}
+
+#widget-overflow .webextension-popup-browser {
+  background-color: #000 !important;
+  min-height: 0% !important;
+}
+
+panelmultiview {
+  background-color: #000 !important;
+}
+
+.panel-viewcontainer {
+  background-color: #000 !important;
+}
+
+.panel-viewstack {
+  background-color: #000 !important;
+}
+
+panelview {
+  background: #000 !important;
+}
+
+.webextension-popup-stack {
+  background-color: #000 !important;
+}
+
+#widget-overflow-mainView > toolbarseparator {
+  display: none !important;
+}
+
+/*+++++ History Dropdown (Toolbar Button) +++++*/
+
+#PanelUI-history {
+  width: 450px !important;
+}
+
+#appMenu_historyMenu > .subviewbutton-iconic {
+  height: 22px !important;
+  min-height: 22px !important;
+}
+
+#appMenu_historyMenu > .subviewbutton-iconic > .toolbarbutton-icon {
+  height: 14px !important;
+  width: 14px !important;
+  transform: scale(0.9) !important;
+}
+
+/*+++++ Tracking Protection Popup +++++*/
+
+#protections-popup-mainView {
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+
+#protections-popup {
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+  width: 290px !important;
+}
+
+#protections-popup-main-header-label {
+  text-align: center;
+  margin-left: -120px !important;
+  width: 290px !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+}
+
+.protections-popup-tp-switch-box {
+  transform: scale(0.6) !important;
+  margin-top: -17px !important;
+}
+
+.protections-popup-tp-switch[enabled] {
+  background-color: #404040 !important;
+}

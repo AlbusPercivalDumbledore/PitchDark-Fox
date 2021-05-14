@@ -1,0 +1,14 @@
+/* tooltips */
+tooltip[default][page] {
+  -moz-appearance: none !important;
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: none !important;
+  border: 1px solid #181818 !important;
+  font-smooth: always;
+}

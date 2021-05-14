@@ -1,0 +1,12 @@
+/*+++++ MENU BAR +++++*/
+
+#main-menubar > menu {
+  padding: 3px !important;
+}
+
+#main-menubar {
+  font-family: "Fira Sans" !important;
+  font-size: 1rem !important;
+  margin-top: 5px !important;
+  font-variant-caps: petite-caps !important;
+}

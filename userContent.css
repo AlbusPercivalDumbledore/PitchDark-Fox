@@ -1,0 +1,1506 @@
+@import url(blanket-rules.css);
+@import url(uc_extensions.css);
+@import url(uc_websites.css);
+
+/*++++++ DARK MODE BETWEEN PAGE LOADING  +++++*/
+
+@-moz-document url("about:home"),
+url("about:blank"),
+url("about:newtab"),
+url("about:privatebrowsing"),
+url("about:memory"),
+url("about:performance"),
+url("about:addons")
+url-prefix("chrome://"),
+{
+  body {
+    background-color: #000 !important;
+  }
+}
+
+body.firefox {
+  background-color: #000 !important;
+}
+
+@-moz-document url(chrome://browser/content/webext-panels.xhtml)
+{
+  :root {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+@-moz-document plain-text-document(), media-document(all) {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color: #fff !important;
+      background-color: #000 !important;
+    }
+
+    body:not([style*="background"], [class], [id]) {
+      background-color: #000 !important;
+    }
+  }
+}
+
+/*+++++ NEW TAB PAGE +++++*/
+
+@-moz-document url("about:newtab"),
+url("about:home") {
+  .meta {
+    background: #181818 !important;
+  }
+
+  .collapsible-section.active {
+    background: #000 !important;
+  }
+
+  .context-menu-list {
+    background-color: #181818 !important;
+  }
+
+  .collapsible-section.ds-layout .section-top-bar .learn-more-link a {
+    display: none !important;
+  }
+
+  .ds-image img,
+  .ds-image .broken-image {
+    background-color: #181818 !important;
+  }
+
+  .ds-card .img {
+    background-color: #181818 !important;
+  }
+
+  .ds-card .img-wrapper {
+    background-color: #181818 !important;
+  }
+
+  .icon.icon-settings {
+    transform: scale(0.7) !important;
+    opacity: 0.3 !important;
+  }
+
+  .personalize-button {
+    display: none !important;
+  }
+}
+
+/*+++++ NEW PRIVATE TAB PAGE +++++*/
+
+@-moz-document url("about:privatebrowsing") {
+  .info,
+  #private-browsing-vpn-link,
+  #private-browsing-vpn-text,
+  #private-browsing-myths {
+    display: none !important;
+  }
+
+  .search-inner-wrapper {
+    filter: invert(1) !important;
+  }
+}
+
+/*+++++ DOWNLOADS PAGE +++++*/
+
+@-moz-document url("about:downloads") {
+  #downloadsRichListBox {
+    background-color: #000 !important;
+    border: 0px !important;
+    outline: 0px !important;
+  }
+
+  #downloadsRichListBox:focus {
+    box-shadow: none !important;
+  }
+
+  #downloadsRichListBox > richlistitem[selected] {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.9) 0px,
+        transparent 0px
+      ),
+      linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, transparent 0px),
+      linear-gradient(to left, rgba(255, 255, 255, 0.5) 0px, transparent 0px),
+      linear-gradient(to top, rgba(255, 255, 255, 0.4) 0px, transparent 0px),
+      linear-gradient(to bottom, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)) !important;
+    border-radius: 0 !important;
+    outline: 0 !important;
+  }
+
+  #downloadsRichListBox > richlistitem {
+    border-bottom: 1px solid var(--panel-separator-color) !important;
+    background: transparent;
+    color: white !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+    max-height: 63px !important;
+    margin-right: 3px !important;
+  }
+
+  #downloadsListEmptyDescription {
+    font-family: "Fira Sans" !important;
+    font-size: 1rem !important;
+  }
+
+  .downloadProgress {
+    height: 3px !important;
+    background-color: blue !important;
+    border: 0px !important;
+  }
+
+  .downloadProgress:not([value="0"])::-moz-progress-bar {
+    margin: 0px !important;
+    height: 3px !important;
+  }
+
+  .downloadProgress::-moz-progress-bar {
+    background-color: red !important;
+  }
+
+  .downloadProgress[paused]::-moz-progress-bar {
+    background-color: #404040;
+  }
+}
+
+/*+++++ PDF VIEWER +++++*/
+
+#toolbarViewer {
+  background-color: #000 !important;
+}
+
+#viewerContainer {
+  background-color: #000 !important;
+}
+
+.dropdownToolbarButton > select:hover {
+  background-color: #181818 !important;
+}
+
+.dropdownToolbarButton > select {
+  background-color: #181818 !important;
+}
+
+.splitToolbarButton > .toolbarButton {
+  transform: scale(0.75) !important;
+}
+
+html[dir="ltr"] #toolbarViewerRight,
+html[dir="rtl"] #toolbarViewerLeft,
+html[dir="ltr"] #toolbarSidebarRight,
+html[dir="rtl"] #toolbarSidebarLeft {
+  float: right;
+  transform: scale(0.8) !important;
+}
+
+html[dir="ltr"] #outerContainer.sidebarOpen #sidebarContainer {
+  background-color: #000 !important;
+}
+
+#thumbnailView {
+  background-color: #000 !important;
+}
+
+#toolbarSidebar {
+  background-color: #000 !important;
+  transform: scale(0.9) !important;
+  margin-left: -10px !important;
+}
+
+.toolbarField.pageNumber {
+  text-align: center !important;
+}
+
+.toolbarField {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+.dropdownToolbarButton > select option {
+  background-color: #000 !important;
+}
+
+#viewerContainer > #viewer > .page > .canvasWrapper > canvas {
+  filter: invert(100%);
+}
+
+html[dir="ltr"] .secondaryToolbarButton > span {
+  padding-right: 4px;
+  font-family: "Fira Sans" !important;
+  font-size: 1.3rem !important;
+}
+
+/*+++++ READER VIEW +++++*/
+
+@-moz-document url-prefix(about:reader) {
+  body.dark {
+    background-color: #000 !important;
+  }
+}
+
+/*+++++ ABOUT: PAGES ++++*/
+
+@-moz-document url-prefix("about:") {
+  window,
+  page,
+  html,
+  .main-content,
+  scrollbar {
+    scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+    scrollbar-width: thin !important;
+    background-color: #000 !important;
+    font-family: Fira Sans !important;
+  }
+
+  h1 {
+    font-variant-caps: petite-caps !important;
+  }
+}
+
+.contentPane.doScroll,
+dialog.doScroll::part(content-box) {
+  font-family: fira sans !important;
+}
+
+/*ABOUT:MEMORY*/
+
+@-moz-document url-prefix("about:memory") {
+  div.opsRow {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #404040 !important;
+    border-radius: 2px !important;
+    background: #000 !important;
+    color: #fff !important;
+    display: inline-block;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  div.section {
+    padding: 0.5em !important;
+    margin: 1em 0em;
+    border: 1px solid #404040 !important;
+    border-radius: 2px !important;
+    background: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+  }
+
+  button {
+    -moz-appearance: none !important;
+    border: 1px solid #404040 !important;
+    margin-top: 10px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+    padding: 3px !important;
+    margin-right: 5px !important;
+  }
+
+  div.opsRowLabel,
+  div.sidebarLabel {
+    background: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+  }
+
+  div.sidebarItem {
+    border: 1px solid #404040 !important;
+    border-radius: 2px !important;
+    background: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  input.filterInput {
+    -moz-appearance: none !important;
+    background: #000 !important;
+    color: #fff !important;
+    border: 1px solid #212121 !important;
+    padding: 3px !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+/* ABOUT:PERFORMANCE */
+
+@-moz-document url-prefix("about:performance") {
+  #dispatch-table {
+    background-color: #000 !important;
+    font-size: 1.05rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #dispatch-thead > tr > td.clickable:hover {
+    background-color: #242424 !important;
+  }
+
+  #dispatch-thead > tr > td {
+    background-color: #000 !important;
+    font-size: 1.3rem !important;
+    font-variant-caps: petite-caps !important;
+    font-family: "Fira Sans" !important;
+  }
+}
+
+/* ABOUT:PROFILES */
+
+@-moz-document url-prefix("about:profiles") {
+  table {
+    width: 75% !important;
+    border: 0px solid var(--in-content-border-color) !important;
+    font-size: 0.9em !important;
+  }
+
+  th {
+    background-color: #000 !important;
+    color: rgb(255, 255, 255);
+  }
+
+  th,
+  td {
+    border: 1px solid #181818 !important;
+    padding: 10px !important;
+    text-align: match-parent;
+  }
+
+  hr {
+    border-color: #181818 !important;
+    width: 80% !important;
+    display: none !important;
+  }
+
+  h2 {
+    color: #64b5f6 !important;
+  }
+}
+
+/* ABOUT:PROCESSES */
+
+@-moz-document url-prefix("about:processes"),
+url-prefix("about:url-classifier") {
+  * {
+    font-family: "Fira Sans" !important;
+    font-size: 0.91rem !important;
+  }
+}
+
+@-moz-document url-prefix("about:telemetry"),
+url-prefix("about:compat"),
+url-prefix("about:support"),
+url-prefix("about:profiles"),
+url-prefix("about:networking"),
+url-prefix("about:logins") {
+  * {
+    font-family: "Fira Sans" !important;
+  }
+}
+
+/* ABOUT:CONFIG */
+
+@-moz-document url-prefix("about:config"), url("chrome://global/content/aboutconfig/aboutconfig.html")
+{
+  :root:dir(ltr) #about-config-search {
+    padding-left: 32px;
+    background: #000 !important;
+  }
+
+  #search-container {
+    background-color: #000 !important;
+  }
+
+  .config-background {
+    background: url("fox2.svg") no-repeat !important;
+    height: 600px !important;
+    margin: -150px auto !important;
+    width: 600px !important;
+    transform: scale(0.3) !important;
+  }
+
+  .config-help-text {
+    text-align: center;
+    display: none !important;
+  }
+}
+
+/* ABOUT:CACHE */
+
+@-moz-document url("about:cache") {
+  body {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  td {
+    font-family: "Fira Sans" !important;
+  }
+}
+
+/* ABOUT:DEBUGGING */
+
+@-moz-document url-prefix("about:debugging") {
+  .debug-target-list.qa-debug-target-list li {
+    background-color: #181818 !important;
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  .fieldpair {
+    border-top: none !important;
+  }
+
+  .debug-target-item__additional_actions {
+    border-top: none !important;
+  }
+
+  .app__content {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  .app {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .sidebar-item {
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  .default-button {
+    color: #fff !important;
+    background-color: black !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  .message.message--level-warning.qa-message {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .card.connect-section {
+    background-color: #181818 !important;
+  }
+
+  #about-debugging-network-locations-host-input {
+    background: #000 !important;
+    color: #fff !important;
+    border: 1px solid #212121 !important;
+  }
+
+  .connect-section__extra {
+    border: none !important;
+  }
+
+  .sidebar {
+    background-color: #000 !important;
+  }
+
+  .technical-text {
+    font-size: 1.1rem !important;
+    font-family: "Fira Sans" !important;
+  }
+}
+
+/* ABOUT:SUPPORT */
+
+@-moz-document url-prefix("about:support") {
+  table {
+    border: 0px !important;
+    font-size: 1.1rem !important;
+  }
+
+  h2 {
+    color: #64b5f6 !important;
+  }
+}
+
+/* ABOUT:ADDONS */
+
+addon-card:not([expanded]) > .addon.card[active="false"] {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+.addon-description {
+  font-size: 14px !important;
+  line-height: 20px;
+  color: #fff !important;
+  font-weight: 400;
+  font-family: "Fira Sans" !important;
+  margin-top: 10px !important;
+}
+
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/content/multi_column_addons.css */
+/* Makes addon manager show addons in 2-4 columns based on available width */
+/* You can use compact_addons_manager.css with this to make things even more, well, compact  */
+/* Compatible with addon_manage_buttons_without_popup.css */
+
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html"),
+url("about:addons") {
+  :root {
+    overflow-x: hidden;
+  }
+
+  .inline-options-stack {
+    min-height: 0px !important;
+    width: 100%;
+    background-color: transparent !important;
+  }
+
+  /* Remove this if it causes horizontal scrolling problems */
+
+  @media (min-width: 720px) {
+    #main {
+      max-width: unset !important;
+      padding-right: 28px;
+    }
+
+    addon-list > section,
+    recommended-addon-list {
+      padding: 1em;
+      display: grid;
+      grid-template-areas: "hd hd" "cd cd";
+      grid-auto-columns: 1fr;
+      column-gap: 1em;
+    }
+
+    .card,
+    panel-list {
+      background: rgb(27, 27, 27) !important;
+    }
+
+    input[type="checkbox"].toggle-button:checked {
+      background: blue !important;
+    }
+
+    input[type="checkbox"].toggle-button {
+      background: darkmagenta !important;
+    }
+
+    addon-card .card-contents {
+      width: unset !important;
+      white-space: initial !important;
+    }
+
+    .card-heading-image {
+      max-width: calc(100% + 32px);
+    }
+
+    section > h2 {
+      grid-area: hd;
+    }
+
+    addon-card {
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
+      grid-area: auto;
+    }
+
+    addon-card .addon-description {
+      max-height: 3em;
+      scrollbar-width: none !important;
+    }
+  }
+
+  .addon-badge-recommended,
+  .addon-badge-private-browsing-allowed {
+    transform: scale(0.75) !important;
+  }
+
+  input[type="checkbox"].toggle-button:checked {
+    transform: scale(0.75) !important;
+  }
+
+  input[type="checkbox"].toggle-button {
+    transform: scale(0.75) !important;
+  }
+
+  @media (min-width: 1220px) {
+    addon-list > section,
+    recommended-addon-list {
+      grid-template-areas: "hd hd hd" "cd cd cd";
+    }
+  }
+
+  @media (min-width: 1720px) {
+    addon-list > section,
+    recommended-addon-list {
+      grid-template-areas: "hd hd hd hd" "cd cd cd cd";
+    }
+  }
+}
+
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/content/addon_manage_buttons_without_popup.css */
+
+/* Show addon management buttons without opening popup */
+
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html"),
+url("about:addons") {
+  .addon-card-message {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .card.addon {
+    padding-bottom: 0px !important;
+  }
+
+  addon-card .addon-card-collapsed {
+    display: grid !important;
+    grid-template-areas: "ic con" "op op";
+    grid-template-columns: 48px auto;
+  }
+
+  addon-card .card-contents {
+    width: initial !important;
+    white-space: initial !important;
+  }
+
+  .more-options-menu {
+    position: static !important;
+    grid-area: op;
+    margin: 0 !important;
+  }
+
+  .card-contents {
+    grid-area: con;
+  }
+
+  .card-heading-icon {
+    grid-area: ic;
+  }
+
+  plugin-options > panel-list,
+  addon-options > panel-list {
+    position: static !important;
+    display: flex !important;
+    padding: 0 !important;
+    margin: 0px calc(0px - var(--card-padding)) !important;
+    margin-top: 0px !important;
+    margin-left: -50px !important;
+    margin-bottom: 2px !important;
+    backdrop-filter: none !important;
+    /* Having a backdrop-filter leads to some unexpected layering issues */
+    border: 0px !important;
+    transform: scale(0.75) !important;
+  }
+
+  button[role="menuitem"] {
+    padding-inline-start: 30px !important;
+    background-position-x: 8px !important;
+  }
+
+  .arrow,
+  .more-options-menu > .more-options-button,
+  .addon-name-container > .more-options-button,
+  panel-item[action="expand"] {
+    display: none !important;
+  }
+
+  div.list {
+    display: inherit !important;
+    flex-direction: row !important;
+  }
+
+  panel-item[action="toggle-disabled"] {
+    --icon: url("chrome://browser/skin/quit.svg");
+  }
+
+  panel-item[action="preferences"] {
+    --icon: url("chrome://global/skin/icons/settings.svg");
+  }
+
+  /* Uncomment these if you want to hide button label - such as with compact_addons_manager */
+  /* This is basically a requirement with compact_addons_manager.css because the button text causes the cards to overflow */
+
+  button[role="menuitem"] > slot {
+    display: none !important;
+  }
+
+  link + button[role="menuitem"] {
+    position: static !important;
+    height: 30px !important;
+    min-width: 30px;
+    padding-inline-end: 4px !important;
+  }
+
+  button[role="menuitem"] > label:not([accesskey]),
+  link + button::after {
+    display: none !important;
+  }
+
+  .category-name {
+    color: #fff !important;
+  }
+
+  .category:focus-visible {
+    background: var(--in-content-button-background-hover) !important;
+  }
+
+  .category[selected="true"] {
+    background: #181818 !important;
+    border-radius: 0px !important;
+  }
+
+  .content-blocking-category {
+    border: 1px solid var(--in-content-box-border-color);
+    background-color: #191919 !important;
+  }
+
+  button.tab-button[selected],
+  button.tab-button[selected]:hover {
+    border-top-color: currentColor;
+    color: #fff !important;
+  }
+
+  #page-options > panel-list {
+    font-family: Fira Sans !important;
+  }
+
+  #page-options > panel-list > panel-item {
+    -moz-context-properties: fill;
+    fill: currentColor;
+    height: 22px !important;
+  }
+}
+
+/*+++++ ERROR PAGES +++++*/
+
+#errorPageContainer,
+body.neterror {
+  background-color: #000 !important;
+  font-family: "Fira Sans" !important;
+  width: 400px !important;
+  margin: auto !important;
+}
+
+#errorPageContainer {
+  background-image: none !important;
+}
+
+#netErrorButtonContainer > .try-again {
+  margin-top: 1.2em;
+  border: 1px solid #212121 !important;
+}
+
+#errorLongDesc {
+  display: none !important;
+}
+
+@-moz-document url(chrome://browser/content/pageinfo/pageInfo.xul),
+url-prefix(chrome: //global/content/httpsonlyerror/)
+{
+  body {
+    background-color: #000 !important;
+  }
+}
+
+@-moz-document url-prefix("about:httpsonlyerror") {
+  body {
+    background-color: #000 !important;
+    font-family: "Fira Sans" !important;
+    width: 400px !important;
+    margin: auto !important;
+  }
+
+  #insecure-explanation-unavailable {
+    margin-bottom: 0.5em;
+    display: none !important;
+  }
+
+  #learn-more-container {
+    margin-block: 0 2em;
+    display: none !important;
+  }
+
+  #explanation-continue {
+    margin-block: 2em;
+    display: none !important;
+  }
+
+  button.primary {
+    border: 1px solid #212121 !important;
+  }
+}
+
+body.caution {
+  border-style: solid;
+  border-color: #ffe900;
+  border-width: 5px !important;
+}
+
+/*+++++ CHROME:// PAGES +++++*/
+
+/* Update History */
+
+@-moz-document url("chrome://mozapps/content/update/history.xhtml")
+{
+  #history {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+  }
+
+  #historyItems {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+    -moz-appearance: none !important;
+  }
+}
+
+/* Illustrations Page */
+
+@-moz-document url-prefix(chrome: //browser/skin/illustrations/)
+{
+  :root {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  body {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #212121 !important;
+  }
+
+  td:first-child > a {
+    white-space: pre;
+    font-size: 1.2rem !important;
+    color: rgb(252, 216, 102) !important;
+  }
+
+  .up {
+    padding: 0 0.5em;
+    margin-inline-start: 20px;
+    color: greenyellow !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+/*+++++ LIBRARY VIEW +++++*/
+
+@-moz-document url(chrome://browser/content/places/places.xhtml), url("about:downloads")
+{
+  /* ============== Popups ============== */
+  menupopup,
+  menupopup menuitem,
+  menupopup menu,
+  menupopup menuseparator {
+    -moz-appearance: none !important;
+  }
+
+  menupopup,
+  panel[type="autocomplete-richlistbox"] {
+    -moz-window-shadow: none !important;
+    background: 0 !important;
+    border: 0 !important;
+    color: #fff !important;
+    box-sizing: content-box !important;
+    width: auto !important;
+  }
+
+  .menupopup-arrowscrollbox {
+    background-color: #000 !important;
+    border: 1px solid #181818 !important;
+  }
+
+  menupopup {
+    padding: 11px 14px 18px !important;
+    margin: -19px -14px 0 !important;
+  }
+
+  menupopup menuseparator {
+    margin: 5px 0 !important;
+    padding: 0 !important;
+    height: 1px !important;
+    background: currentColor !important;
+    opacity: 0.12 !important;
+  }
+
+  menupopup menuitem,
+  menupopup menu,
+  .autocomplete-richlistitem {
+    height: 30px !important;
+    padding: 0 8px !important;
+    border: 0 !important;
+    background: 0 !important;
+    color: #fff !important;
+    fill-opacity: initial !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 1.12rem;
+    font-family: "Fira Sans";
+  }
+
+  menupopup menuitem:hover:not([disabled="true"]),
+  menupopup menu:hover:not([disabled="true"]),
+  .autocomplete-richlistitem:hover:not([disabled="true"]):not([selected="true"]) {
+    background-color: #191919 !important;
+  }
+
+  menupopup menuitem:hover:active:not([disabled="true"]),
+  menupopup menu:hover:active:not([disabled="true"]),
+  .autocomplete-richlistitem:hover:active:not([disabled="true"]),
+  .autocomplete-richlistitem[selected="true"] {
+    background-color: #000 !important;
+  }
+
+  menupopup menuitem[disabled="true"],
+  menupopup menu[disabled="true"],
+  .autocomplete-richlistitem[disabled="true"] {
+    opacity: 0.5 !important;
+  }
+
+  /* disable vertical menu scroll buttons and use a good ol' scrollbar */
+  /* this is a shotgun approach, expect side effects */
+  scrollbox[orient=vertical]
+
+    /* >=71 */ {
+    overflow-y: auto !important;
+  }
+
+  /* why still use scroll buttons; is this the middle ages? */
+  .menupopup-scrollbutton {
+    display: none !important;
+  }
+
+  .menu-iconic-left {
+    -moz-appearance: none !important;
+  }
+
+  /* hide icon if no image (default on macOS but not Windows) */
+  .subviewbutton:not(:-moz-any([image], [targetURI], .bookmark-item))
+    > .menu-iconic-left {
+    display: none;
+  }
+
+  .menu-iconic-icon {
+    fill: currentColor !important;
+    -moz-context-properties: fill, fill-opacity, stroke, stroke-opacity !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: 16px !important;
+    width: 24px !important;
+    height: 24px !important;
+    padding: 4px !important;
+  }
+
+  .menu-text {
+    -moz-appearance: none !important;
+    padding: 0 !important;
+  }
+
+  .menu-right {
+    -moz-appearance: none !important;
+    -moz-context-properties: fill !important;
+    fill: currentColor !important;
+    margin-inline-end: 0 !important;
+    margin-inline-start: 16px !important;
+  }
+
+  #context-navigation {
+    background: 0 !important;
+    -moz-box-flex: 1;
+    -moz-box-pack: center;
+  }
+
+  #context-navigation > .menuitem-iconic {
+    background: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 44px !important;
+    transform: scale(1.3) !important;
+  }
+
+  #context-navigation .menu-iconic-left {
+    border-radius: 50% !important;
+    padding: 8px !important;
+  }
+
+  #context-navigation .menu-iconic-icon {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  #context-navigation .menuitem-iconic:hover:not([disabled]) .menu-iconic-left {
+    background-color: #181818 !important;
+  }
+
+  #context-navigation
+    .menuitem-iconic:hover:active:not([disabled])
+    .menu-iconic-left {
+    background-color: #000 !important;
+  }
+
+  /* needs to align with textbox/bookmark-button but can't overlap it */
+  panel[type="autocomplete-richlistbox"],
+  .bookmark-item:not(menu) > menupopup[placespopup] {
+    padding: 1px 14px 18px !important;
+    margin: 0 -14px 0 !important;
+  }
+
+  .popup-internal-box,
+  panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox,
+  #PopupSearchAutoComplete > *,
+  .menupopup-arrowscrollbox {
+    background: #000 !important;
+  }
+
+  /* themes a menupopup (or other root level / shadow dom popup) as a panel */
+  /* Mozilla's use of shadow dom means we can't use a menupopup > .popup-internal-box */
+  .popup-internal-box,
+  panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox,
+  .menupopup-arrowscrollbox {
+    margin: 8px 0 !important;
+    padding: 8px 0 !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+  }
+
+  .popup-internal-box,
+  .menupopup-arrowscrollbox {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  #PopupSearchAutoComplete > * {
+    border-radius: 0 !important;
+  }
+
+  #PopupSearchAutoComplete > :first-child {
+    border-radius: 4px 4px 0 0 !important;
+  }
+
+  #PopupSearchAutoComplete > :last-child {
+    border-radius: 0 0 4px 4px !important;
+  }
+
+  /* autocomplete panel can't overlap the textbox, so shadow can't go up
+       more than 1px */
+  panel[type="autocomplete-richlistbox"] > .autocomplete-richlistbox {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px -0px rgba(0, 0, 0, 0.14), 0 3px 14px -5px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  /* ============== Menus ============== */
+
+  .tree-bodybox {
+    background: #000 !important;
+  }
+
+  /* These change top bar background color */
+  #placesToolbar {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  /* These change the lists background color */
+  #placesView #placesView .scrollbox-innerbox,
+    #infoPane,
+    #placesList,
+    #placeContent,
+    /* This one changes the urlbar star bookmarking folder tree backgrund color */
+    #editBMPanel_folderTree {
+    -moz-appearance: none !important;
+    background: #181818 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+    min-width: 1px !important;
+  }
+
+  /* These change the list header background and text colors */
+  #placeContent treecol {
+    -moz-appearance: none !important;
+    background: #000 !important;
+    padding: 0px !important;
+    color: #fff !important;
+    border-left: 0px !important;
+    border-bottom: 0px !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #placeContent treecol:hover {
+    -moz-appearance: none !important;
+    background: #000 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  /* This changes the right border on the left list panel */
+  #placesView > splitter {
+    border-inline-end: 0px !important;
+  }
+
+  /* These change the odd rows of the lists */
+  #placeContent tree,
+  #placeContent treechildren:not(.autocomplete-treebody)::-moz-tree-row(odd),
+  #placeContent treechildren:not(.autocomplete-treebody)::-moz-tree-row(hover) {
+    background-color: #000 !important;
+  }
+
+  #placeContent
+    treechildren:not(.autocomplete-treebody)::-moz-tree-row(selected) {
+    background-color: #000 !important;
+  }
+
+  #placeContent treechildren::-moz-tree-cell {
+    border-right: 0px dotted rgba(0, 0, 0, 0.4) !important;
+  }
+
+  #placeContent > splitter {
+    border: 0px solid red !important;
+  }
+
+  /* This changes the forward and back buttons opacity when disabled */
+  #placesToolbar > toolbarbutton[disabled] > .toolbarbutton-icon {
+    opacity: 0.25 !important;
+  }
+
+  /* This changes the forward and back buttons color */
+  #back-button > .toolbarbutton-icon,
+  #forward-button > .toolbarbutton-icon {
+    fill: #fff !important;
+    opacity: 1 !important;
+  }
+
+  /* This deletes the leftover border when clicking one of the top buttons */
+  #placesMenu > menu {
+    border: none !important;
+  }
+
+  /* This changes the text color of the "clear downloads" button */
+  #clearDownloadsButton {
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #clearDownloadsButton[disabled] {
+    color: #000 !important;
+  }
+
+  /* This themes the search box */
+  #searchFilter {
+    transition: all 0.25s ease-in-out !important;
+    -moz-appearance: none !important;
+    border: 0px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  /* This themes the search box on hover */
+  #searchFilter[focused="true"] {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  /* This themes the information box on the lower part of the library menu */
+  #detailsDeck {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-top: 0px solid #000 !important;
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #detailsPane {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-top: 0px solid #000 !important;
+    font-size: 1.1rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  treechildren {
+    font-size: 1.1rem !important;
+    font-family: "Fira Sans" !important;
+    list-style-image: none !important;
+  }
+
+  treechildren::-moz-tree-image(container) {
+    list-style-image: none !important;
+  }
+
+  treechildren::-moz-tree-row {
+    margin-left: -10px !important;
+  }
+
+  treechildren:hover {
+    background-color: #000 !important;
+  }
+
+  treechildren::-moz-tree-row(selected) {
+    background-color: #181818 !important;
+    outline: 0px solid rgb(27, 27, 27) !important;
+  }
+
+  treechildren::-moz-tree-row(hover) {
+    background-color: #000 !important;
+    color: #fff !important;
+    outline: 0px solid rgb(27, 27, 27) !important;
+  }
+
+  treechildren::-moz-tree-image {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  treechildren::-moz-tree-cell-text {
+    color: rgb(221, 226, 234) !important;
+  }
+
+  treechildren::-moz-tree-cell-text(container),
+  treechildren::-moz-tree-cell-text(folder) {
+    color: #fff !important;
+  }
+
+  treechildren::-moz-tree-indentation {
+    width: 10px !important;
+  }
+
+  #downloadsRichListBox > richlistitem[selected] {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.9) 0px,
+        transparent 0px
+      ),
+      linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, transparent 0px),
+      linear-gradient(to left, rgba(255, 255, 255, 0.5) 0px, transparent 0px),
+      linear-gradient(to top, rgba(255, 255, 255, 0.4) 0px, transparent 0px),
+      linear-gradient(to bottom, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)) !important;
+    border-radius: 0px !important;
+    outline: 0px solid rgb(124, 163, 206) !important;
+  }
+
+  .downloadTarget {
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+    margin-top: -10px;
+    -moz-appearance: none !important;
+  }
+
+  #downloadsRichListBox {
+    background: #000 !important;
+  }
+
+  .downloadButton > .button-box {
+    display: none !important;
+  }
+
+  .downloadBlockedBadge {
+    margin: 0 5px !important;
+    background: url("chrome://browser/skin/downloads/download-blocked.svg") top
+      right / 16px no-repeat !important;
+  }
+
+  .downloadBlockedBadge:-moz-locale-dir(rtl) {
+    background-position-x: left !important;
+  }
+
+  #downloadsListBox
+    > richlistitem[verdict="PotentiallyUnwanted"]
+    .downloadBlockedBadge {
+    background-image: url("chrome://browser/skin/warning.svg") !important;
+  }
+
+  /* This changes the text boxes inside the library bottom information box */
+  #infoBox textbox,
+  #infoBox listbox {
+    transition: all 0.25s ease-in-out !important;
+    -moz-appearance: none !important;
+    border: 0px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  /* A fix for bookmark preferences... so that some boxes won't appear brighter than others */
+  #bookmarkproperties #editBMPanel_namePicker,
+  #bookmarkproperties #editBMPanel_tagsField,
+  #bookmarkproperties #editBMPanel_tagsSelector {
+    background-color: #000 !important;
+  }
+
+  /* This changes the same text boxes on hover */
+  #infoBox textbox[focused="true"],
+  #infoBox listbox[focused="true"] {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  #places input {
+    border: 0px !important;
+    background: #000 !important;
+    -moz-appearance: none !important;
+  }
+
+  #editBMPanel_tagsSelectorExpander {
+    background-color: #000 !important;
+    -moz-appearance: none !important;
+    color: white !important;
+  }
+
+  #placeContentColumns {
+    height: 25px !important;
+    font-variant-caps: petite-caps !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+    text-align: center !important;
+  }
+
+  menuitem#openPrivate.menuitem-iconic.privatetab-icon
+    > label.menu-iconic-text {
+    margin-left: -38.5px !important;
+  }
+
+  menuitem#openAllPrivate.menuitem-iconic.privatetab-icon
+    > label.menu-iconic-text {
+    margin-left: -38.5px !important;
+  }
+
+  #contentView treecol {
+    border-inline-end: 0px solid var(--organizer-border-color) !important;
+  }
+
+  #keyword-field-info {
+    display: none !important;
+  }
+
+  #tags-field-info {
+    display: none !important;
+  }
+
+  #editBookmarkPanelRows > vbox > html|input,
+  #editBookmarkPanelRows > vbox > hbox > html|input {
+    outline: none !important;
+    -moz-appearance: none !important;
+  }
+
+  #placesToolbar {
+    background-color: var(--organizer-background-secondary-color);
+    color: var(--organizer-text-primary-color);
+    border: 0px !important;
+  }
+
+  #placeContent tree,
+  #placeContent treechildren::-moz-tree-row(selected) {
+    background-color: #000 !important;
+    border: 0px !important;
+    outline: 0px !important;
+  }
+
+  #placesList tree,
+  #placesList treechildren::-moz-tree-row(selected) {
+    background-color: #000 !important;
+    border: 0px !important;
+    outline: 0px !important;
+  }
+}
+
+/*+++++ Import Settings and Bookmarks Page +++++*/
+
+@-moz-document url(chrome://browser/content/migration/migration.xhtml)
+{
+  .wizard-header {
+    border-bottom: none !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+  }
+
+  wizard {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+  }
+
+  #closeSourceBrowser {
+    font-weight: 500 !important;
+  }
+}
+
+/*+++++ BUTTONS, INPUT BOXES +++++*/
+
+button:focus-visible,
+html|select:focus-visible,
+html|input:is([type="checkbox"], [type="color"], [type="radio"]):focus-visible,
+xul|menulist:focus-visible,
+xul|checkbox:not([native]):focus-visible > .checkbox-check,
+xul|radio[focused="true"] > .radio-check,
+xul|tab:focus-visible > .tab-middle > .tab-text {
+  box-shadow: none !important;
+  outline: 1px solid var(--in-content-focus-outline-color) !important;
+  outline-offset: 2px !important;
+  -moz-outline-radius: 2px !important;
+}
+
+/*+++++ OTHER PAGES +++++*/
+
+:root #categories > .category[selected],
+:root #categories > .category.selected {
+  color: #fff !important;
+}
+
+/*+++++ PAGE FOR INTERNAL ICONS +++++*/
+
+@-moz-document url-prefix(resource:///chrome/browser/skin/classic/browser/)
+{
+  :root {
+    background-color: #000 !important;
+  }
+
+  body {
+    border: 1px solid #212121 !important;
+    border-radius: 2px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  a {
+    color: #64b5f6 !important;
+  }
+
+  svg {
+    filter: invert(1) !important;
+  }
+
+  h1 {
+    font-size: 150% !important;
+    margin: 0 0 0.6em;
+    border-bottom: 0 !important;
+    font-weight: normal;
+  }
+}

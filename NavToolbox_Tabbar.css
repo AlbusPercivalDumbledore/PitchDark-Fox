@@ -1,0 +1,319 @@
+/*+++++ ONE-LINER +++++*/
+
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/navbar_tabs_oneliner.css */
+
+#navigator-toolbox {
+  --uc-navigationbar-width: 50vw;
+  --uc-toolbar-height: 32px !important;
+  --uc-urlbar-min-width: none;
+  --toolbarbutton-inner-padding: calc(
+    (var(--tab-min-height)- 31px) / 2
+  ) !important;
+  background-color: #000 !important;
+  border-bottom: none !important;
+  margin-top: -2px !important;
+}
+
+#navigator-toolbox > #nav-bar {
+  margin-right: calc(100vw - var(--uc-navigationbar-width));
+  margin-top: calc(0px - var(--uc-toolbar-height)) !important;
+  height: var(--uc-toolbar-height) !important;
+}
+
+#TabsToolbar {
+  --toolbarbutton-inner-padding: calc(
+    (var(--tab-min-height) - 31px) / 2
+  ) !important;
+  margin-left: var(--uc-navigationbar-width);
+  --tabs-navbar-shadow-size: 0px;
+  background: #000 !important;
+}
+
+#tabbrowser-tabs {
+  --tab-min-height: calc(
+    var(--uc-toolbar-height) - 2 * var(--proton-tab-block-margin, 0px)
+  ) !important;
+}
+
+.tab-background {
+  border-radius: 0px !important;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  margin-bottom: -1px !important;
+  margin-top: 1px !important;
+}
+
+#titlebar {
+  background: #000 !important;
+}
+
+.tab-context-line {
+  display: none !important;
+}
+
+/*borders in selected tab*/
+
+.tab-background[selected="true"] {
+  background-image: none !important;
+  border-radius: 3px !important;
+  margin: -1px !important;
+  border: 2px solid #dc2430 !important;
+  border-bottom: 3px solid #000 !important;
+  margin-top: 2px !important;
+}
+
+#TabsToolbar[brighttext]
+  #tabbrowser-tabs:not([noshadowfortests])
+  .tabbrowser-tab:is([visuallyselected="true"], [multiselected])
+  > .tab-stack
+  > .tab-background {
+  box-shadow: 0 0 0px
+    var(--tab-line-color, var(--tabs-border-color, rgba(128, 128, 142, 0.9))) !important;
+}
+
+/* Window drag space  */
+:root[tabsintitlebar="true"] #nav-bar {
+  padding-left: 0px !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+  display: none;
+}
+
+.titlebar-spacer {
+  display: none !important;
+}
+
+/* prevent urlbar overflow on narrow windows */
+@media screen and (max-width: 1400px) {
+  #urlbar-container {
+    min-width: unset !important;
+  }
+}
+
+/* Rules specific to window controls on right layout */
+@supports -moz-bool-pref("layout.css.osx-font-smoothing.enabled") {
+  .titlebar-buttonbox-container {
+    position: fixed;
+    display: block;
+    left: 0px;
+    z-index: 3;
+  }
+
+  :root[tabsintitlebar="true"] #nav-bar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+/*+++++ Center Tab Label +++++ */
+
+.tab-content:not([pinned])::before {
+  display: -moz-box;
+  content: "";
+  -moz-box-flex: 1;
+}
+
+/*+++++ Proton Sound Label +++++*/
+
+.tab-icon-sound-label {
+  display: none !important;
+}
+
+/*+++++ Tab Label +++++*/
+
+.tab-label {
+  font-family: "Fira Sans" !important;
+  margin-top: 4px !important;
+}
+
+.tabbrowser-tab[selected="true"],
+.tab-label-container[selected="true"] {
+  font-size: 1.05rem !important;
+}
+
+.tabbrowser-tab:not([selected="true"]) {
+  font-size: 1.05rem !important;
+}
+
+/*+++++ Specify Width of Tabs +++++*/
+
+:root .tabbrowser-tab {
+  min-width: 445px !important;
+}
+
+:root[privatebrowsingmode] .tabbrowser-tab {
+  min-width: 465px !important;
+}
+
+#main-window:not([sizemode="maximized"]) .tabbrowser-tab,
+#main-window:not([sizemode="maximized"]) #urlbar {
+  min-width: 0px !important;
+}
+
+/*+++++ Numbering the Tab +++++*/
+
+.tabbrowser-tab:first-child {
+  counter-reset: nth-tab 0;
+}
+
+.tab-text::before {
+  content: counter(nth-tab) " ";
+  counter-increment: nth-tab;
+  margin-right: 5px !important;
+}
+
+/*+++++ Make Tab Close Button Smaller +++++*/
+
+.tab-close-button {
+  margin-inline-end: calc(var(--inline-tab-padding) / -2);
+  width: 14px !important;
+  height: 14px !important;
+  padding: 2px !important;
+  border-radius: 0px !important;
+  margin-top: 0 !important;
+}
+
+/*Show Close Button on Tab Hover*/
+
+.tabbrowser-tab:not([selected]):not([pinned]) .tab-close-button {
+  display: none !important;
+}
+
+.tabbrowser-tab:not([selected]):not([pinned]):hover .tab-close-button {
+  display: -moz-box !important;
+}
+
+/*Prevent Tab's text near close button, from changing on hover*/
+.tabbrowser-tab {
+  --tab-label-mask-size: 1em !important;
+}
+
+/*+++++ HIDE TABS SCROLL BUTTONS +++++ */
+
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/hide_tabs_scrollbuttons.css */
+
+#tabbrowser-tabs:not([movingtab]) {
+  --uc-scroll-visibility: hidden;
+}
+
+#tabbrowser-tabs[overflow] {
+  --uc-scrollbox-margin: -20px !important;
+}
+
+#scrollbutton-up {
+  position: relative;
+  z-index: 1;
+}
+
+#scrollbutton-up,
+#scrollbutton-down,
+#scrollbutton-up ~ spacer {
+  visibility: var(--uc-scroll-visibility, visible);
+}
+
+.scrollbox-clip {
+  margin-inline: var(--uc-scrollbox-margin, 0);
+}
+
+#tabbrowser-tabs[overflow][positionpinnedtabs] .tabbrowser-tab[pinned] {
+  border-left: 28px solid transparent !important;
+  clip-path: padding-box;
+}
+
+/*+++++ TAB LINE LOADING INDICATOR +++++ */
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/tab_line_loading_indicator.css */
+
+/* Hide the normal loading indicator (just show tab-icon instead) and make the top tab-line bounce left-to-right */
+
+@keyframes tabline-anim {
+  from {
+    background-position-x: left;
+  }
+
+  to {
+    background-position-x: right;
+  }
+}
+
+.tab-line {
+  transform: none !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  transition: background-size 80ms linear !important;
+}
+
+.tabbrowser-tab[busy] > stack > .tab-background > .tab-line {
+  background-size: 10% !important;
+  background-image: linear-gradient(
+    var(--tab-line-color),
+    var(--tab-line-color)
+  );
+  opacity: 0.7 !important;
+  animation: tabline-anim 400ms alternate infinite ease-in-out;
+}
+
+.tab-line[selected] {
+  background-image: linear-gradient(
+    var(--tab-line-color),
+    var(--tab-line-color)
+  );
+  opacity: 1 !important;
+}
+
+.tabbrowser-tab .tab-throbber {
+  display: none;
+}
+
+.tabbrowser-tab .tab-icon-image {
+  display: -moz-box !important;
+  transform: scale(0.8) !important;
+}
+
+.tabbrowser-tab:not([pinned]) .tab-icon-image {
+  display: none /*-moz-box*/ !important;
+}
+
+/*+++++ Hide Toolbox top, bottom borders +++++*/
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/hide_toolbox_top_bottom_borders.css */
+
+:root[sizemode="normal"] {
+  border-top: none !important;
+}
+
+:root[sizemode="normal"] #titlebar {
+  -moz-appearance: none !important;
+}
+
+/* The line below top bar*/
+
+#main-window:not([sizemode="maximized"]) #navigator-toolbox:after {
+  top: 1px !important;
+}
+
+#navigator-toolbox:after {
+  content: "";
+  top: 9px !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 3, 1),
+    #004e92,
+    #aa076b,
+    #dc2430,
+    #dc2430,
+    #aa076b,
+    #004e92,
+    rgb(0, 3, 1)
+  );
+  clip: rect(24px, 2600px, 26px, 0px);
+  position: absolute !important;
+}

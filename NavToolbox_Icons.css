@@ -1,0 +1,231 @@
+/*+++++ Windows Minimize, Maximize, Close Buttons +++++*/
+
+.titlebar-button > .toolbarbutton-icon {
+  height: 14px !important;
+  min-height: 14px !important;
+  width: 14px !important;
+  min-width: 14px !important;
+}
+
+.titlebar-button {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+  padding-top: 7px !important;
+  margin-top: 0px !important;
+}
+
+#TabsToolbar > .titlebar-buttonbox-container {
+  margin-left: 10px !important;
+}
+
+/*+++++ Tab Close Icon +++++*/
+
+.tab-close-button {
+  list-style-image: url("Icons/close.svg") !important;
+  transform: scale(0.7) !important;
+  margin-left: -5px !important;
+  opacity: 0.2 !important;
+}
+
+/*++++ Scale Nav-Bar and Tabs-Toolbar Icons (including downloads, Bookmark, and History Icons) +++++*/
+
+#nav-bar
+  toolbarbutton:not(#alltabs-button, #allTabsMenu-allTabsViewTabs
+    toolbarbutton, .panel-subview-body
+    toolbarbutton, #bookmarks-menu-button, #history-panelmenu, #PanelUI-historyMore, #back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button, #stop-button, #reload-button, #new-tab-button, #_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action, #urlbar-zoom-button),
+#TabsToolbar toolbarbutton:not(#alltabs-button, #new-tab-button, #eom-button),
+#downloads-button,
+#bookmarks-menu-button .toolbarbutton-icon,
+#history-panelmenu .toolbarbutton-icon,
+#eom-button .toolbarbutton-icon
+/*toolbar .webextension-browser-action,*/ {
+  transform: scale(0.75) !important;
+}
+
+/*++++ Scale Back Button, Forward Button, and adjacent Icons + All Tabs, New Tabs, and Undo Close Tab Icons +++++*/
+
+#nav-bar
+  toolbarbutton:is(#back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button),
+#TabsToolbar
+  toolbarbutton:is(#alltabs-button, #_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action) {
+  transform: scale(0.61) !important;
+}
+
+#nav-bar toolbarbutton:is(#stop-button) {
+  transform: scale(0.55) !important;
+}
+
+#nav-bar toolbarbutton:is(#reload-button),
+#TabsToolbar toolbarbutton:is(#tabs-newtab-button, #new-tab-button) {
+  transform: scale(0.65) !important;
+}
+
+/*+++++ Scale Page Action Menu Icons on Url Bar +++++*/
+
+#tracking-protection-icon-box {
+  overflow: hidden;
+  width: 16px;
+  height: 11px !important;
+  margin-top: 5px !important;
+}
+
+#page-action-buttons {
+  margin-top: 8px !important;
+  transform: scale(0.9) !important;
+}
+
+#urlbar-go-button,
+.search-go-button {
+  margin-top: 6px !important;
+}
+
+#urlbar-zoom-button {
+  margin-top: -3px !important;
+  transform: scale(1.1) !important;
+}
+
+/*+++++ Adjust Margins of Nav-Bar and Tabs Toolbar Icons +++++*/
+
+#nav-bar
+  toolbarbutton:not(#alltabs-button, #allTabsMenu-allTabsViewTabs
+    toolbarbutton, .panel-subview-body
+    toolbarbutton, #bookmarks-menu-button, #eom-button, #history-panelmenu, #back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button, #reload-button, #stop-button, #urlbar-zoom-button) {
+  margin-top: 8px !important;
+}
+
+#nav-bar
+  toolbarbutton:is(#back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button, #reload-button),
+#back-button .toolbarbutton-icon,
+#forward-button .toolbarbutton-icon {
+  margin-top: 5px !important;
+}
+
+#nav-bar
+  toolbarbutton:is(#nav-bar-overflow-button, #reload-button, #stop-button),
+#bookmarks-menu-button .toolbarbutton-icon,
+#history-panelmenu .toolbarbutton-icon {
+  margin-top: 6px !important;
+}
+
+#nav-bar toolbarbutton:is(#stop-button) {
+  margin-top: 7px !important;
+}
+
+/*+++++ Hide Private Browsing Indicator Icons +++++*/
+
+.private-browsing-indicator,
+#private-mask.private-browsing-indicator {
+  display: none !important;
+}
+
+/*+++++ Modify Badge on Toolbar Buttons +++++*/
+
+.toolbarbutton-badge {
+  transform: scale(1.2) !important;
+  margin-top: -6px !important;
+}
+
+/*+++++ Make background of Navigation Toolbox Button Transparent on Hover +++++*/
+
+.toolbarbutton-icon:hover {
+  background: transparent !important;
+}
+
+/*+++++ Replace default Icons +++++*/
+
+#back-button {
+  list-style-image: url("Icons/back.svg") !important;
+}
+
+#forward-button {
+  list-style-image: url("Icons/forward.svg") !important;
+}
+
+#stop-button {
+  list-style-image: url("Icons/close.svg") !important;
+}
+
+#reload-button {
+  list-style-image: url("Icons/reload.svg") !important;
+}
+
+#tabs-newtab-button,
+#TabsToolbar #new-tab-button {
+  list-style-image: url("Icons/add.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#bookmarks-menu-button {
+  list-style-image: url("Icons/bookmark_menu.svg") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("Icons/history.svg") !important;
+}
+
+#pageAction-panel-bookmark,
+#star-button {
+  list-style-image: url("Icons/bookmark.svg") !important;
+}
+
+#pageAction-panel-bookmark[starred],
+#star-button[starred] {
+  list-style-image: url("Icons/bookmark-checked.svg") !important;
+}
+
+#tracking-protection-icon {
+  list-style-image: url("Icons/shield.svg") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("Icons/sidebar.svg") !important;
+}
+
+#new-window-button {
+  list-style-image: url("Icons/fox.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("Icons/incognito.svg") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("Icons/chevron.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("Icons/menu.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#alltabs-button {
+  list-style-image: url("Icons/more.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#add-ons-button {
+  list-style-image: url("Icons/puzzle.svg") !important;
+}
+
+#preferences-button {
+  list-style-image: url("Icons/wrench.svg") !important;
+}
+
+#_c607c8df-14a7-4f28-894f-29e8722976af_-browser-action {
+  list-style-image: url("Icons/temp_container.svg") !important;
+}
+
+#_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action {
+  list-style-image: url("Icons/undo.svg") !important;
+}
+
+#umatrix_raymondhill_net-browser-action {
+  list-style-image: url("Icons/blocked.svg") !important;
+  /*margin-top: 5px !important;*/
+}
+
+#addon_darkreader_org-browser-action {
+  list-style-image: url("Icons/flashlight.svg") !important;
+}

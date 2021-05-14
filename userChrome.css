@@ -1,0 +1,63 @@
+@import url(blanket-rules.css);
+@import url(chrome_bookmarks.css);
+@import url(chrome_buttons_and_dialogs.css);
+@import url(chrome_contextmenu.css);
+@import url(chrome_Ctrl+Tab_View.css);
+@import url(chrome_library.css);
+@import url(chrome_menus.css);
+@import url(chrome_popups.css);
+@import url(chrome_sidebar.css);
+@import url(chrome_tooltips.css);
+@import url(chrome_tweaks.css);
+@import url(NavToolbox_Icons.css);
+@import url(NavToolbox_Menubar.css);
+@import url(NavToolbox_Tabbar.css);
+@import url(NavToolbox_Urlbar.css);
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/*+++++ Prevent White Flickering, when Switching Pages ++++++ */
+
+#tabbrowser-tabpanels,
+browser[type="content"] > html {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+:root[privatebrowsingmode="temporary"] #tabbrowser-tabpanels,
+body.caution,
+#webextpanels-window,
+#webext-panels-stack,
+#webext-panels-browser {
+  background-color: #000 !important;
+}
+
+@-moz-document url(chrome://browser/content/webext-panels.xhtml)
+{
+  :root {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+/*+++++ Check Boxes and Radio Buttons +++++*/
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/custom_menupopup_check_icons.css made available under Mozilla Public License v. 2.0
+*/
+
+menuitem:is([type="checkbox"]) .menu-iconic-left {
+  -moz-appearance: none !important;
+  height: 7px;
+  margin-block: 2px;
+  margin-inline: 3px 6px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -moz-context-properties: fill;
+  fill: currentColor;
+}
+
+menuitem[checked] .menu-iconic-left {
+  background-image: url("chrome://global/skin/icons/check.svg");
+  background-color: transparent;
+}

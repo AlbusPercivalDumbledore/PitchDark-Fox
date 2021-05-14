@@ -165,17 +165,17 @@ https://addons.mozilla.org/en-GB/firefox/addon/tabs-aside/
 ### Temporary Containers
 https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/
 
-### TranslateWebPages
+### Translate Web Pages
 https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
 
 ![TranslateWebPages](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_TranslateWebPages.png)
 
-### TreeStyleTab
+### Tree Style Tab
 https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/
 
 ![TreeStyleTab](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_TreeStyleTab.png)
 
-### uBlockOrigin
+### uBlock Origin
 https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
 ![uBlockOrigin](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_uBlockOrigin.png)

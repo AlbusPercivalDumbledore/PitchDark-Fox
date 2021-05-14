@@ -67,40 +67,66 @@ Firefox Stylesheets intended for my Personal use
 Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of extension, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'.
 
 ### AutoTabDiscard
+https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/
+
 ![AutoTabDiscard](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_AutoTabDiscard.png)
 
 ### ClearURLs
+https://addons.mozilla.org/en-US/firefox/addon/clearurls/
+
 ![ClearURLs](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_ClearURLs.png)
 
 ### CookieAutoDelete
+https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/
+
 ![CookieAutoDelete](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_CookieAutoDelete.png)
 
 ### DarkReader
+https://addons.mozilla.org/en-US/firefox/addon/darkreader/
+
 ![DarkReader](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_DarkReader.png)
 
 ### EnhancerForYoutube
+https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/
+
 ![EnhancerForYoutube](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_EnhancerForYoutube.png)
 
 ### LocalCDN
+https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/
+
 ![LocalCDN](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_LocalCDN.png)
 
 ### MultiAccountContainer
+https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
+
 ![MultiAccountContainer](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_MultiAccountContainer.png)
 
 ### NotesByMozilla
+https://addons.mozilla.org/en-US/firefox/addon/notes-by-firefox/
+
 ![NotesByMozilla](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_NotesByMozilla.png)
 
 ### SaveWebPasPNG
+https://addons.mozilla.org/en-US/firefox/addon/save-webp-as-png-or-jpeg/
+
 ![SaveWebPasPNG](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_SaveWebPasPNG.png)
 
 ### TranslateWebPages
+https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
+
 ![TranslateWebPages](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_TranslateWebPages.png)
 
 ### TreeStyleTab
+https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/
+
 ![TreeStyleTab](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_TreeStyleTab.png)
 
 ### uBlockOrigin
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+
 ![uBlockOrigin](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_uBlockOrigin.png)
 
 ### uMatrix
+Requires latest Pre-Release Version of uMatrix from https://github.com/gorhill/uMatrix/releases
+
 ![uMatrix](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_uMatrix.png)

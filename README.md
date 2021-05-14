@@ -49,8 +49,14 @@ This is a collection of stylesheets that I've cobbled together, after Proton Upd
 ### Edit Bookmark
 ![EditBookmark](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/EditBookmark.png)
 
+### HTTPS Only Error
+![HttpsOnlyError](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/HttpsOnlyError.png)
+
 ### Library
 ![Library](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/Library.png)
+
+### Net Error
+![NetErrorPage](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/NetErrorPage.png)
 
 ### New Private Window Page
 ![NewPrivateWindowPage](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/NewPrivateWindowPage.png)

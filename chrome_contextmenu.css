@@ -14,7 +14,7 @@
 
 menupopup > menuitem,
 menupopup > menu {
-  padding-block: 4px !important;
+  padding-block: 3px !important;
   padding-inline-start: 15px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;

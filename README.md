@@ -87,10 +87,11 @@ The best use anyone can make of these stylesheets would be to look for individua
 
 For using as they are, these stylesheets require:
 
-1. Dark Magic Theme https://addons.mozilla.org/en-US/firefox/addon/nicothin-dark-magic/
-2. Certain Scripts from [**u/MotherStylus's repository**](https://github.com/aminomancer/uc.css.js)
-3. Scrips need to be loaded with [**fx-autoconfig**](https://github.com/MrOtherGuy/fx-autoconfig), as detailed in above repository
-4. [**chrome.manifest**](https://github.com/aminomancer/uc.css.js/tree/master/utils) from u/MotherStylus's repository - for restoring Pre-Proton icons - since I've scaled down toolbarbuttons, and new thinner icons look horrible when scaled.
+1. Fira Sans Font https://github.com/mozilla/Fira/releases/
+2. Dark Magic Theme https://addons.mozilla.org/en-US/firefox/addon/nicothin-dark-magic/
+3. Certain Scripts from [**u/MotherStylus's repository**](https://github.com/aminomancer/uc.css.js)
+4. Scrips need to be loaded with [**fx-autoconfig**](https://github.com/MrOtherGuy/fx-autoconfig), as detailed in above repository
+5. [**chrome.manifest**](https://github.com/aminomancer/uc.css.js/tree/master/utils) from u/MotherStylus's repository - for restoring Pre-Proton icons - since I've scaled down toolbarbuttons, and new thinner icons look horrible when scaled.
 
 Scripts Required:
 

@@ -57,8 +57,8 @@
   menupopup menuitem,
   menupopup menu,
   .autocomplete-richlistitem {
-    height: 30px !important;
-    padding: 0 8px !important;
+    height: 24px !important;
+    padding: 0 3px !important;
     border: 0 !important;
     background: #000 !important;
     color: #fff !important;

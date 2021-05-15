@@ -18,6 +18,15 @@
   margin-left: 10px !important;
 }
 
+/* Scale down window controls when menu bar is visible */
+
+.titlebar-min,
+.titlebar-max,
+.titlebar-restore,
+.titlebar-close {
+  transform: scale(0.7) !important;
+}
+
 /*+++++ Tab Close Icon +++++*/
 
 .tab-close-button {

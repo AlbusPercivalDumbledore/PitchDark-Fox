@@ -1,6 +1,6 @@
 /*+++++ CLEAR URLs EXTENSION +++++*/
 
-@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/)
+@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/popup.html)
 {
   .container-fluid {
     background-color: #000 !important;
@@ -139,5 +139,48 @@
 
   #rules_status_head {
     display: none !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/html/settings.html)
+{
+  * {
+    color: #fff !important;
+    width: auto !important;
+    font-family: fira sans !important;
+    background: transparent !important;
+  }
+
+  #badged_color_label,
+  .pickr {
+    display: none !important;
+  }
+
+  .switch {
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    transform: scale(0.6) !important;
+    filter: invert(0.5) !important;
+    right: 0 !important;
+    position: absolute !important;
+    margin-top: -2px !important;
+  }
+
+  .slider.round::before {
+    border-radius: 0 !important;
+  }
+
+  .bg-dark {
+    background-color: transparent !important;
+  }
+
+  br {
+    display: none !important;
+  }
+
+  .col-lg-4 {
+    max-width: 100% !important;
+    margin: auto !important;
   }
 }

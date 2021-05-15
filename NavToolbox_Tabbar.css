@@ -137,7 +137,7 @@
 }
 
 /*+++++ Specify Width of Tabs +++++*/
-
+/*
 :root .tabbrowser-tab {
   min-width: 445px !important;
 }
@@ -153,7 +153,7 @@
 #main-window:not([sizemode="maximized"]) .tabbrowser-tab {
   min-width: 150px !important;
 }
-
+*/
 
 
 /*+++++ Numbering the Tab +++++*/

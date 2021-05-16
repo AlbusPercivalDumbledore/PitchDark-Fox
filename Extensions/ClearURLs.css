@@ -1,6 +1,7 @@
 /*+++++ CLEAR URLs EXTENSION +++++*/
 
-@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/popup.html)
+@-moz-document url-prefix(moz-extension://Enter Internal UUID Here/popup.html),
+url-prefix(moz-extension://Enter Internal UUID Here/html/popup.html)
 {
   .container-fluid {
     background-color: #000 !important;

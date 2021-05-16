@@ -4,13 +4,15 @@ Firefox Stylesheets intended for my Personal use. Sharing them since I've benefi
 ![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/pitchdarkfox.gif)
 
 ### NOTE
-This is a collection of stylesheets that I've cobbled together, after Proton Update broke my earlier stylesheet. This isn't a 'release' of theme for firefox, for some reasons:
+This is just a collection of stylesheets that I've cobbled together, after Proton Update broke my earlier stylesheet. This is NOT a 'release' of theme/style for firefox, for several reasons:
 
 1. Much of it is based on others' hardwork. [**See Credits**](https://github.com/im-hm/PitchDark-Fox/blob/main/README.md#credits)
 2. It was always meant for personal use. So, I've hidden many elements which many people would find useful; tweaked height/width of menus, etc to my own liking
 3. I've been working on these stylesheets on my main profile, which is heavily modified. I'm not sure if everything in it would work as intended on a different profile, different resolution, different OS.
 4. I don't have a programming background. I only have a working knowledge of css, acquired mostly through trial and error. Hence, while I can make it work for myself, I won't have any clue if it doesn't work for you.
 5. Due to 4, I haven't followed CSS Best Practices while putting together these stylesheets. Ex, I couldn't for the life of me figure out how to make some of my rules apply to about-addons. So, I ended up using universal selector (*) 
+
+The best use anyone can make of these stylesheets would be to look for individual code snippets for styling an individual component, and using it for creating one's own style. The stylesheets won't work as intended on setups different from my own (having different resolution, different buttons on toolbar, different user settings, etc).
 
 ## CREDITS
 
@@ -107,7 +109,7 @@ Rules from TreeStyleTabs-TextArea.css (inside Extensions folder) need to be copi
 
 ## STYLING ADDONS
 
-Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of extension, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'. Addons I've styled:
+Themes for Addons are contained in 'Extensions' folder. For styling addons, you've to go to about:debugging, copy Internal UUID of addon, and paste in addon's stylesheet, in place of 'Enter Internal UUID here'. Addons I've styled:
 
 ### Auto Tab Discard
 https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/
@@ -127,6 +129,8 @@ https://addons.mozilla.org/en-US/firefox/addon/clearurls/
 
 ### Cookie Auto-Delete
 https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/
+
+Works only if addon is placed in Overflow menu. The style breaks the addon's popup, if placed directly on the toolbar. 
 
 ![CookieAutoDelete](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_CookieAutoDelete.png)
 

@@ -299,12 +299,19 @@ richlistitem[selected="true"] {
 
 #PersonalToolbar #import-button {
   font-family: "Fira Sans" !important;
-  font-size: 1.12rem !important;
+  font-size: 1rem !important;
+  display:none !important;
 }
 
 toolbarbutton.bookmark-item:not(.subviewbutton) {
   font-family: "Fira Sans" !important;
-  font-size: 1.12rem !important;
+  font-size: 1rem !important;
+}
+
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon, 
+#OtherBookmarks.bookmark-item[container] > .toolbarbutton-icon { 
+  width: 14px !important; 
+  height: 14px !important
 }
 
 .findbar-textbox::selection {

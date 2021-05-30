@@ -1,0 +1,16 @@
+/*+++++ BYPASS PAYWALS CLEAN EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  * {
+    color: #fff !important;
+    font-size: 95% !important;
+  }
+
+  button {
+    background: #000 !important;
+    border: 1px solid #212121 !important;
+    padding: 5px !important;
+    -moz-appearance: none !important;
+  }
+}

@@ -1,0 +1,59 @@
+/* ABOUT:PROFILES */
+
+@-moz-document url-prefix("about:profiles") {
+  /*Remove Page Heading, Subtitle, and lines*/
+  hr,
+  h1,
+  div[data-l10n-id="profiles-subtitle"] {
+    display: none !important;
+  }
+
+  #profiles {
+    margin-top: 30px !important;
+  }
+
+  h2 {
+    color: #64b5f6 !important;
+  }
+
+  table {
+    width: 100% !important;
+    border: 0px solid var(--in-content-border-color) !important;
+    font-size: 0.9em !important;
+  }
+
+  th {
+    background-color: #000 !important;
+    color: rgb(255, 255, 255);
+  }
+
+  th,
+  td {
+    border: 0 !important;
+    padding: 0 !important;
+    padding-right: 20px !important;
+  }
+
+  #action-box {
+    float: inline-end !important;
+    width: 38% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 20px !important;
+    padding: 10px !important;
+    padding-top: 0 !important;
+    text-align: center !important;
+    border: 0 !important;
+  }
+
+  #action-box h3 {
+    font-variant-caps: petite-caps !important;
+    display: none !important;
+  }
+
+  #profiles button {
+    font-size: 1.1rem !important;
+    min-height: 0 !important;
+    color: #64b5f6 !important;
+  }
+}

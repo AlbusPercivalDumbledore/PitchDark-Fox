@@ -1,0 +1,130 @@
+/*+++++ Local CDN EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/pages/popup/popup.html)
+{
+  header {
+    border-bottom-color: #000 !important;
+    margin: auto !important;
+  }
+
+  .icon-logo {
+    filter: invert(0.5) !important;
+  }
+
+  body {
+    background-color: #000 !important;
+    color: #fff !important;
+    width: inherit !important;
+  }
+
+  #donate-button {
+    display: none !important;
+  }
+
+  .description {
+    color: #fff !important;
+    font-style: normal !important;
+    margin: 0 6px;
+    text-align: center;
+    font-family: "Fira Sans" !important;
+    font-size: 0.8rem !important;
+  }
+
+  .counter {
+    font-family: "Fira Sans" !important;
+    color: red !important;
+  }
+
+  .button {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+    transform: scale(0.8) !important;
+    position: absolute !important;
+    right: 0% !important;
+    z-index: 1 !important;
+    margin-top: 0px !important;
+  }
+
+  .button:hover {
+    background-color: #000 !important;
+  }
+
+  #options-button:hover {
+    filter: none !important;
+  }
+
+  .switch {
+    transform: scale(0.5) !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/pages/options/options.html)
+{
+  html,
+  body {
+    background: #000 !important;
+    font-family: "Fira Sans" !important;
+    color: #fff !important;
+  }
+
+  .btn-group {
+    margin-top: 0.5rem !important;
+  }
+
+  .option-group {
+    background-color: #000 !important;
+  }
+
+  .b-contain span {
+    font-size: 15px !important;
+    font-family: inherit;
+  }
+
+  .b-input {
+    margin-top: 4px !important;
+  }
+
+  .description-option {
+    font-style: normal !important;
+    font-size: 13px !important;
+  }
+
+  .input-text {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #212121 !important;
+  }
+
+  .footer {
+    display: none !important;
+  }
+
+  .subtle-hint,
+  body,
+  h3,
+  p,
+  .option-buttons {
+    color: #fff !important;
+    font-size: 0.95rem !important;
+  }
+
+  input,
+  select {
+    color: #fff !important;
+    background: #000 !important;
+    border: 1px solid #212121 !important;
+    padding: 5px !important;
+    margin-top: 5px !important;
+    font-family: "Fira Sans" !important;
+    -moz-appearance: none !important;
+  }
+
+  textarea {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #212121 !important;
+    padding: 10px !important;
+    -moz-appearance: none !important;
+  }
+}

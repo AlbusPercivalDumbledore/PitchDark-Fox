@@ -1,0 +1,111 @@
+/*++++++++++ SIDEBAR ++++++++++*/
+
+/*Sidebar Border*/
+.sidebar-splitter {
+  border-color: #181818 !important;
+}
+
+/*Sidebar Header*/
+#sidebar-box #sidebar-header {
+  font-size: 1.15rem !important;
+  font-family: "Fira Sans" !important;
+  margin-bottom: -5px !important;
+  font-variant-caps: petite-caps !important;
+  margin-left: -25px !important;
+}
+
+/*Sidebar Header Icon*/
+#sidebar-box > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  opacity: 0 !important;
+}
+
+/*Sidebar Close Button*/
+#sidebar-close {
+  visibility: collapse !important;
+}
+
+/*Sidebar Searh Box*/
+#sidebar-search-container #search-box {
+  -moz-appearance: none !important;
+  background-color: #000 !important;
+  color: white !important;
+  margin-top: -5px !important;
+  margin-bottom: -5px !important;
+}
+
+/*Sidebar Switcher Popup*/
+#sidebarMenu-popup .subviewbutton {
+  min-width: 190px;
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+}
+
+#sidebar-switcher-target:hover:-moz-lwtheme {
+  outline: none !important;
+}
+
+/*Specify Background color of sidebar header, search container, bookmark sidebar and history sidebar*/
+#sidebar-header,
+#sidebar-search-container,
+#bookmarksPanel,
+#history-panel,
+#bookmarks-view-children,
+#historyTree {
+  color: #fff !important;
+  background-color: #000 !important;
+  -moz-appearance: none !important;
+  border-color: transparent !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(leaf),
+.sidebar-placesTreechildren::-moz-tree-image(leaf) {
+  display: none !important;
+}
+
+#bookmarks-view-children:-moz-tree-image {
+  margin-left: 0px !important;
+}
+
+.sidebar-placesTree treechildren::-moz-tree-row {
+  min-height: 23px !important;
+  height: 23px !important;
+}
+
+.sidebar-placesTree treechildren::-moz-tree-cell-text {
+  font-size: 1.1rem !important;
+  font-family: "Fira Sans" !important;
+}
+
+#sidebar-switcher-target:-moz-focusring:not(:hover, [open]),
+#sidebar-close:-moz-focusring:not(:hover, [open]) {
+  outline: none !important;
+}
+
+.panel-subview-body {
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  scrollbar-width: thin !important;
+}
+
+#permList,
+scrollbar {
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  scrollbar-width: thin !important;
+}
+
+.content-container,
+.content-header,
+.content-scrollable {
+  background: black !important;
+  font-family: "Fira Sans" !important;
+  font-size: 0.9rem !important;
+}
+
+.button.sync-prefs {
+  font-family: "Fira Sans" !important;
+}
+
+/*View Button on History Sidebar*/
+#viewButton {
+  font-family: "Fira Sans" !important;
+  font-size: 0.9rem !important;
+}

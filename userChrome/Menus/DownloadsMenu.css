@@ -1,0 +1,108 @@
+/*+++++ Downloads Menu +++++*/
+
+/*Reduce Width of menu*/
+#downloadsPanel-multiView > .panel-viewcontainer,
+#downloadsPanel-multiView > .panel-viewcontainer > .panel-viewstack {
+  max-width: 250px !important;
+}
+
+/*No Downloads in this session*/
+#emptyDownloads {
+  font-family: "Fira Sans" !important;
+  font-size: 1.15rem !important;
+}
+
+/*Increase Left Margin of downloads box, containing download items*/
+#downloadsListBox {
+  margin-left: 5px !important;
+}
+
+/*Bottom Border, Font Face, Font-Size, Max Height for Downloading/Downloaded Item*/
+#downloadsListBox > richlistitem {
+  border-bottom: 1px solid var(--panel-separator-color) !important;
+  color: #fff !important;
+  background: #000 !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.2rem !important;
+  max-height: 63px !important;
+  margin-right: -7px !important;
+  margin: 0 !important;
+  margin-left: -10px !important;
+}
+
+/*Details of Downloading item*/
+#downloadsSummaryDetails,
+.downloadDetails {
+  font-size: 1.2rem !important;
+  font-variant: all-small-caps !important;
+  margin-bottom: -1px !important;
+  margin-top: 2px !important;
+}
+
+/*Remove buttons on right (cancel, open folder) when item is not selected*/
+#downloadsListBox > richlistitem:not([selected]) button {
+  -moz-user-focus: none;
+  display: none !important;
+}
+
+/*Remove Icon for Download Type. Using Display:none shifts download item to left, so just making its width and height 0*/
+.downloadTypeIcon {
+  margin: 5px !important;
+  width: 0px !important;
+  height: 0px !important;
+  margin-top: 0px !important;
+}
+
+/*Downloads Progress Bar*/
+.downloadProgress {
+  height: 2px !important;
+  background-color: blue !important;
+  border: 0px !important;
+}
+
+.downloadProgress::-moz-progress-bar {
+  background-color: red !important;
+}
+
+.downloadProgress[paused]::-moz-progress-bar {
+  background-color: #404040 !important;
+}
+
+.downloadProgress:not([value="0"])::-moz-progress-bar {
+  margin: 0px !important;
+  height: 2px !important;
+}
+
+/*Cancel Download, and Retry button on right*/
+/*Icons replaced in Custom_Icons.css*/
+.downloadIconCancel > .button-box > .button-icon {
+  transform: scale(0.7) !important;
+}
+
+.downloadIconRetry > .button-box > .button-icon {
+  transform: scale(0.9) !important;
+}
+
+/*Fix Cancel and Retry Buttons' position and size. They move out of the box, when width is reduced*/
+.downloadContainer {
+  margin-inline-end: -55px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.downloadButton {
+  transform: scale(0.9) !important;
+  opacity: 0.7 !important;
+  min-width: 0px !important;
+}
+
+.downloadButton .button-box {
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
+}
+
+/*Remove Border above Show All Downloads Button*/
+/*Show All Downloads Button is Styled Universally in global-rules.css as its a button*/
+#downloadsFooterButtons {
+  border-top: none !important;
+}

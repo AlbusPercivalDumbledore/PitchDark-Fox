@@ -1,0 +1,74 @@
+/*+++++ HAMBURGER MENU +++++*/
+/*Hidden with #PanelUI-button {display: none !important;} in NavigatorToolbox -> ToolbarButtons.css. Use MenuBar instead. The only worthwhile option available there is account status, for which Manage Account Toolbar Button can be used.*/
+
+/*Reduce Width of menu*/
+#appMenu-protonMainView {
+  width: 18em !important;
+}
+
+/*Specify font-face and size*/
+/*Font size for Panel Headings is specified universally in global-rules.css*/
+#appMenu-protonMainView .panel-subview-body {
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+}
+
+/*Reduce padding for Firefox Account Login Button*/
+#appMenu-fxa-status2[fxastatus] > #appMenu-fxa-label2 {
+  padding-block: 5px !important;
+  -moz-box-flex: 1;
+  margin-top: 5px !important;
+}
+
+/*Make font-weight normal for Firefox Account Login Button. Not needed though, as already specified by universal selector in global-colors.css*/
+#appMenu-fxa-status2[fxastatus]
+  > #appMenu-fxa-label2
+  > vbox
+  > #appMenu-header-description,
+#appMenu-fxa-text {
+  font-weight: normal !important;
+}
+
+/*Gradient Toolbar Separator below account login buttonj*/
+.PanelUI-subView toolbarseparator.proton-zap {
+  border-image: 2
+    linear-gradient(270deg, #004e92 0%, #aa076b 52.08%, #dc2430 100%) !important;
+  border-top: 2px solid transparent !important;
+}
+
+/*Reduce size of twisty icons*/
+.panel-header > .subviewbutton-back {
+  transform: scale(0.7) !important;
+}
+
+/*Specify font-size for keyboard shortcuts on right*/
+.subviewbutton[shortcut]::after {
+  font-size: 1rem !important;
+}
+
+/*Remove frivolous options*/
+#appMenu-new-tab-button2,
+#appMenu-new-window-button2,
+#appMenu-new-private-window-button2,
+#appMenu-bookmarks-button,
+#appMenu-history-button,
+#appMenu-passwords-button,
+#appMenu-extensions-themes-button,
+#appMenu-print-button2,
+#appMenu-save-file-button2,
+#appMenu-find-button2,
+#appMenu-proton-update-banner,
+#appMenu-new-private-window-button2 + toolbarseparator,
+#appMenu-downloads-button,
+#appMenu-extensions-themes-button + toolbarseparator,
+#appMenu_feedbackPage,
+#appMenu_menu_openHelp,
+#appMenu_help_reportSiteIssue,
+#appMenu_menu_HelpPopup_reportPhishingtoolmenu {
+  display: none !important;
+}
+
+/*Remove scroll from More Tools submenu*/
+#appmenu-moreTools {
+  max-height: 400px !important;
+}

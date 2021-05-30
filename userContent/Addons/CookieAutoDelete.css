@@ -1,0 +1,124 @@
+/*+++++ COOKIE AUTO DELETE EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    background: black !important;
+    color: white !important;
+  }
+
+  .alert {
+    filter: invert(1) !important;
+    color: #000 !important;
+    padding: 5px !important;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Fira Sans" !important;
+    color: #fff !important;
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #000 !important;
+  }
+
+  .menu {
+    background-color: #000 !important;
+  }
+
+  .pure-menu-item:hover {
+    background-color: #181818 !important;
+  }
+
+  .pure-menu-selected {
+    background: #000 !important;
+    background-color: #000 !important;
+    border-left-color: #0288d1;
+    border-style: none none none solid;
+  }
+
+  .pure-menu-item {
+    padding-bottom: 0.5em !important;
+    padding-left: 1em;
+    padding-top: 0.5em !important;
+    font-size: 0.85rem !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  button,
+  .btn.btn-info,
+  .btn.btn-warning {
+    padding: 5px !important;
+    font-size: 0.8rem !important;
+    background: #000 !important;
+    color: #fff !important;
+  }
+
+  #sizeSetting,
+  #sizePopup,
+  #notificationOnScreen,
+  #delayBeforeClean,
+  #formText {
+    background: #000 !important;
+    border: 1px solid #212121 !important;
+    transform: scale(0.8) !important;
+    color: #fff !important;
+  }
+
+  h1 {
+    display: none !important;
+  }
+
+  .sidebar-version {
+    padding: 0 !important;
+    text-align: left !important;
+    width: 100%;
+    margin-left: 10px !important;
+    color: darkkhaki !important;
+    margin-bottom: 40px !important;
+  }
+
+  .svg-inline--fa.fa-question-circle.fa-w-16.fa-lg {
+    transform: scale(0.7) !important;
+  }
+
+  label:hover {
+    background-color: transparent !important;
+    cursor: pointer;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/popup/popup.html)
+{
+  .btn-group {
+    margin: auto !important;
+    margin-top: 10px !important;
+  }
+
+  .row.no-gutters .col,
+  img,
+  #CADTitle,
+  #CADVersion {
+    display: none !important;
+  }
+
+  .row.no-gutters {
+    margin-left: 70px !important;
+  }
+
+  .alert {
+    font-size: 0.8rem !important;
+  }
+
+  .row {
+    font-size: 0.85rem !important;
+  }
+}

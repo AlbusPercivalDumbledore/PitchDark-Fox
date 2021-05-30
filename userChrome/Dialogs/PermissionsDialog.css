@@ -1,0 +1,29 @@
+/*+++++ Permission Dialog +++++*/
+
+@-moz-document url(chrome://mozapps/content/handling/permissionDialog.xhtml)
+{
+  #description {
+    font-weight: bold;
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+  }
+
+  #change-app {
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #rememberContainer {
+    margin-bottom: 1em;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  dialog {
+    background-color: #000 !important;
+    border: 1px solid #212121 !important;
+    padding: 15px !important;
+  }
+}

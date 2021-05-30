@@ -1,0 +1,240 @@
+/*+++++ URL BAR +++++*/
+
+/*Specify Font Face, Size, and Color for Urlbar Input*/
+.urlbar-input-box,
+#identity-box,
+[anonid="urlbar-go-button"],
+#urlbar {
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  color: var(--toolbar-color) !important;
+}
+
+/*Urlbar Input Selection Color*/
+#urlbar-input::selection {
+  background-color: #1a237e !important;
+  color: #fff !important;
+}
+
+/* Remove 'Search with google or enter address' from url bar */
+#urlbar-input::placeholder {
+  color: transparent !important;
+}
+
+/* Hide buttons from URL Bar (pocket button, Extension Indicator when using an addon for custom startpage)*/
+#pageActionButton,
+#pocket-button-box,
+#extension-icon,
+#identity-icon,
+#identity-icon-label,
+#identity-box,
+#pocket-button,
+#pageAction-panel-pocket {
+  display: none !important;
+}
+
+/* Remove border after tracking protection container */
+#tracking-protection-icon-container,
+#identity-box {
+  border: none !important;
+  margin-top: 0px !important;
+}
+
+/*+++++ URL Bar Search Mode Indicator +++++*/
+
+/*Modify background and color*/
+#urlbar-search-mode-indicator,
+#urlbar-label-box {
+  background-color: #181818 !important;
+  outline: 1px solid #181818 !important;
+  color: #fff !important;
+  margin-top: 8px !important;
+  font-size: 0.9rem !important;
+}
+
+#urlbar-search-mode-indicator-close:hover {
+  background-color: transparent !important;
+}
+
+/*Make Close Icon smaller*/
+#urlbar-search-mode-indicator-close {
+  height: 6px !important;
+  border-radius: var(--toolbarbutton-border-radius);
+}
+
+/*+++++ Container Labels on urlbar +++++*/
+
+/*Reduce size and opacity of label*/
+#userContext-label {
+  margin: 0;
+  color: var(--identity-tab-color);
+  transform: scale(0.9) !important;
+  opacity: 0.8 !important;
+}
+
+/*Reduce size and opacity of icon*/
+#userContext-indicator {
+  height: 16px;
+  width: 16px;
+  margin-inline-start: 3px;
+  transform: scale(0.7) !important;
+  opacity: 0.8 !important;
+}
+
+/*+++++ URL BAR RESULTS VIEW +++++*/
+
+/*Specify Color, font size and face for results*/
+.urlbarView-results {
+  -moz-appearance: none !important;
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  color: rgb(221, 226, 234) !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+/*Increase Left Margin of Title in Url Bar Results*/
+.urlbarView-title {
+  margin-left: 8px !important;
+}
+
+/*Modify color of url in Url Bar Results, and increase left & top margins*/
+.urlbarView-url {
+  -moz-appearance: none !important;
+  font-size: 1.1rem !important;
+  font-family: "Fira Sans" !important;
+  color: #64b5f6 !important;
+  margin-left: 5px !important;
+  margin-top: 3px !important;
+}
+
+/* Remove 'Try searching with...' */
+.search-one-offs {
+  display: none !important;
+}
+
+/* Remove setting icon from url dropdown */
+.search-panel-one-offs {
+  display: none !important;
+}
+
+/*Make Webpage Favicon in urlbar results smaller*/
+.urlbarView-favicon {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/*Modify fill color of icon indicating bookmarked page in urlbar results*/
+.urlbarView-type-icon {
+  margin-bottom: -4px;
+  margin-inline-start: 8px !important;
+  fill: blue !important;
+}
+
+/*URL Bar Results Highlight Background Color*/
+.urlbarView-row-inner {
+  border-right: 5px solid #000 !important;
+  margin-left: 5px !important;
+  border-radius: 0px !important;
+}
+
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
+  > .urlbarView-row-inner:hover {
+  background-color: #000 !important;
+}
+
+.urlbarView-row:not([type="tip"], [type="dynamic"]):hover
+  > .urlbarView-row-inner {
+  background-color: #000 !important;
+}
+
+/*Indicate selected result in urlbar, with a border on the right*/
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
+  > .urlbarView-row-inner {
+  background: #000 !important;
+  border-right: 5px solid #24324d /*1a237e*/ !important;
+}
+
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/urlbar_full_width.css */
+
+/* Hide dropdown placeholder */
+#urlbar-container:not(:hover) .urlbar-history-dropmarker {
+  margin-inline-start: -28px;
+}
+
+/* Fix customization view */
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow {
+  margin-inline-end: initial !important;
+}
+
+#urlbar:focus-within {
+  min-width: var(--uc-urlbar-min-width, none) !important;
+}
+
+/* Make urlbar popup appear full size like it did before urlbar re-design */
+
+#urlbar-container,
+#urlbar {
+  display: -moz-box !important;
+}
+
+.urlbarView {
+  position: absolute !important;
+  margin: 0px !important;
+  margin-top: 0px !important;
+  width: 70vw !important;
+  border: 1px solid #181818 !important;
+  border-top: none !important;
+  top: var(--urlbar-toolbar-height);
+  background-color: #000 !important;
+  z-index: 4;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+  border-top: none !important;
+}
+
+#urlbar-input {
+  background-color: transparent;
+  border: 1px solid #181818 !important;
+  padding: 10px !important;
+  margin-top: 6px !important;
+}
+
+#urlbar > #urlbar-input-container {
+  padding: 0px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+#urlbar > #urlbar-background {
+  display: none !important;
+}
+
+/* This may seem pretty weird, but it gets around an issue where the height of urlbar may suddenly change when one starts typing into it */
+/* If you are otherwise modifying the urlbar height then you might need to modify the height of this too */
+#urlbar > #urlbar-input-container::before {
+  content: "";
+  display: -moz-box;
+  height: 16px;
+}
+
+/*URL BAR RESULTS IN TWO ROWS*/
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/urlbar_results_in_two_rows.css */
+
+.urlbarView-row-inner {
+  flex-wrap: wrap !important;
+}
+
+.urlbarView-title[title] {
+  flex-grow: 1;
+}
+
+.urlbarView-row > .urlbarView-row-inner > .urlbarView-url {
+  min-width: 95%;
+}
+
+.urlbarView-row[has-url]:not([type="switchtab"]) .urlbarView-title-separator {
+  display: none;
+}

@@ -1,0 +1,11 @@
+/*++++++++++ Bookmarks Dialog (opens on pressing Bookmarks Toolbar button) +++++++++++*/
+
+/*Increase left margin for submenus of Bookmarks dialog*/
+#BMB_bookmarksPopup menupopup[placespopup="true"] {
+  margin-left: 10px !important;
+}
+
+/*Remove 'Show All Bookmarks' Button on Bottom*/
+#BMB_bookmarksShowAll {
+  display: none !important;
+}

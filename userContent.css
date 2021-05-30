@@ -1,8 +1,24 @@
+<<<<<<< HEAD
 @import url(blanket-rules.css);
 @import url(uc_extensions.css);
 @import url(uc_websites.css);
 
 /*++++++ DARK MODE BETWEEN PAGE LOADING  +++++*/
+=======
+@import url(global-colors.css);
+@import url(userContent/AboutPages.css);
+@import url(userContent/Addons.css);
+@import url(userContent/ChromePages.css);
+@import url(userContent/ContextMenu.css);
+@import url(userContent/ErrorPages.css);
+@import url(userContent/InWindowLibrary.css);
+@import url(userContent/PDFviewer.css);
+@import url(userContent/ReaderView.css);
+@import url(userContent/ViewSourcePage.css);
+@import url(userContent/Websites.css);
+
+/*++++++ Remove White Flickering +++++*/
+>>>>>>> 5c1e71a (Remove Frivolous Code)
 
 @-moz-document url("about:home"),
 url("about:blank"),
@@ -13,24 +29,36 @@ url("about:performance"),
 url("about:addons")
 url-prefix("chrome://"),
 {
+<<<<<<< HEAD
+=======
+  html,
+>>>>>>> 5c1e71a (Remove Frivolous Code)
   body {
     background-color: #000 !important;
   }
 }
 
+<<<<<<< HEAD
 body.firefox {
   background-color: #000 !important;
 }
 
 @-moz-document url(chrome://browser/content/webext-panels.xhtml)
+=======
+@-moz-document plain-text-document(), media-document(all), url(chrome://browser/content/webext-panels.xhtml)
+>>>>>>> 5c1e71a (Remove Frivolous Code)
 {
   :root {
     background-color: #000 !important;
     color: #fff !important;
   }
+<<<<<<< HEAD
 }
 
 @-moz-document plain-text-document(), media-document(all) {
+=======
+
+>>>>>>> 5c1e71a (Remove Frivolous Code)
   @media (prefers-color-scheme: dark) {
     :root {
       color: #fff !important;
@@ -43,6 +71,7 @@ body.firefox {
   }
 }
 
+<<<<<<< HEAD
 /*+++++ NEW TAB PAGE +++++*/
 
 @-moz-document url("about:newtab"),
@@ -1451,6 +1480,9 @@ body.caution {
 }
 
 /*+++++ BUTTONS, INPUT BOXES +++++*/
+=======
+/*+++++ BUTTONS, INPUT BOXES +++++*/
+>>>>>>> 5c1e71a (Remove Frivolous Code)
 
 button:focus-visible,
 html|select:focus-visible,
@@ -1464,6 +1496,7 @@ xul|tab:focus-visible > .tab-middle > .tab-text {
   outline-offset: 2px !important;
   -moz-outline-radius: 2px !important;
 }
+<<<<<<< HEAD
 
 /*+++++ OTHER PAGES +++++*/
 
@@ -1504,3 +1537,5 @@ xul|tab:focus-visible > .tab-middle > .tab-text {
     font-weight: normal;
   }
 }
+=======
+>>>>>>> 5c1e71a (Remove Frivolous Code)

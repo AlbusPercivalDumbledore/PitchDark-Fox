@@ -1,0 +1,46 @@
+/*+++++ Common Dialogs +++++*/
+
+@-moz-document url("chrome://global/content/commonDialog.xhtml")
+{
+  * {
+    --checkbox-border-color: #212121 !important;
+    --checkbox-checked-bgcolor: #000 !important;
+    --checkbox-checked-color: #fff !important;
+    --checkbox-checked-hover-bgcolor: #181818 !important;
+    --checkbox-checked-active-bgcolor: #000 !important;
+    --checkbox-checked-border-color: #181818 !important;
+    --checkbox-unchecked-bgcolor: #181818 !important;
+    --checkbox-unchecked-hover-bgcolor: #181818 !important;
+    --checkbox-unchecked-active-bgcolor: #000 !important;
+  }
+
+  #infoTitle {
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #infoBody {
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #infoBody::selection {
+    background-color: #1a237e !important;
+    color: #fff !important;
+  }
+
+  #checkbox {
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+    margin-bottom: 5px !important;
+  }
+
+  #infoContainer {
+    margin-bottom: 0px !important;
+  }
+
+  #titleText {
+    font-size: 1.5rem !important;
+    font-family: "Fira Sans" !important;
+  }
+}

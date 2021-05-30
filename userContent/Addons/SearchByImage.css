@@ -1,0 +1,63 @@
+/*+++++ SEARCH BY IMAGE EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  .mdc-list {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 0.9rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  .header {
+    padding-top: 3px !important;
+    margin-bottom: -7px !important;
+    background-color: #000 !important;
+    display: none !important;
+  }
+
+  .title {
+    color: #fff !important;
+    font-size: 1rem !important;
+  }
+
+  .mdc-icon-button__icon {
+    transform: scale(70%) !important;
+  }
+
+  .list-padding-top {
+    margin-bottom: 1px !important;
+  }
+
+  .mdc-list-item.list-item.mdc-ripple-upgraded {
+    margin-bottom: -13px;
+  }
+
+  .list-items-wrap {
+    margin-top: -5px !important;
+    /*min-width: 150px !important;
+      max-width: 150px !important;*/
+  }
+
+  .mdc-list-item__graphic.list-item-icon {
+    transform: scale(75%) !important;
+    margin-left: -5px !important;
+    margin-right: 10px !important;
+  }
+
+  .list-items {
+    padding-bottom: 15px !important;
+  }
+
+  .header-buttons {
+    display: none !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/src/options/index.html)
+{
+  body {
+    filter: invert(100%) !important;
+    background-color: #000 !important;
+  }
+}

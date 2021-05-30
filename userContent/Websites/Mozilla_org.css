@@ -1,0 +1,72 @@
+@-moz-document domain("mozilla.org") {
+  body {
+    filter: invert(1) !important;
+    background: #000 !important;
+  }
+
+  .Header {
+    background: #20123a;
+    filter: invert(1) !important;
+  }
+
+  .Footer {
+    font-family: Inter Var, sans-serif;
+    filter: invert(1) !important;
+  }
+
+  img {
+    border-style: none;
+    filter: invert(1) !important;
+  }
+
+  .mzp-c-footer {
+    margin-top: auto;
+    filter: invert(1) !important;
+  }
+
+  .mzp-c-call-out.mzp-t-product-nightly {
+    filter: invert(1) !important;
+  }
+
+  .mzp-c-call-out-compact.mzp-t-product-nightly {
+    filter: invert(1) !important;
+  }
+
+  .HeroRecommendation-content {
+    background-color: burlywood !important;
+  }
+
+  .AppBanner:empty {
+    padding: 0px !important;
+  }
+
+  div#mw-head,
+  div#footer,
+  div#mw-panel {
+    background: #fff !important;
+  }
+
+  #outer-wrapper {
+    background: #fff !important;
+  }
+}
+
+@-moz-document domain("bugzilla.mozilla.org"), domain("support.mozilla.org") {
+  body {
+    filter: none !important;
+    background: unset !important;
+  }
+
+  .Header {
+    filter: none !important;
+  }
+
+  .Footer {
+    filter: none !important;
+  }
+
+  img {
+    border-style: none;
+    filter: none !important;
+  }
+}

@@ -1,0 +1,22 @@
+@-moz-document domain("materialui.co") {
+  .material_color_sidead,
+  .other_color_sidead {
+    display: none !important;
+  }
+
+  .container {
+    background-color: #000 !important;
+  }
+
+  .footer {
+    background: transparent !important;
+  }
+
+  .content {
+    background-color: #000 !important;
+  }
+
+  .header.half {
+    filter: invert(1) !important;
+  }
+}

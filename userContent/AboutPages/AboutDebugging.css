@@ -1,0 +1,107 @@
+/* ABOUT:DEBUGGING */
+
+@-moz-document url-prefix("about:debugging") {
+  /*Sidebar*/
+  .sidebar {
+    background-color: #000 !important;
+  }
+
+  .sidebar-item {
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  /*Sidebar Separator*/
+  .separator {
+    border-color: #212121 !important;
+  }
+
+  /*Background color of Page*/
+  .app__content {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  .app {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  /*Reduce Padding of cards, in Setup section*/
+  .card {
+    padding-block: calc(var(--base-unit) * 2) !important;
+  }
+
+  /*Background Color of cards, in Setup section*/
+  .card.connect-section {
+    background-color: #121212 !important;
+  }
+
+  .connect-section__extra {
+    border: none !important;
+  }
+
+  /*Network locations input*/
+  #about-debugging-network-locations-host-input {
+    background: #000 !important;
+    color: #fff !important;
+    border: 1px solid #212121 !important;
+  }
+
+  /*Remove Padding above Network locations input, in Setup section*/
+  .connect-page__network-form {
+    padding-block-start: 0 !important;
+  }
+
+  /*Background color of Cards in This Firefox section*/
+  .debug-target-list.qa-debug-target-list li {
+    background-color: #121212 !important;
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  /*Remove inline padding from cards*/
+  .debug-target-item {
+    padding-inline: 0 !important;
+    margin-block-end: calc(var(--base-unit) * 3) !important;
+  }
+
+  /*Remove top border and paddig from rows within cards*/
+  .fieldpair {
+    border-top: none !important;
+    padding-block: 0 !important;
+  }
+
+  /*Specify color of UUIDs*/
+  .fieldpair__description {
+    color: #ccc !important;
+  }
+
+  .debug-target-item__additional_actions {
+    border-top: none !important;
+  }
+
+  /*Buttons*/
+  .default-button,
+  .primary-button {
+    color: #fff !important;
+    background-color: black !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  /*Warning Message*/
+  .message.message--level-warning.qa-message {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .technical-text {
+    font-size: 1.1rem !important;
+    font-family: "Fira Sans" !important;
+  }
+}

@@ -1,0 +1,75 @@
+/*+++++ DOWNLOADS PAGE +++++*/
+
+@-moz-document url("about:downloads") {
+  /*Remove Border around the page*/
+  #downloadsRichListBox,
+  .downloadMainArea {
+    background-color: #000 !important;
+    border: 0 !important;
+    outline: 0 !important;
+  }
+
+  /*No Downloads Description*/
+  #downloadsListEmptyDescription {
+    font-family: "Fira Sans" !important;
+    font-size: 1.2rem !important;
+  }
+
+  /*Downloading/Downloaded Item*/
+  .downloadTarget {
+    font-size: 1.2rem !important;
+    font-family: "Fira Sans" !important;
+    margin-top: -10px;
+    -moz-appearance: none !important;
+  }
+
+  /*Details of Downloading item*/
+  #downloadsSummaryDetails,
+  .downloadDetails {
+    font-size: 1.2rem !important;
+    font-variant: all-small-caps !important;
+    margin-bottom: -1px !important;
+    margin-top: 2px !important;
+  }
+
+  /*Remove buttons on right (cancel, open folder)*/
+  #downloadsRichListBox > richlistitem button {
+    display: none !important;
+  }
+
+  /*Remove Background Image and Outline from selected item*/
+  #downloadsRichListBox > richlistitem[selected] {
+    background-image: none !important;
+    border-radius: 0px !important;
+    outline: 0px solid rgb(124, 163, 206) !important;
+  }
+
+  #downloadsRichListBox:focus {
+    box-shadow: none !important;
+  }
+
+  /*Icon for Download Type*/
+  .downloadTypeIcon {
+    display: none !important;
+  }
+
+  /*Downloads Progress Bar*/
+  .downloadProgress {
+    height: 3px !important;
+    background-color: blue !important;
+    border: 0px !important;
+  }
+
+  .downloadProgress::-moz-progress-bar {
+    background-color: red !important;
+  }
+
+  .downloadProgress[paused]::-moz-progress-bar {
+    background-color: #404040 !important;
+  }
+
+  .downloadProgress:not([value="0"])::-moz-progress-bar {
+    margin: 0px !important;
+    height: 3px !important;
+  }
+}

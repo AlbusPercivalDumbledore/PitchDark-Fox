@@ -1,0 +1,9 @@
+/*+++++ Status Panel on Bottom +++++*/
+
+#statuspanel-label {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+  font-family: Fira Sans;
+  font-size: 11px !important;
+}

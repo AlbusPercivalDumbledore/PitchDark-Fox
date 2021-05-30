@@ -1,0 +1,34 @@
+/*+++++ About Firefox Dialog +++++*/
+
+@-moz-document url(chrome://browser/content/aboutDialog.xhtml)
+{
+  #clientBox {
+    padding: 0px 0 15px;
+    font-size: 1.15rem !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #bottomBox {
+    font-size: 1.1rem !important;
+    font-family: "Fira Sans" !important;
+    background: #000 !important;
+    display: none;
+  }
+
+  #aboutDialogContainer {
+    background-color: #000 !important;
+  }
+
+  #aboutDialog {
+    background-color: #000 !important;
+  }
+
+  #rightBox {
+    padding-top: 84px !important;
+  }
+
+  #leftBox {
+    margin-top: 60px !important;
+    background-image: url("Icons/foxLogo.png") !important;
+  }
+}

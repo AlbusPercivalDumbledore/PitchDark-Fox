@@ -1,0 +1,43 @@
+@import url(AboutPages/AboutAddons.css);
+@import url(AboutPages/AboutCache.css);
+@import url(AboutPages/AboutConfig.css);
+@import url(AboutPages/AboutDebugging.css);
+@import url(AboutPages/AboutDownloads.css);
+@import url(AboutPages/AboutMemory.css);
+@import url(AboutPages/AboutNewTab.css);
+@import url(AboutPages/AboutPerformance.css);
+@import url(AboutPages/AboutPrivateBrowsing.css);
+@import url(AboutPages/AboutProcesses.css);
+@import url(AboutPages/AboutProfiles.css);
+@import url(AboutPages/AboutSupport.css);
+
+/*+++++ ABOUT: PAGES ++++*/
+
+@-moz-document url-prefix("about:") {
+  window,
+  page,
+  html,
+  .main-content,
+  scrollbar {
+    scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+    scrollbar-width: thin !important;
+    background-color: #000 !important;
+    font-family: Fira Sans !important;
+  }
+
+  h1 {
+    font-variant-caps: petite-caps !important;
+  }
+
+  /*Background to indicate a selected category on left sidebar*/
+  #categories > .category[selected] {
+    background-color: #181818 !important;
+    color: #fff !important;
+    border-radius: 0px !important;
+  }
+}
+
+.contentPane.doScroll,
+dialog.doScroll::part(content-box) {
+  font-family: fira sans !important;
+}

@@ -1,0 +1,74 @@
+/*Confirmation Hint*/
+#confirmation-hint {
+  --arrowpanel-background: #000 !important;
+  --arrowpanel-border-color: #181818 !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+}
+
+/*Popup Notifications, including notification on installing Add-ons*/
+#notification,
+.popup-notification-body,
+#appMenu-addon-installed-notification {
+  font-size: 1.15rem !important;
+  font-family: "Fira Sans" !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/*Notifications that appear horizontally below navigation toolbox +++++*/
+.container.infobar {
+  background: #000 !important;
+  font-size: 1.15rem !important;
+  font-family: Fira Sans !important;
+}
+
+/*+++++ Web Notification Alerts on Bottom Right +++++*/
+/*https://old.reddit.com/r/FirefoxCSS/comments/fx0xe2/dark_html5_web_notifications/*/
+
+@-moz-document url("chrome://global/content/alerts/alert.xhtml")
+{
+  /*Specify font face and size*/
+  #alertNotification {
+    color: #fff !important;
+    background: transparent !important;
+    font-family: "Fira Sans" !important;
+    font-size: 0.9rem !important;
+  }
+
+  /*Invert colors of Background Box. Make it black, with white text*/
+  #alertBox {
+    color: #fff !important;
+    border-color: #181818 !important;
+    background-color: #000 !important;
+    backdrop-filter: none !important;
+    min-width: none !important;
+  }
+
+  /*Increase Bottom Margin of Title; else Info is too close to title*/
+  .alertTitle {
+    margin-bottom: 10px !important;
+  }
+
+  /*Setting Button on Bottom Right*/
+  #alertSettings {
+    -moz-context-properties: fill, fill-opacity !important;
+    color: inherit !important;
+    border-radius: 2px !important;
+    padding: 3px !important;
+    margin: 0px 2px -3px 0px !important;
+    transform: scale(0.8) !important;
+  }
+
+  /*Background of Setting Button on hover*/
+  #alertSettings:hover,
+  #alertSettings:hover:active,
+  #alertSettings[open] {
+    background-color: #000 !important;
+  }
+
+  /*Modify color of source label*/
+  #alertSourceLabel {
+    color: gold !important;
+  }
+}

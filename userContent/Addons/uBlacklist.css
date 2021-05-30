@@ -1,0 +1,10 @@
+/*+++++ U-Blacklist Extension +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  .go3386549925 {
+    background-color: #000 !important;
+    font-family: "Fira Sans" !important;
+    font-size: 0.85rem !important;
+  }
+}

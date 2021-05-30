@@ -1,0 +1,9 @@
+@-moz-document domain("imgur.com") {
+  body {
+    background-color: #000 !important;
+  }
+
+  .GalleryPage-background {
+    background: #000 !important;
+  }
+}

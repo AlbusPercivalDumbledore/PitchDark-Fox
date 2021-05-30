@@ -1,11 +1,16 @@
-<<<<<<< HEAD
-/* tooltips */
-=======
-/* Style Tooltips */
->>>>>>> 5c1e71a (Remove Frivolous Code)
-tooltip[default][page] {
+/*+++++ Tooltips +++++*/
+#tabbrowser-tab-tooltip,
+#btTooltip,
+#un-toolbar-tooltip,
+#tooltip,
+.tooltip,
+#aHTMLTooltip,
+#urlTooltip,
+tooltip {
   -moz-appearance: none !important;
   font-size: 1.05rem !important;
+  /*width: auto !important;
+  height: auto !important;*/
   font-family: "Fira Sans" !important;
   font-weight: normal !important;
   color: #fff !important;
@@ -14,8 +19,4 @@ tooltip[default][page] {
   border-radius: 5px;
   box-shadow: none !important;
   border: 1px solid #181818 !important;
-<<<<<<< HEAD
-  font-smooth: always;
-=======
->>>>>>> 5c1e71a (Remove Frivolous Code)
 }

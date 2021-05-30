@@ -1,9 +1,0 @@
-/*+++++ BLOCK SITE EXTENSION +++++*/
-
-@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
-{
-  * {
-    background: #000 !important;
-    color: #fff !important;
-  }
-}

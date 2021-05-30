@@ -1,0 +1,184 @@
+#tabbar {
+  counter-reset: vtabs atabs tabs;
+}
+
+tab-item:not(.collapsed):not(.discarded) {
+  counter-increment: vtabs atabs tabs;
+}
+tab-item:not(.collapsed) {
+  counter-increment: vtabs tabs;
+}
+tab-item:not(.discarded) {
+  counter-increment: atabs tabs;
+}
+
+tab-item {
+  z-index: auto;
+  counter-increment: tabs;
+  border-radius: 2px !important;
+  margin-top: 0px !important;
+  font-size: 1.1rem !important;
+  font-family: "Airbnb Cereal App Book" !important;
+  height: 25px;
+  /*background:rgb(28,28,28) !important;*/
+}
+
+tab-item.active {
+  background-color: rgb(0, 31, 45) !important;
+}
+
+/* Unread and Discarded tabs */
+
+:root.sidebar tab-item.unread .label-content {
+  opacity: 0.6 !important;
+}
+
+:root.sidebar tab-item.discarded .label-content {
+  opacity: 0.6 !important;
+}
+
+.label {
+  margin-top: 0px !important;
+  margin-left: 30px !important;
+  margin-right: 5px;
+  height: 16px;
+  /*text-align:right*/
+}
+
+#all-tabs {
+  margin-left: 5px !important;
+  margin-right: 8px !important;
+  margin-top: 15px !important;
+}
+
+.closebox {
+  transform: scale(0.8) !important;
+  margin-right: 5px !important;
+  margin-top: 0px;
+  margin-left: 0px;
+  filter: invert(0.5) !important;
+}
+
+#tabbar tab-item:not(:hover) tab-closebox {
+  display: none;
+}
+
+.newtab-button-box {
+  /*display:none;*/
+  filter: invert(1) !important;
+  margin-top: -20px !important;
+  transform: scale(0.7) !important;
+}
+
+.newtab-button-box:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.favicon {
+  margin-top: 0px;
+  filter: invert(0.4) contrast(2.5) saturate(2.5);
+  transform: scale(0.9);
+  margin-left: 10px;
+  display: none;
+}
+
+.twisty {
+  display: none !important;
+}
+
+tab-item .extra-items-container.behind {
+  z-index: unset !important;
+}
+
+tab-item .extra-items-container.behind::after {
+  color: #fff;
+  content: counter(vtabs);
+  font-size: 1.05rem;
+  left: 0.6em;
+  padding: 0em;
+  pointer-events: none;
+  position: absolute;
+  bottom: em;
+  z-index: 1000;
+  margin-top: 0.5em;
+}
+
+:root .tab .highlighter:before {
+  width: 0px;
+  background-color: #e65100;
+}
+
+.contextual-identity-marker {
+  display: none !important;
+}
+
+/*+++++++++ Disable Animations +++++++++++*/
+
+@keyframes throbber {
+}
+@keyframes tab-burst-animation {
+}
+@keyframes tab-burst-animation-light {
+}
+@keyframes blink {
+}
+
+/*++++++ Change styling of pending (unloaded) tabs +++++++*/
+
+/*
+tab-item.discarded {
+  opacity: 0.75;
+}
+
+tab-item.discarded .label-content {
+  color: red;
+}
+
+tab-item.discarded tab-favicon {
+  opacity: 0.5 !important;
+}
+
+tab-item.unread .label-content {
+  font-style: italic;
+}
+*/
+
+/* Put "new tab" button at the top of the tab bar */
+/*
+.newtab-button-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+#tabbar {
+  top: 20px !important;
+  bottom: 0 !important;
+}
+tab-item.pinned {
+  margin-top: 20px;
+}
+*/
+
+/*Always show the "new tab" button at the bottom edge of the side bar */
+
+#tabbar:not(.overflow) .after-tabs {
+  display: none;
+}
+#tabbar:not(.overflow) ~ .after-tabs {
+  display: block;
+}
+
+/*+++ Change close button style ++++*/
+
+tab-closebox::after {
+  content: "⨉";
+
+  background: none;
+  line-height: 1;
+  mask: none;
+  text-align: center;
+  width: 1.25em;
+}

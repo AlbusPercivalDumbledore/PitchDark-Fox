@@ -1,0 +1,52 @@
+@import url(NavigatorToolbox/Menubar.css);
+@import url(NavigatorToolbox/NavTabInOneLine.css);
+@import url(NavigatorToolbox/TabBar.css);
+@import url(NavigatorToolbox/ToolbarButtons.css);
+@import url(NavigatorToolbox/UrlBar.css);
+
+/*Hide Navigator Toolbox top border*/
+:root[sizemode="normal"] {
+  border-top: none !important;
+}
+
+:root[sizemode="normal"] #titlebar {
+  -moz-appearance: none !important;
+}
+
+/* Remove frivolous Window drag space  */
+
+.titlebar-spacer,
+.titlebar-spacer[type="pre-tabs"] {
+  display: none;
+}
+
+/*Specify Background Color of Titlebar*/
+#titlebar {
+  background: #000 !important;
+}
+
+/* Gradient Line below Navigator Toolbox*/
+#main-window:not([sizemode="maximized"]) #navigator-toolbox:after {
+  top: 1px !important;
+}
+
+#navigator-toolbox:after {
+  content: "";
+  top: 9px !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 3, 1),
+    #004e92,
+    #aa076b,
+    #dc2430,
+    #dc2430,
+    #aa076b,
+    #004e92,
+    rgb(0, 3, 1)
+  );
+  clip: rect(24px, 2600px, 26px, 0px);
+  position: absolute !important;
+}

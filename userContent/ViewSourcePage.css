@@ -1,0 +1,17 @@
+@-moz-document url-prefix("view-source:") {
+  *|*:root {
+    background-color: #000 !important;
+    color: #b4b4b4 !important;
+  }
+
+  body#viewsource {
+    font-family: Helvetica Neue !important;
+    background: #000 !important;
+    color: #b4b4b4 !important;
+    font-size: 14px !important;
+  }
+
+  body#viewsource .attribute-name {
+    color: #fff !important;
+  }
+}

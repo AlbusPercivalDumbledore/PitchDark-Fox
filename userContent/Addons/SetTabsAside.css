@@ -1,0 +1,149 @@
+/*+++++ SET TABS ASIDE EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  #no-sessions {
+    bottom: 0px;
+    background-color: #000 !important;
+    color: #fff !important;
+    padding: 25px !important;
+    font-size: 14px !important;
+  }
+
+  #sessions {
+    background-color: #000 !important;
+    margin-left: 10px !important;
+  }
+
+  .header {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  :root {
+    --search-height: 22px !important;
+    --bgcolor: #000 !important;
+  }
+
+  #search-input {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+  }
+
+  #search {
+    border-top: 1px solid #212121 !important;
+  }
+
+  .session > .header .title {
+    white-space: normal !important;
+    font-size: 1.1rem !important;
+    margin-left: 5px !important;
+    line-height: 24px !important;
+  }
+
+  .session:hover {
+    --bg-color: #000 !important;
+    box-shadow: 0px 1px 1px rgba(8, 8, 8, 0.1);
+    color: #fff !important;
+  }
+
+  .session.expanded {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1rem !important;
+  }
+
+  .session > .header .textbutton {
+    color: rgb(255, 0, 0) !important;
+    cursor: pointer;
+    background-color: #000 !important;
+    display: none;
+  }
+
+  .session > .header .more {
+    width: 15px !important;
+    background-position: center 8px;
+    background-image: url("../img/sidebar/more-16-thin.svg");
+    margin-left: 1px;
+    background-color: #fff !important;
+    filter: invert(100%) !important;
+    transform: scale(80%) !important;
+    margin-top: -2px !important;
+  }
+
+  .session > .header .textbutton:hover {
+    text-decoration: none !important;
+  }
+
+  .session {
+    --header-height: 22px !important;
+    --bg-color: #000 !important;
+    --hover-trans-dur: 0.25s;
+  }
+
+  a,
+  a:visited {
+    cursor: pointer;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+    margin-left: 5px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: block !important;
+    margin-bottom: 2px !important;
+    margin-right: 10px !important;
+  }
+
+  .session > .header .number-of-tabs {
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1rem !important;
+    position: absolute !important;
+    right: 1.7em !important;
+    line-height: 25px !important;
+  }
+
+  .session > .header .title:hover {
+    background-color: #000 !important;
+  }
+
+  .tab:hover {
+    text-decoration: none !important;
+  }
+
+  #search-icon {
+    filter: invert(100%) !important;
+    transform: scale(80%) !important;
+  }
+
+  #search-clear {
+    filter: invert(100%) !important;
+    transform: scale(80%) !important;
+    background-color: #fff !important;
+    opacity: 100 !important;
+  }
+
+  .session > .header::before {
+    filter: invert(100%) !important;
+  }
+
+  #search-input:active {
+    outline: none !important;
+  }
+
+  .tab-view > ol {
+    margin-left: 12px !important;
+  }
+
+  .button:not(.disabled) {
+    background-color: #000 !important;
+  }
+
+  #buttons {
+    background-color: #000 !important;
+  }
+}

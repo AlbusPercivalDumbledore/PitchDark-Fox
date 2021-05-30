@@ -1,0 +1,17 @@
+@import url(Menus/AllTabsView.css);
+@import url(Menus/DownloadsMenu.css);
+@import url(Menus/HamburgerMenu.css);
+@import url(Menus/HistoryMenu.css);
+@import url(Menus/OverflowMenu.css);
+@import url(Menus/TrackingProtectionPopup.css);
+
+/*Push Menu Popups downwards*/
+#downloadsPanel,
+#widget-overflow,
+#appMenu-popup,
+#customizationui-widget-panel,
+#identity-popup,
+#permission-popup,
+#protections-popup {
+  margin-top: 6px !important;
+}

@@ -1,0 +1,119 @@
+/*++++++++++ Bookmarks Panel (opens on pressing star in URL Bar) ++++++++++*/
+
+/*Reduce Panel Width*/
+#editBookmarkPanel {
+  font-size: var(--panel-font-size);
+  width: 280px !important;
+}
+
+/*Modify Panel Title*/
+#editBookmarkPanelTitle {
+  font-family: "Fira Sans" !important;
+  font-size: 1.15rem !important;
+}
+
+/*Remove Page Snapshot*/
+#editBookmarkPanelInfoArea {
+  display: none !important;
+}
+
+/*Remove Separator*/
+#editBookmarkSeparator {
+  display: none !important;
+}
+
+/*Modify labels*/
+#editBookmarkPanelContent label[control] {
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+}
+
+/*Modify Folder Select Dropdown*/
+#editBMPanel_folderMenuList {
+  background-color: #000 !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.05rem !important;
+  color: #fff !important;
+  margin-left: -32px !important;
+}
+
+#editBMPanel_folderMenuList .in-menulist {
+  margin-left: 15px !important;
+}
+
+/*Modify Folder tree*/
+#editBMPanel_folderTree {
+  -moz-appearance: none !important;
+  background: #000 !important;
+  color: #fff !important;
+  font-size: 1.05rem !important;
+  font-family: "Fira Sans" !important;
+  min-width: 1px !important;
+  border: 0px #000 !important;
+}
+
+/*Dropmarker on folder select dropdown button*/
+dropmarker:not([native]) {
+  transform: scale(0.7) !important;
+}
+
+/*Autocomplete list that appears on typing existing tags*/
+#editBMPanel_tagsAutocomplete {
+  padding: 5px !important;
+  background: #000 !important;
+}
+
+/*Modify Tag list*/
+#editBMPanel_tagsSelector {
+  font-family: "Fira Sans" !important;
+  font-size: 1.05rem !important;
+  background: #000 !important;
+  color: #fff !important;
+  outline: 0px !important;
+  -moz-appearance: none !important;
+}
+
+/*Modify Tag list checkbox*/
+#editBMPanel_tagsSelector > richlistitem > image {
+  border: 1px solid #fff !important;
+  background: #000 !important;
+  filter: invert(1) !important;
+  opacity: 0.2 !important;
+}
+
+/*Reduce Top Margin of Tags Row*/
+#editBMPanel_tagsRow {
+  margin-top: -5px !important;
+}
+
+/*Remove Keywords Row*/
+#editBookmarkPanelBottomContent {
+  display: none !important;
+}
+
+/*Modify background and color of selection*/
+#editBMPanel_namePicker::selection,
+#editBMPanel_tagsField::selection {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/*Reduce size of save, remove bookmark, cancel buttons, and move them to the left*/
+#editBookmarkPanelBottomButtons {
+  display: flex;
+  margin: 0 !important;
+  margin-bottom: 5px !important;
+  justify-content: flex-start !important;
+  background: #000 !important;
+  font-size: 1rem !important;
+}
+
+#editBookmarkPanelBottomButtons > button {
+  padding: 5px !important;
+}
+
+/*Modify Label of bottom buttons and new tab button*/
+#editBookmarkPanelBottomButtons label,
+#editBMPanel_newFolderButton label {
+  font-size: 1rem !important;
+}

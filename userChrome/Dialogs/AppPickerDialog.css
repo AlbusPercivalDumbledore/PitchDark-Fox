@@ -1,0 +1,35 @@
+/*'Open With Application' Dialog*/
+
+#app-picker {
+  width: 320px;
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+}
+
+#app-picker-listbox > richlistitem {
+  -moz-box-align: center;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+#app-picker-listbox {
+  background-color: #000 !important;
+  border: 0px !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  -moz-appearance: none !important;
+  margin-bottom: 20px !important;
+}
+
+#app-picker > #file-info {
+  margin-bottom: 20px !important;
+  margin-top: 10px !important;
+}
+
+#content-icon,
+#app-picker-listbox > richlistitem > image {
+  width: 22px !important;
+  height: 22px !important;
+}

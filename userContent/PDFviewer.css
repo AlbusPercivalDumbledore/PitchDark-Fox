@@ -1,0 +1,60 @@
+/*+++++ PDF VIEWER +++++*/
+
+#toolbarViewer {
+  background-color: #000 !important;
+  font-family: Fira Sans !important;
+}
+
+.dropdownToolbarButton > select {
+  background-color: #181818 !important;
+  font-family: Fira Sans !important;
+}
+
+.dropdownToolbarButton > select:hover {
+  background-color: #181818 !important;
+}
+
+.splitToolbarButton > .toolbarButton {
+  transform: scale(0.75) !important;
+}
+
+html[dir="ltr"] #toolbarViewerRight,
+html[dir="rtl"] #toolbarViewerLeft,
+html[dir="ltr"] #toolbarSidebarRight,
+html[dir="rtl"] #toolbarSidebarLeft {
+  float: right;
+  transform: scale(0.8) !important;
+}
+
+html[dir="ltr"] #outerContainer.sidebarOpen #sidebarContainer,
+#thumbnailView,
+#toolbarSidebar,
+#viewerContainer,
+.dropdownToolbarButton > select option {
+  background-color: #000 !important;
+}
+
+.toolbarField.pageNumber {
+  text-align: center !important;
+  font-family: Fira Sans !important;
+}
+
+.toolbarField {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+:root:not([nostyle])
+  #viewerContainer
+  > #viewer
+  > .page
+  > .canvasWrapper
+  > canvas {
+  filter: invert(100%);
+}
+
+html[dir="ltr"] .secondaryToolbarButton > span {
+  padding-right: 4px;
+  font-family: "Fira Sans" !important;
+  font-size: 1.3rem !important;
+}

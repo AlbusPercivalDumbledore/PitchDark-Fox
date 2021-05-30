@@ -1,0 +1,62 @@
+@import url(global-colors.css);
+@import url(userContent/AboutPages.css);
+@import url(userContent/Addons.css);
+@import url(userContent/ChromePages.css);
+@import url(userContent/ContextMenu.css);
+@import url(userContent/ErrorPages.css);
+@import url(userContent/InWindowLibrary.css);
+@import url(userContent/PDFviewer.css);
+@import url(userContent/ReaderView.css);
+@import url(userContent/ViewSourcePage.css);
+@import url(userContent/Websites.css);
+
+/*++++++ Remove White Flickering +++++*/
+
+@-moz-document url("about:home"),
+url("about:blank"),
+url("about:newtab"),
+url("about:privatebrowsing"),
+url("about:memory"),
+url("about:performance"),
+url("about:addons")
+url-prefix("chrome://"),
+{
+  html,
+  body {
+    background-color: #000 !important;
+  }
+}
+
+@-moz-document plain-text-document(), media-document(all), url(chrome://browser/content/webext-panels.xhtml)
+{
+  :root {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color: #fff !important;
+      background-color: #000 !important;
+    }
+
+    body:not([style*="background"], [class], [id]) {
+      background-color: #000 !important;
+    }
+  }
+}
+
+/*+++++ BUTTONS, INPUT BOXES +++++*/
+
+button:focus-visible,
+html|select:focus-visible,
+html|input:is([type="checkbox"], [type="color"], [type="radio"]):focus-visible,
+xul|menulist:focus-visible,
+xul|checkbox:not([native]):focus-visible > .checkbox-check,
+xul|radio[focused="true"] > .radio-check,
+xul|tab:focus-visible > .tab-middle > .tab-text {
+  box-shadow: none !important;
+  outline: 1px solid var(--in-content-focus-outline-color) !important;
+  outline-offset: 2px !important;
+  -moz-outline-radius: 2px !important;
+}

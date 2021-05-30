@@ -1,0 +1,32 @@
+/*+++++ PAGE FOR INTERNAL ICONS +++++*/
+
+@-moz-document url-prefix(resource:///)
+{
+  :root {
+    background-color: #000 !important;
+  }
+
+  body {
+    border: 1px solid #212121 !important;
+    border-radius: 2px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.1rem !important;
+  }
+
+  a {
+    color: #64b5f6 !important;
+  }
+
+  svg {
+    filter: invert(1) !important;
+  }
+
+  h1 {
+    font-size: 150% !important;
+    margin: 0 0 0.6em;
+    border-bottom: 0 !important;
+    font-weight: normal;
+  }
+}

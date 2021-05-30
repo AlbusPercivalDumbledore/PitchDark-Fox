@@ -1,0 +1,29 @@
+/*+++++ Google Container +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  * {
+    color: #fff !important;
+    font-family: Fira Sans !important;
+    background: transparent !important;
+    line-height: 22px !important;
+  }
+
+  hr {
+    display: none !important;
+  }
+
+  textarea {
+    border: 2px solid #505050 !important;
+    border-radius: 5px !important;
+  }
+
+  input {
+    filter: invert(1) !important;
+  }
+
+  button {
+    border: 1px solid #505050 !important;
+    padding: 5px !important;
+  }
+}

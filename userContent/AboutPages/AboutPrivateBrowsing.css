@@ -1,0 +1,69 @@
+/*+++++ NEW PRIVATE TAB PAGE +++++*/
+
+@-moz-document url("about:privatebrowsing") {
+  .info,
+  /*#private-browsing-vpn-link,*/
+  #private-browsing-vpn-text,
+  #private-browsing-myths,
+  .search-inner-wrapper,
+  .logo-and-wordmark,
+  .logo,
+  .wordmark {
+    display: none !important;
+  }
+
+  div.showPrivate.showSearch.container::before {
+    display: block;
+    margin: 0px auto 20px;
+    content: "";
+    width: 400px;
+    height: 200px;
+    background: url("chrome://branding/content/about-wordmark.svg") no-repeat;
+    /*url("chrome://branding/content/firefox-wordmark.svg") no-repeat;*/
+    fill: #fff !important;
+    background-size: 400px 200px;
+    -moz-context-properties: fill;
+  }
+
+  div.showPrivate.showSearch.container::after {
+    display: block;
+    margin: 0px auto 50px;
+    content: "";
+    width: 297px;
+    height: 231px;
+    background: url("Icons/fox.gif") no-repeat;
+    fill: #fff !important;
+    background-size: 297px 231px;
+    -moz-context-properties: fill;
+  }
+
+  #private-browsing-vpn-link {
+    visibility: hidden !important;
+  }
+
+  #private-browsing-vpn-link::after {
+    display: block !important;
+    margin: 30px auto 0px;
+    content: "Such Speed, Much Privacy, WOW Browser";
+    color: #fff !important;
+    background: transparent !important;
+    font-size: 24px !important;
+    font-family: Fira Sans !important;
+    text-align: center !important;
+    font-variant-caps: petite-caps !important;
+    visibility: visible !important;
+  }
+
+  #private-browsing-vpn-link::before {
+    display: block;
+    margin: 0px auto 0px;
+    content: "";
+    width: 200px;
+    height: 57px;
+    background: url("Icons/mozillalogo.png") no-repeat;
+    fill: #fff !important;
+    background-size: 200px 57px;
+    -moz-context-properties: fill;
+    visibility: visible !important;
+  }
+}

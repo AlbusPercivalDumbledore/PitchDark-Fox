@@ -1,0 +1,147 @@
+/*+++++ Replace default Icons +++++*/
+
+/*Navigator Toolbox Icons*/
+#navigator-toolbox #back-button {
+  list-style-image: url("Icons/back.svg") !important;
+}
+
+#navigator-toolbox #forward-button {
+  list-style-image: url("Icons/forward.svg") !important;
+}
+
+#navigator-toolbox #stop-button {
+  list-style-image: url("Icons/close.svg") !important;
+}
+
+#navigator-toolbox #reload-button {
+  list-style-image: url("Icons/reload1.svg") !important;
+}
+
+#navigator-toolbox #tabs-newtab-button,
+#navigator-toolbox #TabsToolbar #new-tab-button {
+  list-style-image: url("Icons/add.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#navigator-toolbox #bookmarks-menu-button {
+  list-style-image: url("Icons/bookmark_menu.svg") !important;
+}
+
+#navigator-toolbox #history-panelmenu {
+  list-style-image: url("Icons/history.svg") !important;
+}
+
+#pageAction-panel-bookmark,
+#star-button {
+  list-style-image: url("Icons/bookmark.svg") !important;
+}
+
+#navigator-toolbox #pageAction-panel-bookmark[starred],
+#navigator-toolbox #star-button[starred] {
+  list-style-image: url("Icons/bookmark-checked.svg") !important;
+}
+
+#navigator-toolbox #tracking-protection-icon {
+  list-style-image: url("Icons/shield.svg") !important;
+}
+
+#navigator-toolbox #sidebar-button {
+  list-style-image: url("Icons/sidebar.svg") !important;
+}
+
+#navigator-toolbox #new-window-button {
+  list-style-image: url("Icons/fox.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#navigator-toolbox #privatebrowsing-button {
+  list-style-image: url("Icons/incognito.svg") !important;
+}
+
+#navigator-toolbox #nav-bar-overflow-button {
+  list-style-image: url("Icons/chevron.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#navigator-toolbox #PanelUI-menu-button {
+  list-style-image: url("Icons/menu.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#navigator-toolbox #alltabs-button {
+  list-style-image: url("Icons/more.svg") !important;
+  opacity: 0.9 !important;
+}
+
+#navigator-toolbox #add-ons-button {
+  list-style-image: url("Icons/puzzle.svg") !important;
+}
+
+#navigator-toolbox #preferences-button {
+  list-style-image: url("Icons/wrench.svg") !important;
+}
+
+#navigator-toolbox #privateTab-button {
+  list-style-image: url("Icons/incognito-tab.svg") !important;
+}
+
+#navigator-toolbox #_c607c8df-14a7-4f28-894f-29e8722976af_-browser-action {
+  list-style-image: url("Icons/temp_container.svg") !important;
+}
+
+#navigator-toolbox #_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action {
+  list-style-image: url("Icons/undo.svg") !important;
+}
+
+#navigator-toolbox #umatrix_raymondhill_net-browser-action {
+  list-style-image: url("Icons/blocked.svg") !important;
+  /*margin-top: 5px !important;*/
+}
+
+#navigator-toolbox #_a9c2ad37-e940-4892-8dce-cd73c6cbbc0c_-browser-action {
+  list-style-image: url("Icons/rss.svg") !important;
+}
+
+#navigator-toolbox #addon_darkreader_org-browser-action {
+  list-style-image: url("Icons/flashlight.svg") !important;
+}
+
+#navigator-toolbox #tabsaside_xfox111_net-browser-action {
+  list-style-image: url("Icons/aside.svg") !important;
+}
+
+#navigator-toolbox #_breadcrumbus-browser-action,
+#navigator-toolbox #pageAction-urlbar-_breadcrumbus {
+  list-style-image: url("Icons/url.svg") !important;
+}
+
+/*Cancel Download, and Retry button on right of Downloads Menu*/
+.downloadIconCancel > .button-box > .button-icon {
+  list-style-image: url("Icons/close.svg") !important;
+}
+
+.downloadIconRetry > .button-box > .button-icon {
+  list-style-image: url("Icons/reload.svg") !important;
+}
+
+/*Tab Close Button*/
+.tab-close-button {
+  list-style-image: url("Icons/close.svg") !important;
+}
+
+/* +++++ Change those (ugly) globe favicons +++++*/
+/*https://old.reddit.com/r/FirefoxCSS/comments/bv3ies/change_those_ugly_globe_favicons_and_menu/ 
+https://old.reddit.com/r/FirefoxCSS/comments/k5v3u4/replacing_black_fox_and_globe_icon/ */
+
+/* Keep the globe and change globe color */
+/*.tab-icon-image:not([src]) { fill: #181818 !important; }
+.bookmark-item:not([container]){ fill: #181818 !important;} */
+
+/* Replace globe with firefox icon*/
+.tab-icon-image:not([src]),
+.bookmark-item:not([src]),
+.all-tabs-item:not([src]),
+.all-tabs-button,
+.all-tabs-button:not([src]) {
+  list-style-image: url(chrome://branding/content/icon32.png) !important;
+}

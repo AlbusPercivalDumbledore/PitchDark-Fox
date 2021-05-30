@@ -1,0 +1,14 @@
+/*+++++ MENU BAR +++++*/
+
+/*Change font, capitalize options*/
+#main-menubar {
+  font-family: "Fira Sans" !important;
+  font-size: 1rem !important;
+  margin-top: 5px !important;
+  font-variant-caps: petite-caps !important;
+}
+
+/*Increase Top Margin of Menu Items, to bring them in line with window controls*/
+#toolbar-menubar > #menubar-items {
+  margin-top: 2px !important;
+}

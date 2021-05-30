@@ -1,0 +1,38 @@
+/*+++++ IMAGUS EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/options.html)
+{
+  * {
+    color: #fff !important;
+    background: transparent !important;
+    font-family: fira sans !important;
+    box-shadow: none !important;
+  }
+
+  .logo {
+    display: none !important;
+  }
+
+  #right_panel > aside {
+    padding: 10px !important;
+  }
+
+  #sieve_container > div > span {
+    border: 1px solid #212121 !important;
+  }
+
+  input,
+  textarea,
+  select,
+  code,
+  .checkbox,
+  button {
+    border: 1px solid #212121 !important;
+  }
+
+  .op_buttons > button,
+  .action_buttons > span,
+  .file_button {
+    border: 1px solid #212121 !important;
+  }
+}

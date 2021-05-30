@@ -1,0 +1,56 @@
+/*+++++ TREE STYLES TAB EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  .newtab-button {
+    border: none !important;
+  }
+
+  .tab.contextual-identity-firefox-container-6 .label-content {
+    text-decoration: none !important;
+  }
+
+  .tab.contextual-identity-firefox-container-6 tab-favicon {
+    border-bottom: none !important;
+  }
+
+  #tabbar-container,
+  #tabbar,
+  #background,
+  #subpanel-container {
+    background: #000 !important;
+    color: #fff !important;
+    scrollbar-width: none !important;
+  }
+
+  tab-sound-button {
+    transform: scale(0.85) !important;
+    opacity: 0.4 !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/options/options.html)
+{
+  body {
+    background: transparent !important;
+    color: var(--text-color);
+    padding: 10px !important;
+    font-family: Fira Sans !important;
+  }
+
+  .expert {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  button,
+  input,
+  select {
+    background: #000 !important;
+    padding: 5px !important;
+    font-family: Fira Sans !important;
+    font-size: 1rem !important;
+    border: 1px solid #212121 !important;
+    -moz-appearance: none !important;
+  }
+}

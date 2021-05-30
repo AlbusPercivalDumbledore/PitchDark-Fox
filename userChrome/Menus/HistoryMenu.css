@@ -1,0 +1,19 @@
+/*+++++ History Dropdown (Toolbar Button) +++++*/
+
+/*Reduce Width of menu*/
+#PanelUI-history {
+  width: 450px !important;
+}
+
+/*Reduce height of menu items*/
+#appMenu_historyMenu > .subviewbutton-iconic {
+  height: 22px !important;
+  min-height: 22px !important;
+}
+
+/*Reduce size of webpage icons*/
+#appMenu_historyMenu > .subviewbutton-iconic > .toolbarbutton-icon {
+  height: 14px !important;
+  width: 14px !important;
+  transform: scale(0.9) !important;
+}

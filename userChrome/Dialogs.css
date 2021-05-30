@@ -1,0 +1,69 @@
+@import url(Dialogs/AboutFirefox.css);
+@import url(Dialogs/AppPickerDialog.css);
+@import url(Dialogs/CommonDialogs.css);
+@import url(Dialogs/CreateNewProfile.css);
+@import url(Dialogs/PageInfo.css);
+@import url(Dialogs/PermissionsDialog.css);
+@import url(Dialogs/PrintPreview.css);
+@import url(Dialogs/PrintProgress.css);
+@import url(Dialogs/SanitizeDialog.css);
+@import url(Dialogs/SaveFileDialog.css);
+
+/*Make Minimum Width and Height of Dialogs Null*/
+.dialogBox {
+  min-width: 0px !important;
+  min-height: 0px !important;
+}
+
+/*Specify Font Face for Dialog Titles*/
+.dialogTitle {
+  font-family: Fira Sans;
+}
+
+/*Style Dialog Buttons*/
+.dialog-button-box button,
+.dialog-button-box button:hover {
+  -moz-appearance: none !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  border: 1px solid #181818 !important;
+  padding: 5px !important;
+  font-family: "Fira Sans" !important;
+  font-size: 1rem !important;
+}
+
+/* Prevent dimming of sidebar and findbar */
+/*https://github.com/aminomancer/uc.css.js/blob/master/uc-popups.css#L433 */
+.tab-prompt-dialog.dialogStack {
+  z-index: 0 !important;
+}
+
+/* Tab-prompt-dialogs are anchored to the top of browser content area. This makes them look like they emerge from under the navbar*/
+:is(.tab-prompt-dialog, #window-modal-dialog) .dialogBox {
+  margin-top: 0px !important;
+}
+
+/*Border Radius*/
+:is(.tab-prompt-dialog, #window-modal-dialog) :is(.dialogBox, .dialogFrame) {
+  border-radius: 0 0 5px 5px !important;
+}
+
+.content-prompt-dialog :is(.dialogBox, .dialogFrame) {
+  border-radius: 5px !important;
+}
+
+:is(.tab-prompt-dialog, #window-modal-dialog) .printDialogBox > .dialogFrame {
+  border-radius: 0 !important;
+}
+
+/*Modal Prompts*/
+xul|vbox.paymentDialogContainerFrame,
+xul|vbox.tabmodalprompt-mainContainer {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/*+++++ Multi Account Container Dialog +++++*/
+#_testpilot-containers-panel {
+  width: 130px !important;
+}

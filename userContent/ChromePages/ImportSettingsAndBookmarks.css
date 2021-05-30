@@ -1,0 +1,23 @@
+/*+++++ Import Settings and Bookmarks Page +++++*/
+
+@-moz-document url(chrome://browser/content/migration/migration.xhtml)
+{
+  .wizard-header {
+    border-bottom: none !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+  }
+
+  wizard {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+    font-size: 1.15rem !important;
+  }
+
+  #closeSourceBrowser {
+    font-weight: 500 !important;
+  }
+}

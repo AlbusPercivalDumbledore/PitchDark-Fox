@@ -1,0 +1,60 @@
+/*+++++ SAVE WEBP AS PNG EXTENSION +++++*/
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/options.html)
+{
+  * {
+    background: #1b1b1b !important;
+  }
+
+  :root button,
+  select {
+    background: #000 !important;
+    color: #fff !important;
+    font-family: Fira Sans !important;
+    padding: 5px !important;
+    border: 1px solid #212121 !important;
+    -moz-appearance: none !important;
+  }
+}
+
+@-moz-document url-prefix(moz-extension://Paste Internal UUID from About:Debugging Here/)
+{
+  :root body {
+    margin: 8px 16px;
+    background-color: #000 !important;
+    font-size: 14px !important;
+    color: #fff !important;
+    font-family: "Fira Sans" !important;
+  }
+}
+
+:root .saveWebPasInfo {
+  border: 1px solid #212121 !important;
+  background: #000 !important;
+  color: #fff !important;
+  font-size: 1.1rem !important;
+  padding: 10px !important;
+  text-align: center !important;
+}
+
+:root .saveWebPasInfo p {
+  font-family: Fira Sans !important;
+}
+
+:root .saveWebPasbtns button:hover {
+  color: #fff !important;
+  border-color: #212121 !important;
+  background: #181818 !important;
+}
+
+:root .saveWebPasbtns button {
+  transform: scale(1) !important;
+  font-style: normal !important;
+  border-color: #212121 !important;
+  background: #000 !important;
+  color: #fff !important;
+  font-family: Fira Sans !important;
+  margin-top: 5px !important;
+  box-shadow: none !important;
+  -moz-appearance: none !important;
+}

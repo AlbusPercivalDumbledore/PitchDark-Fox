@@ -23,8 +23,7 @@ scrollbar {
 
 /*+++++ Global Colors +++++*/
 
-:root,
-#root {
+:root {
   --accent-color: #000 !important;
   --accent-color-inactive: #000 !important;
   --additional-images: none !important;

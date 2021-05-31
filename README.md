@@ -45,41 +45,9 @@
 1. Themes for Addons are contained in 'userContent -> Addons' folder.
 2. Internal UUID of Addons is required. It can be found at 'This Firefox' section of 'about:debugging'. It needs to be pasted in addon's stylesheet, in place of 'Paste Internal UUID here'.
 
-### ADDONS STYLED
+### STYLED ADDONS 
 
-1. [**Auto Tab Discard**](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/)
-2. [**Bitwarden Password Manager**](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
-3. [**Block Site**](https://addons.mozilla.org/en-US/firefox/addon/block-website/)
-4. [**Breadcrumbs**](https://addons.mozilla.org/en-US/firefox/addon/breadcrumbus/)
-5. [**Bypass Paywalls**](https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-firefox/)
-6. [**Bypass Paywalls Clean**](https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-clean/)
-7. [**Clear URLs**](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
-8. [**Cookie Auto Delete**](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
-9. [**Dark Reader**](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
-10. [**Enhancer for Youtube**](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/)
-11. [**EPUB Reader**](https://addons.mozilla.org/en-US/firefox/addon/epubreader/)
-12. [**Fast Tab Switcher**](https://addons.mozilla.org/en-US/firefox/addon/fast-tab-switcher/)
-13. [**FeedBro**](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/)
-14. [**Firefox Relay**](https://addons.mozilla.org/en-US/firefox/addon/private-relay/)
-15. [**Google Container**](https://addons.mozilla.org/en-US/firefox/addon/google-container/)
-16. [**Imagus**](https://addons.mozilla.org/en-US/firefox/addon/imagus/)
-17. [**Local CDN**](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/)
-18. [**Multi Account Container**](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
-19. [**Notes By Firefox**](https://addons.mozilla.org/en-US/firefox/addon/notes-by-firefox/)
-20. [**Save WebP as PNG**](https://addons.mozilla.org/en-US/firefox/addon/save-webp-as-png-or-jpeg/)
-21. [**Search By Image**](https://addons.mozilla.org/en-US/firefox/addon/search_by_image/)
-22. [**Tabs Aside**](https://addons.mozilla.org/en-GB/firefox/addon/tabs-aside/)
-23. [**Set Tabs Aside (Edge Legacy)**](https://addons.mozilla.org/en-US/firefox/addon/ms-edge-tabs-aside/)
-24. [**Sponsor Block**](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
-25. [**Stylus**](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-26. [**Temporary Container**](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
-27. [**Translate Webpages**](https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/)
-28. [**Tree Style Tabs**](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
-29. [**uBlacklist**](https://addons.mozilla.org/en-US/firefox/addon/ublacklist/)
-30. [**uBlock Origin**](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-31. [**uMatrix**](https://github.com/gorhill/uMatrix/releases) - Latest Pre-Release Version
-32. [**User Agent Switcher**](https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/)
-33. [**Web Archives**](https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/)
+[**Auto Tab Discard**](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/), [**Bitwarden Password Manager**](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/), [**Block Site**](https://addons.mozilla.org/en-US/firefox/addon/block-website/), [**Breadcrumbs**](https://addons.mozilla.org/en-US/firefox/addon/breadcrumbus/), [**Bypass Paywalls**](https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-firefox/), [**Bypass Paywalls Clean**](https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-clean/), [**Clear URLs**](https://addons.mozilla.org/en-US/firefox/addon/clearurls/), [**Cookie Auto Delete**](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/), [**Dark Reader**](https://addons.mozilla.org/en-US/firefox/addon/darkreader/), [**Enhancer for Youtube**](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/), [**EPUB Reader**](https://addons.mozilla.org/en-US/firefox/addon/epubreader/), [**Fast Tab Switcher**](https://addons.mozilla.org/en-US/firefox/addon/fast-tab-switcher/), [**FeedBro**](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/), [**Firefox Relay**](https://addons.mozilla.org/en-US/firefox/addon/private-relay/), [**Google Container**](https://addons.mozilla.org/en-US/firefox/addon/google-container/), [**Imagus**](https://addons.mozilla.org/en-US/firefox/addon/imagus/), [**Local CDN**](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/), [**Multi Account Container**](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/), [**Notes By Firefox**](https://addons.mozilla.org/en-US/firefox/addon/notes-by-firefox/), [**Save WebP as PNG**](https://addons.mozilla.org/en-US/firefox/addon/save-webp-as-png-or-jpeg/), [**Search By Image**](https://addons.mozilla.org/en-US/firefox/addon/search_by_image/), [**Tabs Aside**](https://addons.mozilla.org/en-GB/firefox/addon/tabs-aside/), [**Set Tabs Aside (Edge Legacy)**](https://addons.mozilla.org/en-US/firefox/addon/ms-edge-tabs-aside/), [**Sponsor Block**](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/), [**Stylus**](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [**Temporary Container**](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/), [**Translate Webpages**](https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/), [**Tree Style Tabs**](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/), [**uBlacklist**](https://addons.mozilla.org/en-US/firefox/addon/ublacklist/), [**uBlock Origin**](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/), [**uMatrix**](https://github.com/gorhill/uMatrix/releases) (Latest Pre-Release Version), [**User Agent Switcher**](https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/), [**Web Archives**](https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/)
 
 ![AutoTabDiscard](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_AutoTabDiscard.png)
 ![Bitwarden](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/addon_Bitwarden.png)
@@ -99,6 +67,7 @@
 ## PREVIEWS
 
 ![AllTabsView](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AllTabsView.png)
+![BookmarksSidebar](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/BookmarksSidebar.png)
 ![ClearAllHistoryDialog](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/ClearAllHistoryDialog.png)
 ![CloseWindowDialog](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/CloseWindowDialog.png)
 ![ContextMenus](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/ContextMenus.png)

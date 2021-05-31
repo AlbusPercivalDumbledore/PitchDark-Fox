@@ -16,7 +16,7 @@
 ### NOTE
 
 1. This is NOT a 'release' of custom-css for Firefox. Its a collection of stylesheets I've put together for my own use. I've merrily tweaked/hidden elements, based on how I'd like them to be.
-2. Much of it is based on others' hardwork. [**See Credits**](https://github.com/im-hm/PitchDark-Fox/blob/main/README.md#credits)
+2. Much of it is based on others' hardwork. [**See Credits**](https://github.com/im-hm/PitchDark-Fox#credits)
 3. I only have a working knowledge of css. Consequently, I haven't followed CSS Best Practices. Ex, avoiding use of universal selector (\*)
 
 ## USAGE

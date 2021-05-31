@@ -45,18 +45,3 @@ url-prefix("chrome://"),
     }
   }
 }
-
-/*+++++ BUTTONS, INPUT BOXES +++++*/
-
-button:focus-visible,
-html|select:focus-visible,
-html|input:is([type="checkbox"], [type="color"], [type="radio"]):focus-visible,
-xul|menulist:focus-visible,
-xul|checkbox:not([native]):focus-visible > .checkbox-check,
-xul|radio[focused="true"] > .radio-check,
-xul|tab:focus-visible > .tab-middle > .tab-text {
-  box-shadow: none !important;
-  outline: 1px solid var(--in-content-focus-outline-color) !important;
-  outline-offset: 2px !important;
-  -moz-outline-radius: 2px !important;
-}

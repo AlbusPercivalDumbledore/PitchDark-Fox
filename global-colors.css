@@ -6,50 +6,6 @@
   text-decoration: none !important;
   --attention-icon-color: #1a237e !important;
   --sidebar-background-color: #000 !important;
-  --in-content-accent-color-active: #181818 !important;
-  --in-content-box-background: #000 !important;
-  --in-content-box-background-odd: #181818 !important;
-  --in-content-box-border-color: #212121 !important;
-  --in-content-box-info-background: #000 !important;
-  --in-content-border-color: #181818 !important;
-  --in-content-border-hover: #181818 !important;
-  --in-content-border-invalid: #181818 !important;
-  --in-content-button-background: #181818 !important;
-  --in-content-button-background-active: #181818 !important;
-  --in-content-button-background-hover: #181818 !important;
-  --in-content-button-border-radius: 2px !important;
-  --in-content-button-horizontal-padding: 12px !important;
-  --in-content-button-text-color-hover: #fff !important;
-  --in-content-button-vertical-padding: 7px !important;
-  --in-content-danger-button-background: #000 !important;
-  --in-content-danger-button-background-hover: #181818 !important;
-  --in-content-danger-button-background-active: #181818 !important;
-  --in-content-deemphasized-text: rgb(180, 180, 180) /*#999999*/ !important;
-  --in-content-dialog-header-background: #000 !important;
-  --in-content-focus-outline-color: #212121 !important;
-  --in-content-icon-color: rgb(251, 251, 254) !important;
-  --in-content-item-hover: color-mix(
-    in srgb,
-    var(--in-content-primary-button-background) 20%,
-    transparent
-  ) !important;
-  --in-content-item-selected: #181818 !important;
-  --in-content-item-selected-text: #fff !important;
-  --in-content-link-color: #fff !important;
-  --in-content-link-color-hover: #fff !important;
-  --in-content-link-color-active: blue !important;
-  --in-content-link-color-visited: blue !important;
-  --in-content-page-color: #fff !important;
-  --in-content-page-background: #000 !important;
-  --in-content-primary-button-text-color: #fff !important;
-  --in-content-primary-button-background: #000 !important;
-  --in-content-primary-button-background-active: #181818 !important;
-  --in-content-primary-button-background-hover: #181818 !important;
-  --in-content-sidebar-width: 240px !important;
-  --in-content-table-background: #000 !important;
-  --in-content-table-border-dark-color: #212121 !important;
-  --in-content-table-header-background: #181818 !important;
-  --in-content-text-color: #fff !important;
 }
 
 /*Selection*/
@@ -66,7 +22,7 @@ scrollbar {
 }
 
 /*+++++ Global Colors +++++*/
-:host,
+
 :root,
 #root {
   --accent-color: #000 !important;
@@ -417,6 +373,84 @@ body {
   --newtab-wordmark-color: #fff !important;
 }
 
+
+/*About:, Chrome:, and Extension Pages*/
+/*https://github.com/aminomancer/uc.css.js/blob/master/userContent.css#L1402*/
+@-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
+  :root {
+    --checkbox-border-color: #212121 !important;
+    --checkbox-checked-bgcolor: #000 !important;
+    --checkbox-checked-color: #fff !important;
+    --checkbox-checked-hover-bgcolor: #181818 !important;
+    --checkbox-checked-active-bgcolor: #000 !important;
+    --checkbox-checked-border-color: #181818 !important;
+    --checkbox-unchecked-bgcolor: #181818 !important;
+    --checkbox-unchecked-hover-bgcolor: #181818 !important;
+    --checkbox-unchecked-active-bgcolor: #000 !important;
+  }
+
+  html:not([role="dialog"]),
+  html:not([role="dialog"]) *,
+  html:not([role="dialog"]) body.activity-stream,
+  window:not([chromehidden]),
+  window:not([chromehidden]) > dialog {
+    --in-content-accent-color-active: #181818 !important;
+    --in-content-box-background: #000 !important;
+    --in-content-box-background-odd: #181818 !important;
+    --in-content-box-border-color: #212121 !important;
+    --in-content-box-info-background: #000 !important;
+    --in-content-border-color: #181818 !important;
+    --in-content-border-hover: #181818 !important;
+    --in-content-border-invalid: #181818 !important;
+    --in-content-button-background: #181818 !important;
+    --in-content-button-background-active: #181818 !important;
+    --in-content-button-background-hover: #181818 !important;
+    --in-content-button-border-radius: 2px !important;
+    --in-content-button-horizontal-padding: 12px !important;
+    --in-content-button-text-color-hover: #fff !important;
+    --in-content-button-vertical-padding: 7px !important;
+    --in-content-danger-button-background: #000 !important;
+    --in-content-danger-button-background-hover: #181818 !important;
+    --in-content-danger-button-background-active: #181818 !important;
+    --in-content-deemphasized-text: rgb(180, 180, 180) /*#999999*/ !important;
+    --in-content-dialog-header-background: #000 !important;
+    --in-content-focus-outline-color: #212121 !important;
+    --in-content-icon-color: rgb(251, 251, 254) !important;
+    --in-content-item-hover: color-mix(
+      in srgb,
+      var(--in-content-primary-button-background) 20%,
+      transparent
+    ) !important;
+    --in-content-item-selected: #181818 !important;
+    --in-content-item-selected-text: #fff !important;
+    --in-content-link-color: #fff !important;
+    --in-content-link-color-hover: #fff !important;
+    --in-content-link-color-active: blue !important;
+    --in-content-link-color-visited: blue !important;
+    --in-content-page-color: #fff !important;
+    --in-content-page-background: #000 !important;
+    --in-content-primary-button-text-color: #fff !important;
+    --in-content-primary-button-background: #000 !important;
+    --in-content-primary-button-background-active: #181818 !important;
+    --in-content-primary-button-background-hover: #181818 !important;
+    --in-content-sidebar-width: 240px !important;
+    --in-content-table-background: #000 !important;
+    --in-content-table-border-dark-color: #212121 !important;
+    --in-content-table-header-background: #181818 !important;
+    --in-content-text-color: #fff !important;
+  }
+
+  /*Remove Separator, Change font in about:preferences iframes*/
+  .groove {
+    display: none !important;
+  }
+
+  window > dialog,
+  .button-box > .button-text {
+    font-family: Fira Sans !important;
+  }
+}
+
 /*MENU POPUPS*/
 .menupopup-arrowscrollbox {
   --menu-background-color: #000 !important;
@@ -448,3 +482,5 @@ notification {
   --overlay-button-bg-color: #000 !important;
   --overlay-button-hover-bg-color: #181818 !important;
 }
+
+

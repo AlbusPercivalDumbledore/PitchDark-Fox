@@ -3,22 +3,22 @@
 @-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xhtml")
 {
   wizard {
-    color: #fff !important;
-    background-color: #000 !important;
+    color: var(--Dark_TextColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     font-family: "Fira Sans" !important;
     font-size: 1.2rem !important;
   }
 
   .wizard-header {
-    color: #fff !important;
-    background-color: #000 !important;
+    color: var(--Dark_TextColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border-bottom: 0px !important;
   }
 }
 
 #fxaSignoutDialog {
-  color: #fff !important;
-  background-color: #000 !important;
+  color: var(--Dark_TextColor) !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 1.2rem !important;
 }

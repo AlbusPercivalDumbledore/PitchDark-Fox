@@ -4,11 +4,11 @@
 {
   :root:dir(ltr) #about-config-search {
     padding-left: 32px;
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
   }
 
   #search-container {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   .config-background {

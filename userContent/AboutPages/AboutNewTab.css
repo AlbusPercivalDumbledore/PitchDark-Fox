@@ -8,16 +8,30 @@ url("about:home") {
   .ds-image .broken-image,
   .ds-card .img,
   .ds-card .img-wrapper {
-    background: #181818 !important;
+    background: var(--Dark_ActiveColor) !important;
   }
 
   .collapsible-section.active {
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
   }
 
   .icon.icon-settings,
   .personalize-button,
+  .search-wrapper .logo-and-wordmark .wordmark,
+  .search-wrapper .logo-and-wordmark .logo,
+  .search-inner-wrapper,
+  .search-wrapper .logo-and-wordmark,
+  .body-wrapper.on,
   .collapsible-section.ds-layout .section-top-bar .learn-more-link a {
     display: none !important;
+  }
+}
+
+@-moz-document url('about:home'), url('about:newtab'), url("about:privatebrowsing") {
+  body {
+    background-image: url(Icons/background-halfspeed.gif);
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-size: cover !important;
   }
 }

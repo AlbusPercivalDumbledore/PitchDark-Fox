@@ -3,8 +3,8 @@
   :root {
     scrollbar-width: thin !important;
     scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
-    --in-content-page-background: #000 !important;
-    --organizer-bordeR-color-selected: #181818 !important;
+    --in-content-page-background: var(--Dark_BackgroundColor) !important;
+    --organizer-bordeR-color-selected: var(--Dark_ActiveColor) !important;
   }
 
   /*+++++ Bookmark and History View inside Library View +++++*/
@@ -17,7 +17,7 @@
 
   #placesToolbar,
   .tree-bodybox {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border: 0 !important;
   }
 
@@ -37,7 +37,7 @@
 
   #contentView treecol {
     border-inline-end: 0 !important;
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
   }
 
   /*Items*/
@@ -45,11 +45,11 @@
     font-size: 1.1rem !important;
     font-family: "Fira Sans" !important;
     margin-top: 5px !important;
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   treechildren:hover {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   /*Shift Items slightly to left*/
@@ -59,9 +59,9 @@
 
   /*Details Pane on Bottom*/
   #detailsPane {
-    background-color: #000 !important;
-    color: #fff !important;
-    border-top: 0px solid #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border-top: 0px solid var(--Dark_BackgroundColor) !important;
     font-size: 1.1rem !important;
     font-family: "Fira Sans" !important;
   }
@@ -116,18 +116,18 @@
   /*Background of Downloads Box*/
   #downloadsRichListBox,
   .downloadMainArea {
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
   }
 
   /*Clear Downloads Button on top*/
   #clearDownloadsButton {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
     font-size: 1.1rem !important;
     font-family: "Fira Sans" !important;
   }
 
   #clearDownloadsButton[disabled] {
-    color: rgb(180, 180, 180) !important;
+    color: var(--Dark_DimmedColor) !important;
   }
 
   /*Downloading/Downloaded Item*/
@@ -142,7 +142,7 @@
   #downloadsRichListBox > richlistitem[selected] {
     background-image: none !important;
     border-radius: 0px !important;
-    outline: 0px solid rgb(124, 163, 206) !important;
+    outline: 0px !important;
   }
 
   /*Downloads Progress Bar*/

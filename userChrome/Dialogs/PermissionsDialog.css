@@ -3,7 +3,6 @@
 @-moz-document url(chrome://mozapps/content/handling/permissionDialog.xhtml)
 {
   #description {
-    font-weight: bold;
     font-family: "Fira Sans" !important;
     font-size: 1.2rem !important;
   }
@@ -22,8 +21,8 @@
   }
 
   dialog {
-    background-color: #000 !important;
-    border: 1px solid #212121 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
     padding: 15px !important;
   }
 }

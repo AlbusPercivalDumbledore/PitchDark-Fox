@@ -2,8 +2,6 @@
 
 /*Remove frivolous padding, and specify font face*/
 findbar {
-  border-top: 1px solid ThreeDShadow;
-  border-top-color: threedshadow;
   padding-block: 0px !important;
   font-family: Fira Sans !important;
 }
@@ -16,18 +14,84 @@ findbar {
   background: transparent !important;
 }
 
+/*Bring Textbox in line with other findbar content*/
+.findbar-textbox {
+  margin-top: -2px !important;
+}
+
 /*Background when hovering over buttons*/
 .findbar-button:hover {
-  background: #000 !important;
+  background: var(--Dark_BackgroundColor) !important;
 }
 
 /*Scale down close icon*/
-.findbar-closebutton.tabbable.close-icon {
+.findbar-closebutton.tabbable.close-icon > .toolbarbutton-icon {
   transform: scale(0.7) !important;
 }
 
 /*Text Selection Color in Findbar*/
 .findbar-textbox::selection {
   background-color: #1a237e !important;
-  color: #fff !important;
+  color: var(--Dark_TextColor) !important;
+}
+
+/*Floating Findbar on Top*/
+/* privacy.resistFingerprinting.letterboxing prevents this from working properly */
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/floating_findbar_on_top.css */
+
+findbar {
+  -moz-box-ordinal-group: 0;
+  margin-bottom: -33px;
+  position: relative;
+  border-top: none !important;
+  /*padding: 0 !important;*/
+  transition: transform 82ms linear, opacity 82ms linear 32ms !important;
+  background: none !important;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.findbar-container > .findbar-find-fast {
+  padding: var(--toolbarbutton-inner-padding) 1px;
+  margin: 0 !important;
+}
+
+findbar[hidden] {
+  transform: translateY(-30px);
+}
+
+findbar > .findbar-container,
+findbar > .close-icon {
+  border: 1px solid var(--chrome-content-separator-color);
+  border-width: 0 0 1px 0px;
+  background: var(--uc-light-bkgnd-color, var(--toolbar-bgcolor)) !important;
+  pointer-events: auto;
+}
+findbar > .findbar-container {
+  -moz-box-direction: reverse;
+  border-left-width: 1px;
+  border-bottom-left-radius: 4px;
+}
+
+.findbar-closebutton {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  padding: 5px !important;
+}
+.findbar-closebutton > image {
+  padding: 3px;
+}
+.findbar-closebutton:hover > image {
+  background: var(--toolbarbutton-hover-background) !important;
+  border-radius: 4px;
+}
+/*
+findbar > .findbar-container > hbox {
+  margin: 0 5px;
+}*/
+
+findbar::before {
+  content: "";
+  display: -moz-box;
+  -moz-box-flex: 100;
 }

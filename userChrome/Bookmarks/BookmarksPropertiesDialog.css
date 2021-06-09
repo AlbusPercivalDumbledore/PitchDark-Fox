@@ -6,7 +6,7 @@
   /*Make minimum width null*/
   #bookmarkproperties {
     min-width: 0px !important;
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
   }
 
   /*Increase padding*/
@@ -52,7 +52,7 @@
     display: flex;
     margin: 0 !important;
     justify-content: center !important;
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
     font-size: 1rem !important;
   }
 }

@@ -4,22 +4,19 @@
 /*Reduce top margin, specify width of NavBar, height of Toolbar, and ToolbarButton Padding in Navigator Toolbox*/
 #navigator-toolbox {
   --uc-navigationbar-width: 50vw;
-  --uc-toolbar-height: 32px !important;
-  --uc-urlbar-min-width: none;
-  --toolbarbutton-inner-padding: calc(
-    (var(--tab-min-height)- 31px) / 2
-  ) !important;
-  background-color: #000 !important;
+  --uc-toolbar-height: 28px;
+  --uc-urlbar-min-width: 50vw; /* minimum width for opened urlbar */
   border-bottom: none !important;
-  margin-top: -2px !important;
 }
+/*
+#main-window:not([sizemode="maximized"]) #navigator-toolbox {
+  margin-top: -2px !important;
+}*/
 
 /*Specify right margin, top margin, and height for NavBar*/
 #navigator-toolbox > #nav-bar {
   margin-right: calc(100vw - var(--uc-navigationbar-width));
   margin-top: calc(0px - var(--uc-toolbar-height)) !important;
-  height: var(--uc-toolbar-height) !important;
-  box-shadow: none !important;
 }
 
 /*Remove Left Padding, and specify right padding for Navbar. Needed because Hamburger Menu Button is hidden, and hence there is not much space b/w overflow menu button and closest tab*/
@@ -28,30 +25,44 @@
   padding-right: 5px !important;
 }
 
-/*Reduce Top Margin of Nav Bar Customization Target. This is to fix Icons on NavBar being slightly lower than Icons on TabBar*/
-#nav-bar-customization-target {
-  margin-top: -4px !important;
-}
-
 /*Specify left margin, background, and padding in TabsToolBar*/
 #TabsToolbar {
-  --toolbarbutton-inner-padding: calc(
-    (var(--tab-min-height) - 31px) / 2
-  ) !important;
   margin-left: var(--uc-navigationbar-width);
   --tabs-navbar-shadow-size: 0px;
-  background: #000 !important;
 }
 
 /*Specify Minimum Height of Tabs*/
 #tabbrowser-tabs {
   --tab-min-height: calc(
-    var(--uc-toolbar-height) - 2 * var(--proton-tab-block-margin, 0px)
+    var(--uc-toolbar-height) - 2 * var(--tab-block-margin, 0px)
   ) !important;
+  --tab-block-margin: 0px !important;
+}
+
+#scrollbutton-up,
+#scrollbutton-down {
+  border-block-width: 0px !important;
+  border: 0 !important;
+}
+
+/* Make opened urlbar overlay the toolbar */
+/*#urlbar[open]:focus-within {
+  min-width: var(--uc-urlbar-min-width, none) !important;
+}*/
+
+/* Hide dropdown placeholder */
+#urlbar-container:not(:hover) .urlbar-history-dropmarker {
+  margin-inline-start: -28px;
 }
 
 /* prevent urlbar from overflowing in narrow windows */
 #main-window:not([sizemode="maximized"]) #urlbar,
 #urlbar-container {
   min-width: 0px !important;
+  --urlbar-container-height: 28px !important;
+}
+
+/* Fix customization view */
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow {
+  margin-inline-end: initial !important;
 }

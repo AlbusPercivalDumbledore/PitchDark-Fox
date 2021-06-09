@@ -3,15 +3,20 @@
 @-moz-document url("chrome://global/content/commonDialog.xhtml")
 {
   * {
-    --checkbox-border-color: #212121 !important;
-    --checkbox-checked-bgcolor: #000 !important;
-    --checkbox-checked-color: #fff !important;
-    --checkbox-checked-hover-bgcolor: #181818 !important;
-    --checkbox-checked-active-bgcolor: #000 !important;
-    --checkbox-checked-border-color: #181818 !important;
-    --checkbox-unchecked-bgcolor: #181818 !important;
-    --checkbox-unchecked-hover-bgcolor: #181818 !important;
-    --checkbox-unchecked-active-bgcolor: #000 !important;
+    --checkbox-border-color: var(--Dark_BorderColor) !important;
+    --checkbox-checked-bgcolor: var(--Dark_BackgroundColor) !important;
+    --checkbox-checked-color: var(--Dark_TextColor) !important;
+    --checkbox-checked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-checked-active-bgcolor: var(--Dark_BackgroundColor) !important;
+    --checkbox-checked-border-color: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-active-bgcolor: var(--Dark_BackgroundColor) !important;
+  }
+
+  dialog#commonDialog {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #infoTitle {
@@ -26,13 +31,15 @@
 
   #infoBody::selection {
     background-color: #1a237e !important;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #checkbox {
-    font-size: 1.15rem !important;
+    font-size: 1rem !important;
     font-family: "Fira Sans" !important;
-    margin-bottom: 5px !important;
+    margin-bottom: -10px !important;
+    margin-top: -10px !important;
+    margin-left: 5px !important;
   }
 
   #infoContainer {
@@ -42,5 +49,10 @@
   #titleText {
     font-size: 1.5rem !important;
     font-family: "Fira Sans" !important;
+  }
+
+  .dialog-button-box {
+    margin-bottom: -10px !important;
+    margin-top: -5px !important;
   }
 }

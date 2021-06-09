@@ -1,17 +1,22 @@
-* {
-  font-weight: normal !important;
-  outline: none !important;
-  scrollbar-width: none !important;
-  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
-  text-decoration: none !important;
-  --attention-icon-color: #1a237e !important;
-  --sidebar-background-color: #000 !important;
+/*Pitch Dark Fox Colors*/
+:root {
+  --Dark_TextColor: #fff !important;
+  --Dark_DimmedColor: #b4b4b4 !important;
+  --Dark_LinkColor: #64b5f6 !important;
+  --Dark_BackgroundColor: #000 /*#1c1b22*/ !important;
+  --Dark_ActiveColor: #181818 !important;
+  --Dark_BorderColor: #212121 !important;
 }
 
 /*Selection*/
 ::selection {
   background-color: #1a237e !important;
-  color: #fff !important;
+  color: var(--Dark_TextColor) !important;
+}
+
+/*Link Hover*/
+.text-link:hover {
+  text-decoration: none !important;
 }
 
 /*In-UI scroll-bars*/
@@ -23,369 +28,504 @@ scrollbar {
 
 /*+++++ Global Colors +++++*/
 
+* {
+  font-weight: normal !important;
+  outline: none !important;
+  scrollbar-width: none !important;
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  text-decoration: none !important;
+  --attention-icon-color: #1a237e !important;
+  --sidebar-background-color: var(--Dark_BackgroundColor) !important;
+}
+
 :root {
-  --accent-color: #000 !important;
-  --accent-color-inactive: #000 !important;
+  font-weight: normal !important;
+  outline: none !important;
+  scrollbar-width: none !important;
+  scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
+  text-decoration: none !important;
+  --attention-icon-color: #1a237e !important;
+  --accent-color: var(--Dark_BackgroundColor) !important;
+  --accent-color-inactive: var(--Dark_BackgroundColor) !important;
   --additional-images: none !important;
-  --arrowpanel-color: #fff !important;
-  --arrowpanel-dimmed: #181818 !important;
-  --arrowpanel-dimmed-further: #181818 !important;
-  --arrowpanel-dimmed-even-further: #181818 !important;
-  --arrowpanel-background: #000 !important;
-  --arrowpanel-border-color: #212121 !important;
-  --arrowpanel-menuitem-padding: 5px !important;
+
+  /*Arrow Panel*/
+  --arrowpanel-color: var(--Dark_TextColor) !important;
+  --arrowpanel-dimmed: var(--Dark_ActiveColor) !important;
+  --arrowpanel-dimmed-further: var(--Dark_ActiveColor) !important;
+  --arrowpanel-dimmed-even-further: var(--Dark_ActiveColor) !important;
+  --arrowpanel-background: var(--Dark_BackgroundColor) !important;
+  --arrowpanel-border-color: var(--Dark_BorderColor) !important;
+  --arrowpanel-menuitem-padding: 4px !important;
   --arrowpanel-menuitem-padding-block: 5px !important;
   --arrowpanel-menuitem-border-radius: 2px !important;
   --arrowpanel-menuitem-margin: 0 6px !important;
-  --arrowpanel-border-radius: 6px !important;
-  --arrowpanel-padding: 12px !important;
-  --autocomplete-popup-color: #fff !important;
-  --autocomplete-popup-background: #000 !important;
-  --autocomplete-popup-highlight-background: #212121 !important;
-  --autocomplete-popup-highlight-color: #fff !important;
+  --arrowpanel-border-radius: 4px !important;
+  --arrowpanel-padding: 5px !important;
+
+  --default-arrowpanel-color: var(--Dark_TextColor) !important;
+  --default-arrowpanel-background: var(--Dark_BackgroundColor) !important;
+  --default-arrowpanel-border-color: var(--Dark_ActiveColor) !important;
+
+  /*Autocomplete*/
+  --autocomplete-popup-color: var(--Dark_TextColor) !important;
+  --autocomplete-popup-background: var(--Dark_BackgroundColor) !important;
+  --autocomplete-popup-highlight-background: var(--Dark_BorderColor) !important;
+  --autocomplete-popup-highlight-color: var(--Dark_TextColor) !important;
+
   --background-alignment: right top !important;
   --background-tiling: no-repeat !important;
-  --background-tab-separator-color: #181818 !important;
+  --background-tab-separator-color: var(--Dark_ActiveColor) !important;
+
   --bookmark-block-padding: 3px !important;
-  --button-color: #fff !important;
-  --button-bgcolor: #000 !important;
-  --button-active-bgcolor: #000 !important;
-  --button-hover-bgcolor: #181818 !important;
-  --button-hover-color: #181818 !important;
-  --buttons-destructive-bgcolor: #000 !important;
-  --buttons-destructive-hover-bgcolor: #181818 !important;
-  --buttons-destructive-active-bgcolor: #181818 !important;
-  --buttons-destructive-color: #fff !important;
-  --buttons-primary-button-bgcolor: #000 !important;
-  --buttons-primary-button-hover-bgcolor: #181818 !important;
-  --buttons-primary-button-active-bgcolor: #181818 !important;
-  --buttons-primary-button-color: #fff !important;
-  --card-outline-color: #181818 !important;
-  --card-shadow: 0 1px 2px #212121 !important;
+
+  /*Buttons*/
+  --button-color: var(--Dark_TextColor) !important;
+  --button-bgcolor: var(--Dark_BackgroundColor) !important;
+  --button-active-bgcolor: var(--Dark_ActiveColor) !important;
+  --button-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --button-hover-color: var(--Dark_ActiveColor) !important;
+  --buttons-destructive-bgcolor: var(--Dark_BackgroundColor) !important;
+  --buttons-destructive-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --buttons-destructive-active-bgcolor: var(--Dark_ActiveColor) !important;
+  --buttons-destructive-color: var(--Dark_TextColor) !important;
+  --buttons-primary-button-bgcolor: var(--Dark_BackgroundColor) !important;
+  --buttons-primary-button-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --buttons-primary-button-active-bgcolor: var(--Dark_ActiveColor) !important;
+  --buttons-primary-button-color: var(--Dark_TextColor) !important;
+
+  /*Addon Cards*/
+  --card-outline-color: var(--Dark_ActiveColor) !important;
+  --card-shadow: 0 1px 2px var(--Dark_BackgroundColor) !important;
   --card-shadow-hover: var(--card-shadow), 0 0 0 5px var(--card-outline-color) !important;
-  --cfr-active-color: #64b5f6 !important;
-  --cfr-animation-duration: 0.35s !important;
+
+  --cfr-active-color: var(--Dark_LinkColor) !important;
+  /*--cfr-animation-duration: 0.35s !important;
   --cfr-button-addons-icon: url(chrome://activity-stream/content/data/content/assets/glyph-webextension-16.svg) !important;
   --cfr-button-features-icon: url(chrome://activity-stream/content/data/content/assets/glyph-cfr-feature-16.svg) !important;
-  --cfr-button-highlights-icon: url(chrome://activity-stream/content/data/content/assets/glyph-highlights-16.svg) !important;
-  --checkbox-border-color: #212121 !important;
-  --checkbox-checked-bgcolor: #000 !important;
-  --checkbox-checked-color: #fff !important;
-  --checkbox-checked-hover-bgcolor: #181818 !important;
-  --checkbox-checked-active-bgcolor: #000 !important;
-  --checkbox-checked-border-color: #181818 !important;
-  --checkbox-unchecked-bgcolor: #181818 !important;
-  --checkbox-unchecked-hover-bgcolor: #181818 !important;
-  --checkbox-unchecked-active-bgcolor: #000 !important;
-  --chrome-content-separator-color: #181818 !important;
-  --dark-menu-color: #fff !important;
-  --dark-menu-disabled-color: rgb(180, 180, 180) /*#999999*/ !important;
-  --dark-menu-background-color: #000 !important;
-  --dark-menu-border-color: #000 !important;
+  --cfr-button-highlights-icon: url(chrome://activity-stream/content/data/content/assets/glyph-highlights-16.svg) !important;*/
+
+  /*Checkboxes*/
+  --checkbox-border-color: var(--Dark_BorderColor) !important;
+  --checkbox-checked-bgcolor: var(--Dark_BackgroundColor) !important;
+  --checkbox-checked-color: var(--Dark_TextColor) !important;
+  --checkbox-checked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --checkbox-checked-active-bgcolor: var(--Dark_ActiveColor) !important;
+  --checkbox-checked-border-color: var(--Dark_BorderColor) !important;
+  --checkbox-unchecked-bgcolor: var(--Dark_BackgroundColor) !important;
+  --checkbox-unchecked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --checkbox-unchecked-active-bgcolor: var(--Dark_ActiveColor) !important;
+
+  --chrome-content-separator-color: var(--Dark_BackgroundColor) !important;
+
+  /*Menus*/
+  --dark-menu-color: var(--Dark_TextColor) !important;
+  --dark-menu-disabled-color: var(--Dark_DimmedColor) !important;
+  --dark-menu-background-color: var(--Dark_BackgroundColor) !important;
+  --dark-menu-border-color: var(--Dark_BorderColor) !important;
   --dark-menu-icon-opacity: 1 !important;
-  --dark-menuitem-hover-background-color: #000 !important;
-  --default-arrowpanel-color: #fff !important;
-  --default-arrowpanel-background: #000 !important;
-  --default-arrowpanel-border-color: #181818 !important;
-  --dialog-warning-text-color: #fff !important;
-  --drag-drop-transition-duration: 0s !important;
+  --dark-menuitem-hover-background-color: var(--Dark_ActiveColor) !important;
+
+  --menu-background-color: var(--Dark_BackgroundColor) !important;
+  --menu-border-color: var(--Dark_BackgroundColor) !important;
+  --menu-color: var(--Dark_TextColor) !important;
+  --menu-disabled-color: var(--Dark_DimmedColor) !important;
+  --menu-icon-opacity: 1 !important;
+  --menuitem-hover-background-color: var(--Dark_ActiveColor) !important;
+
+  /*Warnings and Errors*/
+  --dialog-warning-text-color: var(--Dark_TextColor) !important;
+  --error-text-color: rgb(252, 117, 102) !important;
+
+  /*--drag-drop-transition-duration: 0s !important;*/
+
+  /*Downloads*/
   --downloads-item-height: 5.5em !important;
   --downloads-item-font-size-factor: 0.9 !important;
   --downloads-item-details-opacity: 0.6 !important;
-  --error-text-color: rgb(252, 117, 102) !important;
+
+  /*Focus Colors*/
   --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color) !important;
-  --focus-outline-color: #181818 !important;
+  --focus-outline-color: var(--Dark_ActiveColor) !important;
   --focus-outline-width: 1px !important;
+
+  /*Identity Box*/
   --identity-box-margin-inline: 4px !important;
   --identity-box-label-opacity: 0.8 !important;
-  --in-content-accent-color-active: #181818 !important;
-  --in-content-box-background: #000 !important;
-  --in-content-box-background-odd: #181818 !important;
-  --in-content-box-border-color: #212121 !important;
-  --in-content-box-info-background: #000 !important;
-  --in-content-border-color: #181818 !important;
-  --in-content-border-hover: #181818 !important;
-  --in-content-border-invalid: #181818 !important;
-  --in-content-button-background: #181818 !important;
-  --in-content-button-background-active: #181818 !important;
-  --in-content-button-background-hover: #181818 !important;
+
+  /*In-Content Colors*/
+  --in-content-accent-color-active: var(--Dark_ActiveColor) !important;
+
+  --in-content-box-background: var(--Dark_BackgroundColor) !important;
+  --in-content-box-background-odd: var(--Dark_ActiveColor) !important;
+  --in-content-box-border-color: var(--Dark_BorderColor) !important;
+  --in-content-box-info-background: var(--Dark_BackgroundColor) !important;
+
+  --in-content-border-color: var(--Dark_ActiveColor) !important;
+  --in-content-border-hover: var(--Dark_ActiveColor) !important;
+  --in-content-border-invalid: var(--Dark_ActiveColor) !important;
+
+  --in-content-button-background: var(--Dark_BackgroundColor) !important;
+  --in-content-button-background-active: var(--Dark_ActiveColor) !important;
+  --in-content-button-background-hover: var(--Dark_ActiveColor) !important;
   --in-content-button-border-radius: 2px !important;
-  --in-content-button-horizontal-padding: 12px !important;
-  --in-content-button-text-color-hover: #fff !important;
-  --in-content-button-vertical-padding: 7px !important;
-  --in-content-danger-button-background: #000 !important;
-  --in-content-danger-button-background-hover: #181818 !important;
-  --in-content-danger-button-background-active: #181818 !important;
-  --in-content-deemphasized-text: rgb(180, 180, 180) /*#999999*/ !important;
-  --in-content-dialog-header-background: #000 !important;
-  --in-content-focus-outline-color: #212121 !important;
-  --in-content-icon-color: rgb(251, 251, 254) !important;
-  --in-content-item-hover: color-mix(
+  --in-content-button-horizontal-padding: 5px !important;
+  --in-content-button-text-color-hover: var(--Dark_TextColor) !important;
+  --in-content-button-vertical-padding: 5px !important;
+
+  --in-content-danger-button-background: var(--Dark_ActiveColor) !important;
+  --in-content-danger-button-background-hover: var(
+    --Dark_ActiveColor
+  ) !important;
+  --in-content-danger-button-background-active: var(
+    --Dark_ActiveColor
+  ) !important;
+
+  --in-content-deemphasized-text: var(--Dark_DimmedColor) !important;
+
+  --in-content-dialog-header-background: var(--Dark_BackgroundColor) !important;
+
+  --in-content-focus-outline-color: var(--Dark_BorderColor) !important;
+
+  --in-content-icon-color: var(--Dark_TextColor) !important;
+
+  /*--in-content-item-hover: color-mix(
     in srgb,
     var(--in-content-primary-button-background) 20%,
     transparent
+  ) !important;*/
+  --in-content-item-selected: var(--Dark_ActiveColor) !important;
+  --in-content-item-selected-text: var(--Dark_TextColor) !important;
+
+  --in-content-link-color: var(--Dark_LinkColor) !important;
+  --in-content-link-color-hover: var(--Dark_LinkColor) !important;
+  --in-content-link-color-active: var(--Dark_LinkColor) !important;
+  --in-content-link-color-visited: var(--Dark_LinkColor) !important;
+
+  --in-content-page-color: var(--Dark_TextColor) !important;
+  --in-content-page-background: var(--Dark_BackgroundColor) !important;
+
+  --in-content-primary-button-text-color: var(--Dark_TextColor) !important;
+  --in-content-primary-button-background: var(
+    --Dark_BackgroundColor
   ) !important;
-  --in-content-item-selected: #181818 !important;
-  --in-content-item-selected-text: #fff !important;
-  --in-content-link-color: #fff !important;
-  --in-content-link-color-hover: #fff !important;
-  --in-content-link-color-active: blue !important;
-  --in-content-link-color-visited: blue !important;
-  --in-content-page-color: #fff !important;
-  --in-content-page-background: #000 !important;
-  --in-content-primary-button-text-color: #fff !important;
-  --in-content-primary-button-background: #000 !important;
-  --in-content-primary-button-background-active: #181818 !important;
-  --in-content-primary-button-background-hover: #181818 !important;
+  --in-content-primary-button-background-active: var(
+    --Dark_ActiveColor
+  ) !important;
+  --in-content-primary-button-background-hover: var(
+    --Dark_ActiveColor
+  ) !important;
+
   --in-content-sidebar-width: 240px !important;
-  --in-content-table-background: #000 !important;
-  --in-content-table-border-dark-color: #212121 !important;
-  --in-content-table-header-background: #181818 !important;
-  --in-content-text-color: #fff !important;
-  --inline-tab-padding: 8px !important;
-  --input-color: #fff !important;
-  --input-bgcolor: #000 !important;
-  --input-border-color: #212121 !important;
-  --input-error-border-color: #212121 !important;
-  --lwt-accent-color: #000 !important;
-  --lwt-accent-color-inactive: #000 !important;
+
+  --in-content-table-background: var(--Dark_BackgroundColor) !important;
+  --in-content-table-border-dark-color: var(--Dark_BorderColor) !important;
+  --in-content-table-header-background: var(--Dark_ActiveColor) !important;
+
+  --in-content-text-color: var(--Dark_TextColor) !important;
+
+  --inline-tab-padding: 5px !important;
+
+  --input-color: var(--Dark_TextColor) !important;
+  --input-bgcolor: var(--Dark_BackgroundColor) !important;
+  --input-border-color: var(--Dark_BorderColor) !important;
+  --input-error-border-color: var(--Dark_BorderColor) !important;
+
+  --lwt-accent-color: var(--accent-color) !important;
+  --lwt-accent-color-inactive: var(--accent-color-inactive) !important;
   --lwt-additional-images: none !important;
   --lwt-background-alignment: right top !important;
   --lwt-background-tiling: no-repeat !important;
-  --lwt-background-tab-separator-color: #181818 !important;
-  --lwt-popup-brighttext-url-color: #64b5f6 !important;
-  --lwt-selected-tab-background-color: #000 !important;
-  --lwt-sidebar-background-color: #000 !important;
+  --lwt-background-tab-separator-color: var(--Dark_ActiveColor) !important;
+  --lwt-popup-brighttext-url-color: var(--Dark_LinkColor) !important;
+  --lwt-selected-tab-background-color: var(--Dark_ActiveColor) !important;
+  --lwt-sidebar-background-color: var(--Dark_BackgroundColor) !important;
   --lwt-sidebar-text-color: rgba(249, 249, 250, 1) !important;
-  --lwt-tab-text: #fff !important;
-  --lwt-text-color: #fff !important;
-  --lwt-toolbarbutton-icon-fill: rgb(230, 230, 230) !important;
-  --lwt-toolbarbutton-icon-fill-attention: rgb(148, 0, 255) !important;
-  --lwt-toolbar-field-color: #fff !important;
-  --lwt-toolbar-field-background-color: #000 !important;
-  --lwt-toolbar-field-border-color: #181818 !important;
-  --lwt-toolbar-field-focus: #181818 !important;
-  --lwt-toolbar-field-focus-color: #fff !important;
-  --lwt-toolbar-field-highlight: #181818 !important;
-  --lwt-toolbar-field-highlight-text: #fff !important;
-  --menu-background-color: #000 !important;
-  --menu-border-color: #000 !important;
-  --menu-color: #fff !important;
-  --menu-disabled-color: rgb(180, 180, 180) /*#999999*/ !important;
-  --menu-icon-opacity: 1 !important;
-  --menuitem-hover-background-color: #000 !important;
-  --message-bar-background-color: #001924 !important;
-  --message-bar-text-color: #fff !important;
-  --newtab-background-color: #000 !important;
-  --newtab-text-primary-color: rgba(251, 251, 254, 1);
-  --organizer-background-color-content: #181818 !important;
-  --organizer-border-color-selected: #242424 !important;
-  --organizer-searchbox-border-active: #212121 !important;
-  --organizer-searchbox-border-active-shadow: #212121 !important;
-  --panel-banner-item-color: #fff !important;
-  --panel-banner-item-background-color: #181818 !important;
-  --panel-banner-item-active-bgcolor: #000 !important;
-  --panel-banner-item-hover-bgcolor: #181818 !important;
-  --panel-banner-item-info-icon-bgcolor: #64b5f6 !important;
-  --panel-banner-item-update-supported-bgcolor: #64b5f6 !important;
-  --panel-banner-item-warning-icon-bgcolor: #64b5f6 !important;
+  --lwt-tab-text: var(--Dark_TextColor) !important;
+  --lwt-text-color: var(--Dark_TextColor) !important;
+  --lwt-toolbarbutton-icon-fill: var(--Dark_TextColor) !important;
+  --lwt-toolbarbutton-icon-fill-attention: var(
+    --attention-icon-color
+  ) !important;
+  --lwt-toolbar-field-color: var(--Dark_TextColor) !important;
+  --lwt-toolbar-field-background-color: var(--Dark_BackgroundColor) !important;
+  --lwt-toolbar-field-border-color: var(--Dark_BorderColor) !important;
+  --lwt-toolbar-field-focus: var(--Dark_ActiveColor) !important;
+  --lwt-toolbar-field-focus-color: var(--Dark_TextColor) !important;
+  --lwt-toolbar-field-highlight: var(--Dark_ActiveColor) !important;
+  --lwt-toolbar-field-highlight-text: var(--Dark_TextColor) !important;
+
+  --message-bar-background-color: var(--Dark_BackgroundColor) !important;
+  --message-bar-text-color: var(--Dark_TextColor) !important;
+
+  --newtab-background-color: var(--Dark_BackgroundColor) !important;
+  --newtab-text-primary-color: var(--Dark_TextColor) !important;
+
+  --organizer-background-color-content: var(--Dark_ActiveColor) !important;
+  --organizer-border-color-selected: var(--Dark_BorderColor) !important;
+  --organizer-searchbox-border-active: var(--Dark_BorderColor) !important;
+  --organizer-searchbox-border-active-shadow: var(
+    --Dark_BorderColor
+  ) !important;
+
+  --panel-banner-item-color: var(--Dark_TextColor) !important;
+  --panel-banner-item-background-color: var(--Dark_BackgroundColor) !important;
+  --panel-banner-item-active-bgcolor: var(--Dark_ActiveColor) !important;
+  --panel-banner-item-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --panel-banner-item-info-icon-bgcolor: var(--Dark_BackgroundColor) !important;
+  --panel-banner-item-update-supported-bgcolor: var(
+    --Dark_BackgroundColor
+  ) !important;
+  --panel-banner-item-warning-icon-bgcolor: var(
+    --Dark_BackgroundColor
+  ) !important;
   --panel-description-color: rgba(255, 255, 255, 0.65) !important;
-  --panel-disabled-color: rgb(180, 180, 180) /*#999999*/ !important;
-  --panel-separator-color: #181818 !important;
+  --panel-disabled-color: var(--Dark_DimmedColor) !important;
+  --panel-separator-color: var(--Dark_ActiveColor) !important;
   --panel-separator-margin: 3px 6px !important;
   --panel-separator-zap-gradient: linear-gradient(
     90deg,
-    #9059ff 0%,
-    #ff4aa2 52.08%,
-    #ffbd4f 100%
+    #004e92,
+    #aa076b,
+    #dc2430
   ) !important;
-  --panel-shortcut-color: #fff !important;
-  --panel-subview-body-padding: 0px !important;
-  --panelui-subview-transition-duration: 150ms !important;
-  --panelview-toolbarbutton-active-color: #fff !important;
-  --panelview-toolbarbutton-hover-color: #fff !important;
-  --panelview-toolbarbutton-active-bgcolor: #181818 !important;
-  --panelview-toolbarbutton-hover-bgcolor: #181818 !important;
+  --panel-shortcut-color: var(--Dark_TextColor) !important;
+  --panel-subview-body-padding: 4px !important;
+  /*--panelui-subview-transition-duration: 300ms !important;*/
+  --panelview-toolbarbutton-active-color: var(--Dark_TextColor) !important;
+  --panelview-toolbarbutton-hover-color: var(--Dark_TextColor) !important;
+  --panelview-toolbarbutton-active-bgcolor: var(--Dark_ActiveColor) !important;
+  --panelview-toolbarbutton-hover-bgcolor: var(--Dark_ActiveColor) !important;
   --panelview-toolbarbutton-focus-box-shadow: none !important;
-  --pinned-tab-width: 36px !important;
-  --popup-brighttext-url-color: #64b5f6 !important;
-  --popup-notification-body-width: calc(
+
+  --pinned-tab-width: 30px !important;
+
+  --popup-brighttext-url-color: var(--Dark_LinkColor) !important;
+  /*--popup-notification-body-width: calc(
     31em - calc(2 * var(--arrowpanel-padding))
+  ) !important;*/
+
+  --selected-tab-background-color: var(--Dark_ActiveColor) !important;
+
+  --short-notification-background: var(--Dark_BackgroundColor) !important;
+  --short-notification-gradient: linear-gradient(
+    90deg,
+    #004e92,
+    #aa076b,
+    #dc2430
   ) !important;
-  --proton-tab-block-margin: 2px !important;
-  --selected-tab-background-color: #000 !important;
-  --short-notification-background: #000 !important;
-  --short-notification-gradient: #000 !important;
-  --sidebar-border-color: #000 !important;
-  --sidebar-background-color: #000 !important;
-  --sidebar-text-color: rgba(249, 249, 250, 1) !important;
+
+  --sidebar-border-color: var(--Dark_BorderColor) !important;
+  --sidebar-background-color: var(--Dark_BackgroundColor) !important;
+  --sidebar-text-color: var(--Dark_TextColor) !important;
+
   --space-above-tabbar: 0px !important;
-  --tab-border-radius: 4px !important;
-  --tab-line-color: rgb(148, 0, 255) !important;
-  --tab-min-height: 32px !important;
-  --tab-shadow-max-size: 6px !important;
-  --tab-text: #fff !important;
-  --tabs-border-color: threedshadow !important;
-  --tabs-navbar-shadow-size: 1px !important;
-  --tabpanel-background-color: #000 !important;
-  --text-color: #fff !important;
-  --toolbar-bgcolor: #000 !important;
+  --tab-border-radius: 0px !important;
+  --tab-line-color: var(--Dark_BackgroundColor) !important;
+
+  --tab-min-height: 28px !important;
+  --uc-toolbar-height: 28px;
+
+  --tab-shadow-max-size: 0px !important;
+  --tab-text: var(--Dark_TextColor) !important;
+  --tabs-border-color: var(--Dark_BackgroundColor) !important;
+  --tabs-navbar-shadow-size: 0px !important;
+  --tabpanel-background-color: var(--Dark_BackgroundColor) !important;
+
+  --text-color: var(--Dark_TextColor) !important;
+
+  --toolbar-bgcolor: var(--Dark_BackgroundColor) !important;
   --toolbar-bgimage: none !important;
-  --toolbarbutton-icon-fill: rgb(230, 230, 230) !important;
-  --toolbarbutton-icon-fill-attention: rgb(148, 0, 255) !important;
-  --toolbar-field-color: #fff !important;
-  --toolbar-field-background-color: #000 !important;
-  --toolbar-field-border-color: #181818 !important;
-  --toolbar-field-focus: #181818 !important;
-  --toolbar-field-focus-color: #fff !important;
-  --toolbar-field-highlight: #181818 !important;
-  --toolbar-field-highlight-text: #fff !important;
-  --toolbar-color: #fff !important;
-  --toolbar-field-focus-border-color: #212121 !important;
-  --toolbar-non-lwt-bgcolor: #000 !important;
+  --toolbarbutton-icon-fill: var(--Dark_TextColor) !important;
+  --toolbarbutton-icon-fill-attention: var(--accent-color) !important;
+
+  --toolbar-field-color: var(--Dark_TextColor) !important;
+  --toolbar-field-background-color: var(--Dark_BackgroundColor) !important;
+  --toolbar-field-border-color: var(--Dark_BorderColor) !important;
+  --toolbar-field-focus: var(--Dark_ActiveColor) !important;
+  --toolbar-field-focus-color: var(--Dark_TextColor) !important;
+  --toolbar-field-focus-border-color: var(--Dark_BorderColor) !important;
+  --toolbar-field-highlight: var(--Dark_ActiveColor) !important;
+  --toolbar-field-highlight-text: var(--Dark_TextColor) !important;
+
+  --toolbar-color: var(--Dark_TextColor) !important;
+
+  --toolbar-non-lwt-bgcolor: var(--Dark_BackgroundColor) !important;
   --toolbar-non-lwt-bgimage: none !important;
-  --toolbar-non-lwt-textcolor: #fff !important;
+  --toolbar-non-lwt-textcolor: var(--Dark_TextColor) !important;
+
   --toolbar-start-end-padding: 0px !important;
-  --toolbarbutton-active-background: #181818 !important;
-  --toolbarbutton-hover-background: #181818 !important;
+
+  --toolbarbutton-active-background: var(--Dark_ActiveColor) !important;
+  --toolbarbutton-hover-background: var(--Dark_ActiveColor) !important;
   --toolbarbutton-border-radius: 4px !important;
   --toolbarbutton-focus-outline: var(--focus-outline) !important;
-  --toolbarbutton-height: 0 !important;
-  --toolbarbutton-hover-transition-duration: 150ms !important;
+  /*--toolbarbutton-height: 0 !important;
+  --toolbarbutton-hover-transition-duration: 150ms !important;*/
   --toolbarbutton-icon-fill-opacity: 1 !important;
-  --toolbarbutton-inner-padding: calc(
-    (var(--tab-min-height) - 28px) / 2
-  ) !important;
-  --toolbarbutton-outer-padding: 1px !important;
+  --toolbarbutton-inner-padding: 3px !important;
+  /*calc(
+    (var(--tab-min-height) - 25px) / 2
+  ) !important;*/
+  --toolbarbutton-outer-padding: 0px !important;
   --toolbarbutton-vertical-text-padding: calc(
     var(--toolbarbutton-inner-padding) - 1px
   ) !important;
-  --toolbarseparator-color: #181818 !important;
-  --urlbar-box-bgcolor: #000 !important;
-  --urlbar-box-hover-bgcolor: #000 !important;
-  --urlbar-box-active-bgcolor: #000 !important;
-  --urlbar-container-padding: 1px !important;
-  --urlbar-icon-padding: calc((var(--tab-min-height) - 28px) / 2) !important;
+
+  --toolbarseparator-color: var(--Dark_ActiveColor) !important;
+
+  --urlbar-box-bgcolor: var(--Dark_BackgroundColor) !important;
+  --urlbar-box-hover-bgcolor: var(--Dark_BackgroundColor) !important;
+  --urlbar-box-active-bgcolor: var(--Dark_BackgroundColor) !important;
+
+  --urlbar-container-padding: 0px !important;
+
+  --urlbar-icon-padding: 3px /*calc((var(--tab-min-height) - 28px) / 2)*/ !important;
+
   --urlbar-icon-fill-opacity: 1 !important;
   --urlbar-min-height: 20px !important;
-  --urlbar-popup-action-color: #64b5f6 !important;
-  --urlbar-popup-url-color: var(--lwt-popup-brighttext-url-color) !important;
-  --urlbar-result-hover-bgcolor: var(--arrowpanel-dimmed) !important;
-  --urlbar-separator-color: #181818 !important;
-  --urlbarView-action-slide-in-distance: 200px !important;
-  --urlbarView-button-background: #000 !important;
-  --urlbarView-button-background-hover: #000 !important;
-  --urlbarView-button-background-active: #000 !important;
-  --urlbarView-primary-button-text: #fff !important;
-  --urlbarView-primary-button-background: #000 !important;
-  --urlbarView-primary-button-background-active: #181818 !important;
-  --urlbarView-primary-button-background-hover: #181818 !important;
-  --urlbarView-item-inline-padding: calc(
-    (var(--tab-min-height) - 28px) / 2
+  --urlbar-popup-action-color: var(--Dark_LinkColor) !important;
+  --urlbar-popup-url-color: var(--Dark_LinkColor) !important;
+
+  --urlbar-result-hover-bgcolor: var(--Dark_ActiveColor) !important;
+  --urlbar-separator-color: var(--Dark_ActiveColor) !important;
+  /*--urlbarView-action-slide-in-distance: 200px !important;*/
+  --urlbarView-button-background: var(--Dark_BackgroundColor) !important;
+  --urlbarView-button-background-hover: var(--Dark_ActiveColor) !important;
+  --urlbarView-button-background-active: var(--Dark_ActiveColor) !important;
+
+  --urlbarView-primary-button-text: var(--Dark_TextColor) !important;
+  --urlbarView-primary-button-background: var(
+    --Dark_BackgroundColor
   ) !important;
-  --zoom-controls-bgcolor: #000 !important;
+  --urlbarView-primary-button-background-active: var(
+    --Dark_ActiveColor
+  ) !important;
+  --urlbarView-primary-button-background-hover: var(
+    --Dark_ActiveColor
+  ) !important;
+
+  --urlbarView-item-inline-padding: 5px
+    /*calc(
+    (var(--tab-min-height) - 28px) / 2
+  )*/ !important;
+
+  --zoom-controls-bgcolor: var(--Dark_BackgroundColor) !important;
 }
 
-/*NEW TAB PAGE*/
+#TabsToolbar {
+  --toolbarbutton-inner-padding: 3px !important;
+}
 
+/*New Tab Page*/
 body[lwt-newtab-brighttext],
 body {
-  --newtab-background-color: #000 !important;
-  --newtab-border-primary-color: #212121 !important;
-  --newtab-border-secondary-color: #212121 !important;
-  --newtab-button-primary-color: #000 !important;
-  --newtab-button-secondary-color: #000 !important;
-  --newtab-element-active-color: #000 !important;
-  --newtab-element-hover-color: #181818 !important;
-  --newtab-icon-primary-color: rgba(249, 249, 250, 0.8) !important;
+  --newtab-background-color: var(--Dark_BackgroundColor) !important;
+  --newtab-border-primary-color: var(--Dark_BorderColor) !important;
+  --newtab-border-secondary-color: var(--Dark_BorderColor) !important;
+  --newtab-button-primary-color: var(--Dark_BackgroundColor) !important;
+  --newtab-button-secondary-color: var(--Dark_BackgroundColor) !important;
+  --newtab-element-active-color: var(--Dark_ActiveColor) !important;
+  --newtab-element-hover-color: var(--Dark_ActiveColor) !important;
+  --newtab-icon-primary-color: var(--Dark_TextColor) !important;
   --newtab-icon-secondary-color: rgba(249, 249, 250, 0.4) !important;
   --newtab-icon-tertiary-color: rgba(249, 249, 250, 0.4) !important;
-  --newtab-inner-box-shadow-color: #181818 !important;
-  --newtab-inner-box-shadow-color-nte: #181818 !important;
-  --newtab-tile-shadow-secondary: #181818 !important;
-  --newtab-link-primary-color: #64b5f6 !important;
-  --newtab-link-secondary-color: #64b5f6 !important;
-  --newtab-text-conditional-color: #f9f9fa !important;
-  --newtab-text-primary-color: #fbfbfe !important;
+  --newtab-inner-box-shadow-color: var(--Dark_ActiveColor) !important;
+  --newtab-inner-box-shadow-color-nte: var(--Dark_ActiveColor) !important;
+  --newtab-tile-shadow-secondary: var(--Dark_ActiveColor) !important;
+  --newtab-link-primary-color: var(--Dark_LinkColor) !important;
+  --newtab-link-secondary-color: var(--Dark_LinkColor) !important;
+  --newtab-text-conditional-color: var(--Dark_TextColor) !important;
+  --newtab-text-primary-color: var(--Dark_TextColor) !important;
   --newtab-text-secondary-color: rgba(249, 249, 250, 0.8) !important;
-  --newtab-textbox-background-color: #000 !important;
-  --newtab-textbox-border: #212121 !important;
-  --newtab-textbox-focus-color: #fff !important;
-  --newtab-textbox-focus-boxshadow: 0 0 0 1px #181818 !important;
-  --newtab-background-button-color: #000 !important;
-  --newtab-background-button-text-color: #cdcdd4 !important;
-  --newtab-background-button-hover-color: #181818 !important;
-  --newtab-background-button-active-color: #181818 !important;
-  --newtab-feed-button-background: #000 !important;
-  --newtab-feed-button-text: #f9f9fa !important;
-  --newtab-feed-button-background-faded: #000 !important;
-  --newtab-feed-button-text-faded: rgb(180, 180, 180) /*#999999*/ !important;
-  --newtab-feed-button-spinner: #d7d7db !important;
-  --newtab-contextmenu-background-color: #000 !important;
-  --newtab-contextmenu-button-color: #000 !important;
-  --newtab-modal-color: #000 !important;
-  --newtab-overlay-color: #000 !important;
-  --newtab-section-header-text-color: rgba(249, 249, 250, 0.8) !important;
-  --newtab-section-navigation-text-color: rgba(249, 249, 250, 0.8) !important;
-  --newtab-section-active-contextmenu-color: #fff !important;
-  --newtab-search-border-color: #212121 !important;
-  --newtab-search-dropdown-color: #000 !important;
-  --newtab-search-dropdown-header-color: #000 !important;
-  --newtab-search-header-background-color: #000 !important;
-  --newtab-search-icon-color: rgba(249, 249, 250, 0.6) !important;
-  --newtab-search-wordmark-color: #fff !important;
-  --newtab-topsites-background-color: #000 !important;
+  --newtab-textbox-background-color: var(--Dark_BackgroundColor) !important;
+  --newtab-textbox-border: var(--Dark_BorderColor) !important;
+  --newtab-textbox-focus-color: var(--Dark_TextColor) !important;
+  --newtab-textbox-focus-boxshadow: 0 0 0 1px var(--Dark_ActiveColor) !important;
+  --newtab-background-button-color: var(--Dark_BackgroundColor) !important;
+  --newtab-background-button-text-color: var(--Dark_TextColor) !important;
+  --newtab-background-button-hover-color: var(--Dark_ActiveColor) !important;
+  --newtab-background-button-active-color: var(--Dark_ActiveColor) !important;
+  --newtab-feed-button-background: var(--Dark_BackgroundColor) !important;
+  --newtab-feed-button-text: var(--Dark_TextColor) !important;
+  --newtab-feed-button-background-faded: var(--Dark_BackgroundColor) !important;
+  --newtab-feed-button-text-faded: var(--Dark_DimmedColor) !important;
+  --newtab-feed-button-spinner: var(--Dark_TextColor) !important;
+  --newtab-contextmenu-background-color: var(--Dark_BackgroundColor) !important;
+  --newtab-contextmenu-button-color: var(--Dark_BackgroundColor) !important;
+  --newtab-modal-color: var(--Dark_BackgroundColor) !important;
+  --newtab-overlay-color: var(--Dark_BackgroundColor) !important;
+  --newtab-section-header-text-color: var(--Dark_TextColor) !important;
+  --newtab-section-navigation-text-color: var(--Dark_TextColor) !important;
+  --newtab-section-active-contextmenu-color: var(--Dark_TextColor) !important;
+  --newtab-search-border-color: var(--Dark_BorderColor) !important;
+  --newtab-search-dropdown-color: var(--Dark_BackgroundColor) !important;
+  --newtab-search-dropdown-header-color: var(--Dark_BackgroundColor) !important;
+  --newtab-search-header-background-color: var(
+    --Dark_BackgroundColor
+  ) !important;
+  --newtab-search-icon-color: var(--Dark_TextColor) !important;
+  --newtab-search-wordmark-color: var(--Dark_TextColor) !important;
+  --newtab-topsites-background-color: var(--Dark_BackgroundColor) !important;
   --newtab-topsites-icon-shadow: none !important;
-  --newtab-topsites-label-color: rgba(249, 249, 250, 0.8) !important;
-  --newtab-topsites-outer-card-hover: #181818 !important;
-  --newtab-topsites-context-menu-hover: #181818 !important;
-  --newtab-card-active-outline-color: #181818 !important;
-  --newtab-card-background-color: #000 !important;
-  --newtab-card-hairline-color: #000 !important;
-  --newtab-card-placeholder-color: #000 !important;
-  --newtab-card-shadow: 0 1px 8px 0 #181818 !important;
-  --newtab-snippets-background-color: #000 !important;
-  --newtab-snippets-hairline-color: #181818 !important;
-  --newtab-background-primary-text-color: #cdcdd4 !important;
-  --newtab-focus-outline: #181818 !important;
-  --newtab-focus-border: #212121 !important;
-  --newtab-focus-border-selected: #212121 !important;
-  --newtab-primary-action-background: #000 !important;
-  --newtab-primary-action-background-off: #000 !important;
-  --newtab-seperator-line-color: #212121 !important;
-  --customize-menu-primary-text-color: #e0e0e6 !important;
-  --customize-menu-check-fill: #e0e0e6 !important;
-  --customize-menu-background: #000 !important;
-  --customize-menu-secondary-action-background: #000 !important;
-  --customize-menu-secondary-action-background-hover: #000 !important;
-  --customize-menu-secondary-action-background-active: #181818 !important;
-  --customize-menu-seperator-line-color: #212121 !important;
-  --customize-menu-first-shadow: #181818 !important;
-  --customize-menu-second-shadow: #181818 !important;
-  --customize-menu-primary-action-text: #e0e0e6 !important;
-  --customize-menu-line-color: #212121 !important;
-  --newtab-search-first-shadow: #181818 !important;
-  --newtab-search-second-shadow: #181818 !important;
-  --newtab-search-text-color: #b1b1bd !important;
-  --newtab-card-first-shadow: #181818 !important;
-  --newtab-card-second-shadow: #181818 !important;
-  --newtab-wordmark-color: #fff !important;
+  --newtab-topsites-label-color: var(--Dark_TextColor) !important;
+  --newtab-topsites-outer-card-hover: var(--Dark_ActiveColor) !important;
+  --newtab-topsites-context-menu-hover: var(--Dark_ActiveColor) !important;
+  --newtab-card-active-outline-color: var(--Dark_ActiveColor) !important;
+  --newtab-card-background-color: var(--Dark_BackgroundColor) !important;
+  --newtab-card-hairline-color: var(--Dark_BackgroundColor) !important;
+  --newtab-card-placeholder-color: var(--Dark_BackgroundColor) !important;
+  --newtab-card-shadow: 0 1px 8px 0 var(--Dark_BackgroundColor) !important;
+  --newtab-snippets-background-color: var(--Dark_BackgroundColor) !important;
+  --newtab-snippets-hairline-color: var(--Dark_ActiveColor) !important;
+  --newtab-background-primary-text-color: var(--Dark_TextColor) !important;
+  --newtab-focus-outline: var(--Dark_ActiveColor) !important;
+  --newtab-focus-border: var(--Dark_BorderColor) !important;
+  --newtab-focus-border-selected: var(--Dark_BorderColor) !important;
+  --newtab-primary-action-background: var(--Dark_BackgroundColor) !important;
+  --newtab-primary-action-background-off: var(
+    --Dark_BackgroundColor
+  ) !important;
+  --newtab-seperator-line-color: var(--Dark_BorderColor) !important;
+  --customize-menu-primary-text-color: var(--Dark_TextColor) !important;
+  --customize-menu-check-fill: var(--Dark_TextColor) !important;
+  --customize-menu-background: var(--Dark_BackgroundColor) !important;
+  --customize-menu-secondary-action-background: var(
+    --Dark_BackgroundColor
+  ) !important;
+  --customize-menu-secondary-action-background-hover: var(
+    --Dark_ActiveColor
+  ) !important;
+  --customize-menu-secondary-action-background-active: var(
+    --Dark_ActiveColor
+  ) !important;
+  --customize-menu-seperator-line-color: var(--Dark_BorderColor) !important;
+  --customize-menu-first-shadow: var(--Dark_BackgroundColor) !important;
+  --customize-menu-second-shadow: var(--Dark_BackgroundColor) !important;
+  --customize-menu-primary-action-text: var(--Dark_TextColor) !important;
+  --customize-menu-line-color: var(--Dark_BorderColor) !important;
+  --newtab-search-first-shadow: var(--Dark_BackgroundColor) !important;
+  --newtab-search-second-shadow: var(--Dark_BackgroundColor) !important;
+  --newtab-search-text-color: var(--Dark_DimmedColor) !important;
+  --newtab-card-first-shadow: var(--Dark_BackgroundColor) !important;
+  --newtab-card-second-shadow: var(--Dark_BackgroundColor) !important;
+  --newtab-wordmark-color: var(--Dark_TextColor) !important;
 }
-
 
 /*About:, Chrome:, and Extension Pages*/
 /*https://github.com/aminomancer/uc.css.js/blob/master/userContent.css#L1402*/
-@-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
+/*regexp("^(about:|chrome:|moz-extension:).*")*/
+@-moz-document regexp("^(about:|chrome:).*") {
   :root {
-    --checkbox-border-color: #212121 !important;
-    --checkbox-checked-bgcolor: #000 !important;
-    --checkbox-checked-color: #fff !important;
-    --checkbox-checked-hover-bgcolor: #181818 !important;
-    --checkbox-checked-active-bgcolor: #000 !important;
-    --checkbox-checked-border-color: #181818 !important;
-    --checkbox-unchecked-bgcolor: #181818 !important;
-    --checkbox-unchecked-hover-bgcolor: #181818 !important;
-    --checkbox-unchecked-active-bgcolor: #000 !important;
+    --checkbox-border-color: var(--Dark_BorderColor) !important;
+    --checkbox-checked-bgcolor: var(--Dark_BackgroundColor) !important;
+    --checkbox-checked-color: var(--Dark_TextColor) !important;
+    --checkbox-checked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-checked-active-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-checked-border-color: var(--Dark_BorderColor) !important;
+    --checkbox-unchecked-bgcolor: var(--Dark_BackgroundColor) !important;
+    --checkbox-unchecked-hover-bgcolor: var(--Dark_ActiveColor) !important;
+    --checkbox-unchecked-active-bgcolor: var(--Dark_ActiveColor) !important;
   }
 
   html:not([role="dialog"]),
@@ -393,50 +533,77 @@ body {
   html:not([role="dialog"]) body.activity-stream,
   window:not([chromehidden]),
   window:not([chromehidden]) > dialog {
-    --in-content-accent-color-active: #181818 !important;
-    --in-content-box-background: #000 !important;
-    --in-content-box-background-odd: #181818 !important;
-    --in-content-box-border-color: #212121 !important;
-    --in-content-box-info-background: #000 !important;
-    --in-content-border-color: #181818 !important;
-    --in-content-border-hover: #181818 !important;
-    --in-content-border-invalid: #181818 !important;
-    --in-content-button-background: #181818 !important;
-    --in-content-button-background-active: #181818 !important;
-    --in-content-button-background-hover: #181818 !important;
+    --in-content-accent-color-active: var(--Dark_ActiveColor) !important;
+
+    --in-content-box-background: var(--Dark_BackgroundColor) !important;
+    --in-content-box-background-odd: var(--Dark_ActiveColor) !important;
+    --in-content-box-border-color: var(--Dark_BorderColor) !important;
+    --in-content-box-info-background: var(--Dark_BackgroundColor) !important;
+
+    --in-content-border-color: var(--Dark_ActiveColor) !important;
+    --in-content-border-hover: var(--Dark_ActiveColor) !important;
+    --in-content-border-invalid: var(--Dark_ActiveColor) !important;
+
+    --in-content-button-background: var(--Dark_BackgroundColor) !important;
+    --in-content-button-background-active: var(--Dark_ActiveColor) !important;
+    --in-content-button-background-hover: var(--Dark_ActiveColor) !important;
     --in-content-button-border-radius: 2px !important;
-    --in-content-button-horizontal-padding: 12px !important;
-    --in-content-button-text-color-hover: #fff !important;
-    --in-content-button-vertical-padding: 7px !important;
-    --in-content-danger-button-background: #000 !important;
-    --in-content-danger-button-background-hover: #181818 !important;
-    --in-content-danger-button-background-active: #181818 !important;
-    --in-content-deemphasized-text: rgb(180, 180, 180) /*#999999*/ !important;
-    --in-content-dialog-header-background: #000 !important;
-    --in-content-focus-outline-color: #212121 !important;
-    --in-content-icon-color: rgb(251, 251, 254) !important;
-    --in-content-item-hover: color-mix(
+    --in-content-button-horizontal-padding: 5px !important;
+    --in-content-button-text-color-hover: var(--Dark_TextColor) !important;
+    --in-content-button-vertical-padding: 5px !important;
+
+    --in-content-danger-button-background: var(--Dark_ActiveColor) !important;
+    --in-content-danger-button-background-hover: var(
+      --Dark_ActiveColor
+    ) !important;
+    --in-content-danger-button-background-active: var(
+      --Dark_ActiveColor
+    ) !important;
+
+    --in-content-deemphasized-text: var(--Dark_DimmedColor) !important;
+
+    --in-content-dialog-header-background: var(
+      --Dark_BackgroundColor
+    ) !important;
+
+    --in-content-focus-outline-color: var(--Dark_BorderColor) !important;
+
+    --in-content-icon-color: var(--Dark_TextColor) !important;
+
+    /*--in-content-item-hover: color-mix(
       in srgb,
       var(--in-content-primary-button-background) 20%,
       transparent
+    ) !important;*/
+    --in-content-item-selected: var(--Dark_ActiveColor) !important;
+    --in-content-item-selected-text: var(--Dark_TextColor) !important;
+
+    --in-content-link-color: var(--Dark_LinkColor) !important;
+    --in-content-link-color-hover: var(--Dark_LinkColor) !important;
+    --in-content-link-color-active: var(--Dark_LinkColor) !important;
+    --in-content-link-color-visited: var(--Dark_LinkColor) !important;
+
+    --in-content-page-color: var(--Dark_TextColor) !important;
+    --in-content-page-background: var(--Dark_BackgroundColor) !important;
+
+    --in-content-primary-button-text-color: var(--Dark_TextColor) !important;
+    --in-content-primary-button-background: var(
+      --Dark_BackgroundColor
     ) !important;
-    --in-content-item-selected: #181818 !important;
-    --in-content-item-selected-text: #fff !important;
-    --in-content-link-color: #fff !important;
-    --in-content-link-color-hover: #fff !important;
-    --in-content-link-color-active: blue !important;
-    --in-content-link-color-visited: blue !important;
-    --in-content-page-color: #fff !important;
-    --in-content-page-background: #000 !important;
-    --in-content-primary-button-text-color: #fff !important;
-    --in-content-primary-button-background: #000 !important;
-    --in-content-primary-button-background-active: #181818 !important;
-    --in-content-primary-button-background-hover: #181818 !important;
+    --in-content-primary-button-background-active: var(
+      --Dark_ActiveColor
+    ) !important;
+    --in-content-primary-button-background-hover: var(
+      --Dark_ActiveColor
+    ) !important;
+
     --in-content-sidebar-width: 240px !important;
-    --in-content-table-background: #000 !important;
-    --in-content-table-border-dark-color: #212121 !important;
-    --in-content-table-header-background: #181818 !important;
-    --in-content-text-color: #fff !important;
+
+    --in-content-table-background: var(--Dark_BackgroundColor) !important;
+    --in-content-table-border-dark-color: var(--Dark_BorderColor) !important;
+    --in-content-table-header-background: var(--Dark_ActiveColor) !important;
+
+    --in-content-text-color: var(--Dark_TextColor) !important;
   }
 
   /*Remove Separator, Change font in about:preferences iframes*/
@@ -450,36 +617,37 @@ body {
   }
 }
 
+/*PDF VIEWER*/
+:root {
+  --dropdown-btn-bg-color: var(--Dark_BackgroundColor) !important;
+  --doorhanger-bg-color: var(--Dark_BackgroundColor) !important;
+  --doorhanger-border-color: var(--Dark_BorderColor) !important;
+  --doorhanger-hover-color: var(--Dark_TextColor) !important;
+  --doorhanger-hover-bg-color: var(--Dark_ActiveColor) !important;
+  --doorhanger-separator-color: var(--Dark_ActiveColor) !important;
+  --overlay-button-bg-color: var(--Dark_BackgroundColor) !important;
+  --overlay-button-hover-bg-color: var(--Dark_ActiveColor) !important;
+}
+
 /*MENU POPUPS*/
-.menupopup-arrowscrollbox {
-  --menu-background-color: #000 !important;
-  --menu-border-color: #212121 !important;
-  --menu-color: #fff !important;
-  --menu-disabled-color: rgb(180, 180, 180) /*#999999*/ !important;
+menupopup {
+  --dark-menu-color: var(--Dark_TextColor) !important;
+  --dark-menu-disabled-color: var(--Dark_DimmedColor) !important;
+  --dark-menu-background-color: var(--Dark_BackgroundColor) !important;
+  --dark-menu-border-color: var(--Dark_BorderColor) !important;
+  --dark-menu-icon-opacity: 1 !important;
+  --dark-menuitem-hover-background-color: var(--Dark_ActiveColor) !important;
+
+  --menu-background-color: var(--Dark_BackgroundColor) !important;
+  --menu-border-color: var(--Dark_BackgroundColor) !important;
+  --menu-color: var(--Dark_TextColor) !important;
+  --menu-disabled-color: var(--Dark_DimmedColor) !important;
   --menu-icon-opacity: 1 !important;
+  --menuitem-hover-background-color: var(--Dark_ActiveColor) !important;
 }
 
 /*Notifications*/
 notification {
-  background: #000 !important;
-  color: #fff !important;
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
 }
-
-/*Link Hover*/
-.text-link:hover {
-  text-decoration: none !important;
-}
-
-/*PDF VIEWER*/
-:root {
-  --dropdown-btn-bg-color: #000 !important;
-  --doorhanger-bg-color: #000 !important;
-  --doorhanger-border-color: #212121 !important;
-  --doorhanger-hover-color: rgba(249, 249, 250, 1);
-  --doorhanger-hover-bg-color: #181818 !important;
-  --doorhanger-separator-color: #181818 !important;
-  --overlay-button-bg-color: #000 !important;
-  --overlay-button-hover-bg-color: #181818 !important;
-}
-
-

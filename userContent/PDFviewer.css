@@ -1,17 +1,17 @@
 /*+++++ PDF VIEWER +++++*/
 
 #toolbarViewer {
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   font-family: Fira Sans !important;
 }
 
 .dropdownToolbarButton > select {
-  background-color: #181818 !important;
+  background-color: var(--Dark_ActiveColor) !important;
   font-family: Fira Sans !important;
 }
 
 .dropdownToolbarButton > select:hover {
-  background-color: #181818 !important;
+  background-color: var(--Dark_ActiveColor) !important;
 }
 
 .splitToolbarButton > .toolbarButton {
@@ -31,7 +31,7 @@ html[dir="ltr"] #outerContainer.sidebarOpen #sidebarContainer,
 #toolbarSidebar,
 #viewerContainer,
 .dropdownToolbarButton > select option {
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
 }
 
 .toolbarField.pageNumber {
@@ -40,8 +40,8 @@ html[dir="ltr"] #outerContainer.sidebarOpen #sidebarContainer,
 }
 
 .toolbarField {
-  background-color: #000 !important;
-  border-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  border-color: var(--Dark_BackgroundColor) !important;
 }
 
 :root:not([nostyle])

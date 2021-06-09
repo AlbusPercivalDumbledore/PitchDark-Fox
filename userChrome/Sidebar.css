@@ -2,7 +2,8 @@
 
 /*Sidebar Border*/
 .sidebar-splitter {
-  border-color: #181818 !important;
+  border-color: var(--Dark_ActiveColor) !important;
+  display: none !important;
 }
 
 /*Sidebar Header*/
@@ -27,8 +28,8 @@
 /*Sidebar Searh Box*/
 #sidebar-search-container #search-box {
   -moz-appearance: none !important;
-  background-color: #000 !important;
-  color: white !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
   margin-top: -5px !important;
   margin-bottom: -5px !important;
 }
@@ -51,8 +52,8 @@
 #history-panel,
 #bookmarks-view-children,
 #historyTree {
-  color: #fff !important;
-  background-color: #000 !important;
+  color: var(--Dark_TextColor) !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   -moz-appearance: none !important;
   border-color: transparent !important;
 }
@@ -95,7 +96,7 @@ scrollbar {
 .content-container,
 .content-header,
 .content-scrollable {
-  background: black !important;
+  background: var(--Dark_BackgroundColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 0.9rem !important;
 }
@@ -108,4 +109,75 @@ scrollbar {
 #viewButton {
   font-family: "Fira Sans" !important;
   font-size: 0.9rem !important;
+}
+
+/* Autohide Sidebar - Show it only when the cursor is over it  */
+/*https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_sidebar.css*/
+
+#sidebar-box {
+  --uc-sidebar-width: 1px;
+  --uc-sidebar-hover-width: 300px;
+  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.6s before hiding sidebar */
+  position: relative;
+  min-width: var(--uc-sidebar-width) !important;
+  width: var(--uc-sidebar-width) !important;
+  max-width: var(--uc-sidebar-width) !important;
+  z-index: 1;
+}
+
+#sidebar-box[positionend] {
+  direction: rtl;
+}
+#sidebar-box[positionend] > * {
+  direction: ltr;
+}
+
+#sidebar-box[positionend]:-moz-locale-dir(rtl) {
+  direction: ltr;
+}
+#sidebar-box[positionend]:-moz-locale-dir(rtl) > * {
+  direction: rtl;
+}
+
+#main-window[sizemode="fullscreen"] #sidebar-box {
+  --uc-sidebar-width: 1px;
+}
+
+#sidebar-header {
+  overflow: hidden;
+}
+
+#sidebar {
+  transition: min-width 1ms linear var(--uc-autohide-sidebar-delay) !important;
+  min-width: var(--uc-sidebar-width) !important;
+  will-change: min-width;
+}
+
+#sidebar-box:hover > #sidebar {
+  min-width: var(--uc-sidebar-hover-width) !important;
+  transition-delay: 0ms !important;
+}
+
+/* Add sidebar divider*/
+
+#sidebar,
+#sidebar-header {
+  background-color: var(--toolbar-bgcolor) !important;
+  border-inline: 1px solid var(--Dark_ActiveColor);
+  border-inline-width: 0px 1px;
+}
+
+#sidebar-box:not([positionend]) > :-moz-locale-dir(rtl),
+#sidebar-box[positionend] > * {
+  border-inline-width: 1px 0px;
+}
+
+/* Move statuspanel to the other side when sidebar is hovered so it doesn't get covered by sidebar */
+
+#sidebar-box:not([positionend]):hover ~ #appcontent #statuspanel {
+  inset-inline: auto 0px !important;
+}
+#sidebar-box:not([positionend]):hover ~ #appcontent #statuspanel-label {
+  margin-inline: 0px !important;
+  border-left-style: solid !important;
 }

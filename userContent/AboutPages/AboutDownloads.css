@@ -4,7 +4,7 @@
   /*Remove Border around the page*/
   #downloadsRichListBox,
   .downloadMainArea {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border: 0 !important;
     outline: 0 !important;
   }
@@ -41,7 +41,7 @@
   #downloadsRichListBox > richlistitem[selected] {
     background-image: none !important;
     border-radius: 0px !important;
-    outline: 0px solid rgb(124, 163, 206) !important;
+    outline: 0px !important;
   }
 
   #downloadsRichListBox:focus {

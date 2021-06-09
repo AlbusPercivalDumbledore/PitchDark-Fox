@@ -3,9 +3,9 @@
 @-moz-document url(chrome://browser/content/pageinfo/pageInfo.xhtml)
 {
   #topBar {
-    background: #000 !important;
-    color: #fff !important;
-    border-bottom: 1px solid #212121 !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border-bottom: 1px solid var(--Dark_BorderColor) !important;
     font-family: "Fira Sans" !important;
     font-size: 1.2rem !important;
     font-variant-caps: petite-caps !important;
@@ -13,13 +13,13 @@
   }
 
   #viewGroup > radio[selected="true"] {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     color: #64b5f6 !important;
   }
 
   #viewGroup > radio:hover {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #viewGroup > radio {
@@ -30,8 +30,8 @@
   treechildren,
   treechildren::-moz-tree-row(even),
   treechildren::-moz-tree-row(odd) {
-    background: #000 !important;
-    color: #fff !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   tree {
@@ -42,8 +42,8 @@
 
   treecols {
     padding: 5px !important;
-    background: #000 !important;
-    border-bottom: 1px solid #212121 !important;
+    background: var(--Dark_BackgroundColor) !important;
+    border-bottom: 1px solid var(--Dark_BorderColor) !important;
   }
 
   #meta-name,
@@ -54,43 +54,43 @@
   #image-alt,
   #image-count,
   .treecol-image {
-    background: #000 !important;
-    color: #fff !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
     -moz-appearance: none !important;
   }
 
   #metatree,
   #imagetree {
-    border: 1px solid #212121 !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
     -moz-appearance: none !important;
   }
 
   #theimagecontainer {
-    background: #000 !important;
-    border: 1px solid #212121 !important;
+    background: var(--Dark_BackgroundColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 
   #imagecontainerbox {
     margin: 0.5em;
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
     overflow: auto;
-    border: 1px solid #212121 !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 
   #permList {
-    background: #000 !important;
-    color: #fff !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
     -moz-appearance: none !important;
     font-family: "Fira Sans" !important;
     font-size: 1.1rem !important;
   }
 
   .permission {
-    border-bottom: 1px solid #212121 !important;
+    border-bottom: 1px solid var(--Dark_BorderColor) !important;
   }
 
   .permission:hover {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 }

@@ -3,28 +3,28 @@
 @-moz-document url-prefix(about:reader) {
   body,
   body.dark {
-    background-color: #000 !important;
-    --main-background: #000 !important;
-    --main-foreground: #fff !important;
-    --toolbar-border: #212121 !important;
-    --toolbar-box-shadow: #000 !important;
-    --toolbar-button-hover: #141414 !important;
-    --toolbar-button-active: #212121 !important;
-    --popup-button-active: #212121 !important;
-    --popup-bgcolor: #000 !important;
-    --popup-button: #141414 !important;
-    --popup-line: #212121 !important;
-    --selected-background: #212121 !important;
-    --link-foreground: #64b5f6 !important;
-    --visited-link-foreground: #64b5f6 !important;
-    --link-selected-foreground: #fff;
-    --opaque-popup-border: #212121 !important;
-    --font-value-border: #000 !important;
-    --font-color: #fff;
-    --icon-fill: #fff;
-    --icon-disabled-fill: #ffffff66;
-    --tooltip-background: #000 !important;
-    --tooltip-foreground: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    --main-background: var(--Dark_BackgroundColor) !important;
+    --main-foreground: var(--Dark_TextColor) !important;
+    --toolbar-border: var(--Dark_BorderColor) !important;
+    --toolbar-box-shadow: var(--Dark_BackgroundColor) !important;
+    --toolbar-button-hover: var(--Dark_ActiveColor) !important;
+    --toolbar-button-active: var(--Dark_BorderColor) !important;
+    --popup-button-active: var(--Dark_BorderColor) !important;
+    --popup-bgcolor: var(--Dark_BackgroundColor) !important;
+    --popup-button: var(--Dark_ActiveColor) !important;
+    --popup-line: var(--Dark_BorderColor) !important;
+    --selected-background: var(--Dark_BorderColor) !important;
+    --link-foreground: var(--Dark_LinkColor) !important;
+    --visited-link-foreground: var(--Dark_LinkColor) !important;
+    --link-selected-foreground: var(--Dark_TextColor);
+    --opaque-popup-border: var(--Dark_BorderColor) !important;
+    --font-value-border: var(--Dark_BackgroundColor) !important;
+    --font-color: var(--Dark_TextColor);
+    --icon-fill: var(--Dark_TextColor);
+    --icon-disabled-fill: var(--Dark_TextColor) fff66;
+    --tooltip-background: var(--Dark_BackgroundColor) !important;
+    --tooltip-foreground: var(--Dark_TextColor) !important;
   }
 
   body.serif,
@@ -57,7 +57,7 @@
   }
 
   hr {
-    border-color: #212121 !important;
+    border-color: var(--Dark_BorderColor) !important;
   }
 
   .header > .credits {

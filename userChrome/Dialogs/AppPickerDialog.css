@@ -2,20 +2,20 @@
 
 #app-picker {
   width: 320px;
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 1.1rem !important;
 }
 
 #app-picker-listbox > richlistitem {
   -moz-box-align: center;
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
 }
 
 #app-picker-listbox {
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   border: 0px !important;
   scrollbar-width: thin !important;
   scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;

@@ -2,7 +2,7 @@
 
 /*Reduce Width of menu*/
 #PanelUI-history {
-  width: 450px !important;
+  width: 350px !important;
 }
 
 /*Reduce height of menu items*/
@@ -16,4 +16,20 @@
   height: 14px !important;
   width: 14px !important;
   transform: scale(0.9) !important;
+}
+
+/*Remove separatora*/
+#appMenuRecentlyClosedWindows + * + toolbarseparator,
+#appMenuClearRecentHistory + toolbarseparator
+/*#PanelUI-history > .panel-subview-body + toolbarseparator*/ {
+  display: none !important;
+}
+
+/*Recent History Heading*/
+#panelMenu_recentHistory {
+  font-size: 14px !important;
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+  font-variant: petite-caps !important;
+  color: var(--Dark_TextColor) !important;
 }

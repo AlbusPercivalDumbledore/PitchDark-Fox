@@ -1,7 +1,7 @@
 /*Confirmation Hint*/
 #confirmation-hint {
-  --arrowpanel-background: #000 !important;
-  --arrowpanel-border-color: #181818 !important;
+  --arrowpanel-background: var(--Dark_BackgroundColor) !important;
+  --arrowpanel-border-color: var(--Dark_ActiveColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 1.1rem !important;
 }
@@ -12,15 +12,23 @@
 #appMenu-addon-installed-notification {
   font-size: 1.15rem !important;
   font-family: "Fira Sans" !important;
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
 }
 
 /*Notifications that appear horizontally below navigation toolbox +++++*/
 .container.infobar {
-  background: #000 !important;
+  background: var(--Dark_BackgroundColor) !important;
   font-size: 1.15rem !important;
   font-family: Fira Sans !important;
+}
+
+/*-- is now Full Screen Notification*/
+#fullscreen-warning {
+  background-color: var(--Dark_BackgroundColor) !important;
+  border: 1px solid var(--Dark_BorderColor) !important;
+  color: var(--Dark_TextColor) !important;
+  padding: 5px !important;
 }
 
 /*+++++ Web Notification Alerts on Bottom Right +++++*/
@@ -30,7 +38,7 @@
 {
   /*Specify font face and size*/
   #alertNotification {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
     background: transparent !important;
     font-family: "Fira Sans" !important;
     font-size: 0.9rem !important;
@@ -38,9 +46,9 @@
 
   /*Invert colors of Background Box. Make it black, with white text*/
   #alertBox {
-    color: #fff !important;
-    border-color: #181818 !important;
-    background-color: #000 !important;
+    color: var(--Dark_TextColor) !important;
+    border-color: var(--Dark_ActiveColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     backdrop-filter: none !important;
     min-width: none !important;
   }
@@ -64,7 +72,7 @@
   #alertSettings:hover,
   #alertSettings:hover:active,
   #alertSettings[open] {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   /*Modify color of source label*/

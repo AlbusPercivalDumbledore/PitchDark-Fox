@@ -2,8 +2,8 @@
 
 @-moz-document url("about:cache") {
   body {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
     font-size: 1.2rem !important;
     font-family: "Fira Sans" !important;
   }
@@ -18,14 +18,14 @@
   }
 }
 
-@-moz-document url-prefix("about:cache?"), url-prefix("about:cache-entry?") {
+@-moz-document url-prefix("about:cache?storage=memory"), url-prefix("about:cache-entry?") {
   body,
   .aboutPageWideContainer {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   a {
-    color: #64b5f6 !important;
+    color: var(--Dark_LinkColor) !important;
   }
 
   a,

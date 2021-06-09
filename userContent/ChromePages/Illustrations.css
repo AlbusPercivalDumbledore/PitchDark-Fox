@@ -3,14 +3,14 @@
 @-moz-document url-prefix(chrome: //browser/skin/illustrations/)
 {
   :root {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   body {
-    background-color: #000 !important;
-    color: #fff !important;
-    border: 1px solid #212121 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 
   td:first-child > a {

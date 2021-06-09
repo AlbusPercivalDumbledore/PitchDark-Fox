@@ -23,25 +23,25 @@ url-prefix("chrome://"),
 {
   html,
   body {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 }
 
 @-moz-document plain-text-document(), media-document(all), url(chrome://browser/content/webext-panels.xhtml)
 {
   :root {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      color: #fff !important;
-      background-color: #000 !important;
+      color: var(--Dark_TextColor) !important;
+      background-color: var(--Dark_BackgroundColor) !important;
     }
 
     body:not([style*="background"], [class], [id]) {
-      background-color: #000 !important;
+      background-color: var(--Dark_BackgroundColor) !important;
     }
   }
 }

@@ -17,6 +17,10 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+:root {
+  font-family: Fira Sans !important;
+}
+
 /*+++++ Prevent White Flickering, Full Dark Mode ++++++ */
 
 #main-window,
@@ -37,9 +41,9 @@ panelmultiview,
 .panel-viewcontainer,
 .panel-viewstack,
 panelview {
-  background-color: #000 !important;
-  background: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  background: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
   border-radius: 0 !important;
 }
 

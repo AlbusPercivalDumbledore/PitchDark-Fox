@@ -22,30 +22,31 @@
 
 /*Specify Background Color of Titlebar*/
 #titlebar {
-  background: #000 !important;
+  background: var(--Dark_BackgroundColor) !important;
 }
 
 /* Gradient Line below Navigator Toolbox*/
+
 #main-window:not([sizemode="maximized"]) #navigator-toolbox:after {
-  top: 1px !important;
+  top: 2px !important;
 }
 
 #navigator-toolbox:after {
   content: "";
-  top: 9px !important;
+  top: 10px !important;
   left: 0;
   right: 0;
   bottom: 0;
   background: linear-gradient(
     90deg,
-    rgb(0, 3, 1),
+    var(--Dark_BackgroundColor),
     #004e92,
     #aa076b,
     #dc2430,
     #dc2430,
     #aa076b,
     #004e92,
-    rgb(0, 3, 1)
+    var(--Dark_BackgroundColor)
   );
   clip: rect(24px, 2600px, 26px, 0px);
   position: absolute !important;

@@ -9,7 +9,7 @@
 }
 
 .previewStack {
-  background: #000 !important;
+  background: var(--Dark_BackgroundColor) !important;
 }
 
 .toolbarButton,

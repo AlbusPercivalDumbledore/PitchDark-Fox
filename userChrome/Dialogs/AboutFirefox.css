@@ -11,16 +11,16 @@
   #bottomBox {
     font-size: 1.1rem !important;
     font-family: "Fira Sans" !important;
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
     display: none;
   }
 
   #aboutDialogContainer {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   #aboutDialog {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   #rightBox {

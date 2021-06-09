@@ -1,123 +1,20 @@
 /*+++++ Windows Minimize, Maximize, Close Buttons +++++*/
 
 .titlebar-button > .toolbarbutton-icon {
-  height: 14px !important;
-  min-height: 14px !important;
-  width: 14px !important;
-  min-width: 14px !important;
+  height: 10px !important;
+  min-height: 10px !important;
+  width: 10px !important;
+  min-width: 10px !important;
 }
 
 .titlebar-button {
-  padding-left: 1px !important;
-  padding-right: 1px !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
   padding-top: 7px !important;
-  margin-top: 0px !important;
 }
 
 #TabsToolbar > .titlebar-buttonbox-container {
   margin-left: 10px !important;
-}
-
-/*When Menubar is visible*/
-.titlebar-min,
-.titlebar-max,
-.titlebar-restore,
-.titlebar-close {
-  transform: scale(0.7) !important;
-}
-
-/*+++++ Hide Hamburger Menu Button +++++*/
-#PanelUI-button {
-  display: none !important;
-}
-
-/*+++++ Scale Nav-Bar and Tabs-Toolbar Icons (including downloads, Bookmark, and History Icons) +++++*/
-
-#nav-bar
-  toolbarbutton:not(#alltabs-button, #allTabsMenu-allTabsViewTabs
-    toolbarbutton, .panel-subview-body
-    toolbarbutton, #bookmarks-menu-button, #history-panelmenu, #PanelUI-historyMore, #back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button, #stop-button, #reload-button, #new-tab-button, #_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action, #urlbar-zoom-button),
-#TabsToolbar toolbarbutton:not(#alltabs-button, #new-tab-button, #eom-button),
-#downloads-button,
-#bookmarks-menu-button .toolbarbutton-icon,
-#history-panelmenu .toolbarbutton-icon,
-#eom-button .toolbarbutton-icon
-/*toolbar .webextension-browser-action,*/ {
-  transform: scale(0.75) !important;
-}
-
-/*++++ Scale Back Button, Forward Button, and adjacent Icons + All Tabs, New Tabs, and Undo Close Tab Icons +++++*/
-
-#nav-bar
-  toolbarbutton:is(#back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button),
-#TabsToolbar
-  toolbarbutton:is(#alltabs-button, #_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action) {
-  transform: scale(0.61) !important;
-}
-
-#nav-bar toolbarbutton:is(#stop-button) {
-  transform: scale(0.55) !important;
-}
-
-#nav-bar toolbarbutton:is(#reload-button),
-#TabsToolbar toolbarbutton:is(#tabs-newtab-button, #new-tab-button) {
-  transform: scale(0.65) !important;
-}
-
-/*+++++ Scale Page Action Menu Icons and other icons on Url Bar +++++*/
-
-#tracking-protection-icon-box {
-  overflow: hidden;
-  width: 16px;
-  height: 11px !important;
-  margin-top: 5px !important;
-}
-
-#page-action-buttons {
-  margin-top: 8px !important;
-  transform: scale(0.9) !important;
-}
-
-#urlbar-go-button,
-.search-go-button {
-  margin-top: 6px !important;
-}
-
-#urlbar-zoom-button {
-  margin-top: -3px !important;
-  transform: scale(1.1) !important;
-}
-
-#pageAction-urlbar-jid1-xufzosoflzsoxg_jetpack {
-  margin-top: 2px !important;
-  filter: invert(1) !important;
-}
-
-/*+++++ Adjust Margins of Nav-Bar and Tabs Toolbar Icons +++++*/
-
-#nav-bar
-  toolbarbutton:not(#alltabs-button, #allTabsMenu-allTabsViewTabs
-    toolbarbutton, .panel-subview-body
-    toolbarbutton, #bookmarks-menu-button, #eom-button, #history-panelmenu, #back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button, #reload-button, #stop-button, #urlbar-zoom-button) {
-  margin-top: 8px !important;
-}
-
-#nav-bar
-  toolbarbutton:is(#back-button, #forward-button, #PanelUI-menu-button, #nav-bar-overflow-button, #reload-button),
-#back-button .toolbarbutton-icon,
-#forward-button .toolbarbutton-icon {
-  margin-top: 5px !important;
-}
-
-#nav-bar
-  toolbarbutton:is(#nav-bar-overflow-button, #reload-button, #stop-button),
-#bookmarks-menu-button .toolbarbutton-icon,
-#history-panelmenu .toolbarbutton-icon {
-  margin-top: 6px !important;
-}
-
-#nav-bar toolbarbutton:is(#stop-button) {
-  margin-top: 7px !important;
 }
 
 /*+++++ Hide Private Browsing Indicator Icons +++++*/
@@ -127,26 +24,80 @@
   display: none !important;
 }
 
-/*+++++ Modify Badge on Toolbar Buttons +++++*/
-
-.toolbarbutton-badge {
-  transform: scale(1.2) !important;
-  margin-top: -6px !important;
-}
-
-/*+++++ Make background of Toolbar Buttons, Identity Box Buttons,  Transparent on Hover, and when selected +++++*/
-
-.identity-box-button:hover,
-#tracking-protection-icon-container:hover,
-.identity-box-button[open="true"],
-#tracking-protection-icon-container[open="true"],
-:not(.urlbar-icon-wrapper) > .urlbar-icon:hover,
-.urlbar-icon-wrapper:hover {
-  background: transparent !important;
-}
-
-/*+++++ Change background color of sidebar button, when it is active (remove the hideos circle around it) +++++*/
+/*+++++ Change background color of sidebar button, when it is active +++++*/
 
 #sidebar-button[checked] > .toolbarbutton-icon {
   background-color: inherit !important;
+}
+
+/*+++++ Hide Hamburger Menu Button +++++*/
+#PanelUI-button {
+  display: none !important;
+}
+
+/*Scale Down Toolbar Button Icons*/
+
+.toolbarbutton-1 > .toolbarbutton-icon {
+  width: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+  height: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+}
+
+.webextension-browser-action > .toolbarbutton-badge-stack > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbarbutton-icon {
+  height: 14px !important;
+  width: 14px !important;
+}
+
+/*+++++ Scale down Back, Forward, Stop-Reload, New tab, Reopen Closed Tab, Downloads Buttons +++++*/
+
+#nav-bar
+  toolbarbutton:is(#back-button, #forward-button, #stop-button, #reload-button, #nav-bar-overflow-button)
+  > .toolbarbutton-icon,
+#TabsToolbar
+  toolbarbutton:is(#new-tab-button, #tabs-newtab-button)
+  > .toolbarbutton-icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+#nav-bar toolbarbutton:is(#stop-button) > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#nav-bar
+  toolbarbutton:is(#stop-reload-button > #stop-button, #stop-reload-button
+    > #reload-button)
+  > .toolbarbutton-icon {
+  margin-top: -2px !important;
+}
+
+#_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action .toolbarbutton-icon {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+#TabsToolbar
+  toolbarbutton:is(#downloads-button)
+  > .toolbarbutton-badge-stack
+  > box {
+  min-width: 14px !important;
+  min-height: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/*Scale Down Tracking Protection Icon*/
+.sharing-icon,
+#identity-icon,
+#permissions-granted-icon,
+#tracking-protection-icon,
+#blocked-permissions-container > .blocked-permission-icon {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+/*+++++ Invert Colors of RES UrlBar Icon +++++*/
+#pageAction-urlbar-jid1-xufzosoflzsoxg_jetpack {
+  filter: invert(1) !important;
 }

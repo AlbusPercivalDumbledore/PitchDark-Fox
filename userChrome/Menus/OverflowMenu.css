@@ -4,7 +4,6 @@
 #widget-overflow-mainView {
   min-width: 20em !important;
   max-width: 20em !important;
-  margin: 6px !important;
 }
 
 /*Specify font-face and size for menu items*/
@@ -32,7 +31,7 @@
 /*Make min-height of addon popups in overflow menu 0, to avoid needless blank space*/
 
 #widget-overflow .webextension-popup-browser {
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   min-height: 0% !important;
 }
 

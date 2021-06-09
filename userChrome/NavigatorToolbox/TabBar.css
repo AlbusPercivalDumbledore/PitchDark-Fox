@@ -9,6 +9,27 @@
   content: counter(nth-tab) " ";
   counter-increment: nth-tab;
   margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+#tabbrowser-tabs {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+/*Specify Width of Tabs when window is maximized*/
+:root .tabbrowser-tab:not([pinned]) {
+  min-width: 419px !important;
+}
+
+/*Specify Width of Tabs when window is not maximized*/
+#main-window:not([sizemode="maximized"]) .tabbrowser-tab:not([pinned]) {
+  min-width: 150px !important;
+}
+
+/*Specify Width of Tabs in Private Browsing Mode*/
+:root[privatebrowsingmode] .tabbrowser-tab:not([pinned]) {
+  min-width: 455px !important;
 }
 
 /*Remove Tab Loading Indicator*/
@@ -17,10 +38,9 @@
 }
 
 /*Specify font face and top margin for Tab Label*/
-
 .tab-label {
   font-family: "Fira Sans" !important;
-  margin-top: 4px !important;
+  margin-top: 2px !important;
 }
 
 /*Specify font size for Tab Label, when tab is active, and when not*/
@@ -46,18 +66,14 @@
   border-radius: 0px !important;
   margin-block-start: 2px;
   margin-block-end: 2px;
-  margin-bottom: -1px !important;
-  margin-top: 1px !important;
 }
 
 /*Border in Active Tab*/
 .tab-background[selected="true"] {
   background-image: none !important; /*linear-gradient(90deg, #141e30 0%, rgb(0, 35, 41) 52.08%, #141e30 100%)*/
   border-radius: 3px !important;
-  margin: -1px !important;
   border: 2px solid #dc2430 !important;
-  border-bottom: 3px solid #000 !important;
-  margin-top: 2px !important;
+  border-bottom: 2px solid var(--Dark_BackgroundColor) !important;
   /*border-image: 1 1 0 1 linear-gradient(90deg, #004e92 0%, #aa076b 52.08%, #dc2430 100%)!important;*/
 }
 
@@ -120,7 +136,7 @@
 }
 
 /*Prevent Tab's text near close button, from changing on hover*/
-/*https://github.com/MrOtherGuy/firefox-csshacks/*/
+/*https://www.reddit.com/r/FirefoxCSS/comments/mxh3u2/is_there_a_way_to_prevent_a_tabs_text_from/*/
 .tabbrowser-tab {
   --tab-label-mask-size: 1em !important;
 }

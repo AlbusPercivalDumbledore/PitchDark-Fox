@@ -63,7 +63,7 @@
 }
 
 .protections-popup-category-icon.thirdpartycookies-icon {
-  fill: #0000ff !important;
+  fill: var(--Dark_BackgroundColor) 0ff !important;
 }
 
 .protections-popup-category-icon.socialblock-icon {
@@ -73,6 +73,12 @@
 /*Reduce frivolous margins on items*/
 #protections-popup-category-list > toolbarbutton {
   margin-top: -5px !important;
+}
+
+/*Remove margins around no trackers description*/
+#protections-popup-no-trackers-found-description {
+  margin: 0 !important;
+  font-size: 1em !important;
 }
 
 /*Make bottom margin of 'blocked' content box in the middle null*/
@@ -97,10 +103,4 @@
 
 #protections-popup .panel-footer.panel-footer-menulike {
   border-top: 0 !important;
-}
-
-/*Remove margins around no trackers description*/
-#protections-popup-no-trackers-found-description {
-  margin: 0 !important;
-  font-size: 1em !important;
 }

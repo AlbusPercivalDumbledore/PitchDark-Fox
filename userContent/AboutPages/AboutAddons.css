@@ -26,7 +26,7 @@
   .addon-description {
     font-size: 14px !important;
     line-height: 20px;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
     font-weight: 400;
     font-family: "Fira Sans" !important;
     margin-top: 10px !important;
@@ -61,14 +61,14 @@
 
   input[type="checkbox"].toggle-button {
     background: #4a148c !important;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
   }
 
   /*Tabs on top of a selected Addon's Page*/
   button.tab-button[selected],
   button.tab-button[selected]:hover {
     border-top-color: currentColor;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   /*Options Tab of a selected Addon*/

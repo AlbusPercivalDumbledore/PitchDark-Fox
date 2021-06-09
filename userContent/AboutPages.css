@@ -21,7 +21,7 @@
   scrollbar {
     scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
     scrollbar-width: thin !important;
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     font-family: Fira Sans !important;
   }
 
@@ -31,9 +31,14 @@
 
   /*Background to indicate a selected category on left sidebar*/
   #categories > .category[selected] {
-    background-color: #181818 !important;
-    color: #fff !important;
+    background-color: var(--Dark_ActiveColor) !important;
+    color: var(--Dark_TextColor) !important;
     border-radius: 0px !important;
+  }
+
+  /*Sidebar Item Hover Background*/
+  .sidebar-item--selectable:hover {
+    background-color: var(--Dark_ActiveColor) !important;
   }
 }
 

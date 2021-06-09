@@ -6,8 +6,8 @@
   body,
   html,
   .paneHead {
-    background: #000 !important;
-    color: #fff !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #noTabFound {
@@ -15,15 +15,10 @@
     font-variant-caps: petite-caps !important;
   }
 
-  #matList {
-    transform: scale(0.99) !important;
-    margin-right: 10px !important;
-  }
-
   #matHead {
     padding-bottom: 1px;
     padding-top: 1px;
-    margin-left: -7px !important;
+    transform: scale(1.02) !important;
   }
 
   * {
@@ -31,47 +26,47 @@
   }
 
   #gotoDashboard {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     font-size: 0.9rem !important;
     font-family: "Fira Sans" !important;
-    margin: 10px !important;
+    margin: 7px !important;
   }
 
   .paneContent {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
   }
 
   body,
   .paneHead {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
   }
 
   #specificScope.on {
-    background-color: #000 !important;
-    border-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-color: var(--Dark_BackgroundColor) !important;
   }
 
   #dashboard-nav-widgets {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border-bottom-color: #181818 !important;
   }
 
   #dashboard-nav-widgets .tabButton {
     color: #aaa !important;
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border-color: #181818 !important;
   }
 
   #dashboard-nav-widgets .tabButton.selected {
-    color: #fff !important;
-    background-color: #000 !important;
-    border-bottom-color: #000 !important;
+    color: var(--Dark_TextColor) !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-bottom-color: var(--Dark_BackgroundColor) !important;
   }
 
   #domainOnly {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border: none !important;
   }
 
@@ -123,8 +118,8 @@
   }
 
   .dropdown-menu ul {
-    background-color: #000 !important;
-    border-color: #212121 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-color: var(--Dark_BorderColor) !important;
   }
 
   .dropdown-menu li:hover {
@@ -132,13 +127,13 @@
   }
 
   .dropdown-menu li.switchTrue {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
   .dropdown-menu li:not(.switchTrue) {
     color: #aaa !important;
   }
   .dropdown-menu span {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #mtxSwitches .off ellipse[style] {
@@ -150,7 +145,7 @@
   }
 
   button:not(#buttonUpdate) {
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
     border-color: transparent !important;
     border-radius: 3px;
     color: #ddd !important;
@@ -160,7 +155,7 @@
   button:not(#buttonUpdate):hover,
   #domainOnly:hover {
     background: #181818 !important;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   button[disabled] {
@@ -170,7 +165,7 @@
   #buttonUpdate {
     background: #ffbb33 !important;
     border-color: transparent !important;
-    color: #000 !important;
+    color: var(--Dark_BackgroundColor) !important;
   }
 
   #buttonUpdate:hover {
@@ -193,12 +188,12 @@
   .cm-search-widget,
   .CodeMirror-gutters,
   .CodeMirror-merge-gap {
-    background: #000 !important;
+    background: var(--Dark_BackgroundColor) !important;
     border: none !important;
   }
 
   .cm-search-widget {
-    border-bottom: 1px solid #000 !important;
+    border-bottom: 1px solid var(--Dark_BackgroundColor) !important;
   }
 
   .CodeMirror,
@@ -233,63 +228,63 @@
     color: #aaa !important;
   }
   .CodeMirror-cursor {
-    border-left-color: #212121 !important;
+    border-left-color: var(--Dark_BorderColor) !important;
   }
   .cm-staticnetBlock {
     color: #f62 !important;
   }
   .cm-staticOpt {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   textarea,
   input[type="text"],
   input[type="search"] {
     -moz-appearance: none !important;
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     color: #aaa !important;
-    border: 1px solid #212121 !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 
   code,
   .fa-icon-badge {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   .CodeMirror-code > div:nth-child(odd),
   .CodeMirror-code > pre:nth-child(odd) {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
   .CodeMirror-code > div:nth-child(even),
   .CodeMirror-code > pre:nth-child(even) {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   #specificScope span[data-scope]:not(.on),
   #globalScope:not(.on),
   #specificScope.scope:not(.on) {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
   #specificScope span[data-scope].on,
   #globalScope.on {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border-top: 2px solid #ff5722 !important;
   }
   #globalScope:not(.on),
   #specificScope.scope:not(.on) {
-    border-color: #000 !important;
+    border-color: var(--Dark_BackgroundColor) !important;
   }
 
   #buttonReload:hover,
   #buttonRevertAll:hover,
   .scopeRel:hover,
   .toolbar span[data-extension-url="logger-ui.html"]:hover {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   body:not(.colorblind) .t82 {
-    background-color: #212121 !important;
+    background-color: var(--Dark_BorderColor) !important;
   }
 
   .matCell.p82,
@@ -303,18 +298,18 @@
   }
 
   body:not(.colorblind) .t2 {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   .t2,
   .t1 {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #whitelist,
   #whitelist:hover {
     opacity: 1 !important;
-    background: #212121 !important;
+    background: var(--Dark_BorderColor) !important;
   }
 
   #blacklist,
@@ -325,21 +320,25 @@
 
   #matHead {
     border-top: 1px solid #181818 !important;
-    margin-top: 10px !important;
+    margin-top: 5px !important;
   }
 
   .matCell {
-    border: 1px solid #000 !important;
-    margin: 1px !important;
-    font-size: 0.95em;
+    border: 1px solid var(--Dark_BackgroundColor) !important;
+    /*margin: 1px !important;*/
+    font-size: 13px;
     box-sizing: content-box;
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;
-    line-height: 60% !important;
+    line-height: 50% !important;
     padding: 6px 2px;
     position: relative;
-    width: 2.2em !important;
+    width: 2.1em !important;
+  }
+
+  .matSection.g4Meta {
+    display: none !important;
   }
 
   body.powerOff .matRow.rw .matCell {
@@ -351,7 +350,7 @@
     background-color: #4d0000 !important;
   }
   body:not(.colorblind) .t1 {
-    background-color: hsl(0, 35%, 18%) !important;
+    background-color: hsl(0, 35%, 14%) !important;
     /*background-color: #02352d !important;*/
   }
 
@@ -361,17 +360,17 @@
   }
 
   [data-i18n-tip]::after {
-    background-color: #000 !important;
-    border-color: #212121 !important;
-    color: #fff !important;
-    box-shadow: 5px 7px 15px 2px #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border-color: var(--Dark_BorderColor) !important;
+    color: var(--Dark_TextColor) !important;
+    box-shadow: 5px 7px 15px 2px var(--Dark_BackgroundColor) !important;
   }
 
   input[type="number"] {
     -moz-appearance: none !important;
-    background: #000 !important;
-    border: 1px solid #212121 !important;
-    color: #fff !important;
+    background: var(--Dark_BackgroundColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   /* Checkbox coloring */
@@ -399,23 +398,23 @@
   /* Select boxes coloring */
   select {
     -moz-appearance: none !important;
-    background: #000
+    background: var(--Dark_BackgroundColor)
       url("data:image/svg+xml;charset=utf-8,%3Csvg width='11' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M434.574 488L430.5 492.147 426.428 488 425 489.399 430.5 494.999 436 489.399z' transform='translate(-425 -488)' fill='%23cccccc' fill-rule='evenodd'/%3E%3C/svg%3E")
       no-repeat calc(100% - 5px) 50% !important;
-    border: 1px solid #212121 !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
     padding: 3px 20px 3px 3px !important;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   select:hover {
     background: #303030
       url("data:image/svg+xml;charset=utf-8,%3Csvg width='11' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M434.574 488L430.5 492.147 426.428 488 425 489.399 430.5 494.999 436 489.399z' transform='translate(-425 -488)' fill='%23cccccc' fill-rule='evenodd'/%3E%3C/svg%3E")
       no-repeat calc(100% - 5px) 50% !important;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   #parsed {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border: 0px !important;
     color: #ccc !important;
     font-size: 15px !important;
@@ -449,7 +448,7 @@
   #content,
   .dialog,
   #popupPanelContainer {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     border-color: #181818 !important;
   }
 
@@ -458,7 +457,7 @@
     border-color: #181818 !important;
   }
   table tr:nth-child(odd) {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
   table tr:nth-child(even) {
     background-color: #181818 !important;

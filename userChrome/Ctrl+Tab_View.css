@@ -3,40 +3,44 @@
 /*Specify Background Color around Tab Previews*/
 #ctrlTab-panel {
   -moz-appearance: none !important;
-  color: #ffffff !important;
+  color: var(--Dark_TextColor) fff !important;
   border-style: none !important;
   padding: 20px 10px 10px !important;
   font-family: Fira Sans !important;
-  font-weight: bold !important;
-  background: #000 !important;
   text-align: center !important;
   text-shadow: none !important;
+  --panel-background: rgba(0, 0, 0, 0.5) !important;
 }
 
-/*Adjust Margins and Padding of Preview*/
-.ctrlTab-preview:not(#ctrlTab-showAll) > * > .ctrlTab-preview-inner {
-  margin: -10px -10px 0 !important;
+#ctrlTab-showAll,
+.ctrlTab-preview:focus > .ctrlTab-preview-inner,
+#ctrlTab-showAll:focus {
+  background-color: var(--Dark_BackgroundColor) !important;
+}
+
+#ctrlTab-showAll:focus {
+  margin-top: 6px !important;
+  border: 2px solid #dc2430 !important;
+}
+
+.ctrlTab-preview {
+  background: transparent !important;
+  border: 0 !important;
 }
 
 .ctrlTab-preview-inner {
-  padding: 8px !important;
+  padding: 10px !important;
   border: 2px solid transparent !important;
-  border-radius: 0px !important;
-}
-
-/*Specify Dimensions of Preview*/
-tabPreview-canvas element {
-  max-width: 272px !important;
-  min-width: 272px !important;
-  max-height: 153px !important;
-  min-height: 153px !important;
+  border-radius: 5px !important;
+  background: var(--Dark_BackgroundColor) !important;
+  margin-bottom: 5px !important;
 }
 
 /*Gradient Border around Active Tab*/
 .ctrlTab-preview:focus > .ctrlTab-preview-inner {
-  border: 2px solid transparent !important;
-  border-image: 2 2 2 2
-    linear-gradient(90deg, #004e92 0%, #aa076b 52.08%, #dc2430 100%) !important;
+  border: 2px solid #dc2430 !important;
+  /*border-image: 2 2 2 2
+    linear-gradient(90deg, #004e92 0%, #aa076b 52.08%, #dc2430 100%) !important;*/
 }
 
 /*Reduce size of favicons, remove background*/
@@ -44,22 +48,10 @@ tabPreview-canvas element {
   background-color: transparent !important;
   width: 20px !important;
   height: 20px !important;
-  padding: 2px !important;
-}
-
-/*Move favicons to bottom left*/
-.ctrlTab-favicon-container {
-  -moz-box-align: start !important;
-  -moz-box-pack: start !important;
+  padding: 0px !important;
 }
 
 /*Remove those hideos broken image icons, that appear in place of previews, when webpage hasn't finished loading*/
 .ctrlTab-canvas > img:not(src) {
   display: none !important;
-}
-
-#ctrlTab-showAll,
-.ctrlTab-preview:focus > .ctrlTab-preview-inner,
-#ctrlTab-showAll:focus {
-  background: #000 !important;
 }

@@ -3,20 +3,20 @@
 @-moz-document url-prefix(resource:///)
 {
   :root {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   body {
-    border: 1px solid #212121 !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
     border-radius: 2px !important;
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
     font-family: "Fira Sans" !important;
     font-size: 1.1rem !important;
   }
 
   a {
-    color: #64b5f6 !important;
+    color: var(--Dark_LinkColor) !important;
   }
 
   svg {

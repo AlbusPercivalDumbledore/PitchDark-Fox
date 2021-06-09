@@ -13,18 +13,19 @@
   }
 
   h2 {
-    color: #64b5f6 !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   table {
     width: 100% !important;
     border: 0px solid var(--in-content-border-color) !important;
     font-size: 0.9em !important;
+    color: #ccc !important;
   }
 
   th {
-    background-color: #000 !important;
-    color: rgb(255, 255, 255);
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: #eee !important;
   }
 
   th,
@@ -54,6 +55,7 @@
   #profiles button {
     font-size: 1.1rem !important;
     min-height: 0 !important;
-    color: #64b5f6 !important;
+    color: var(--Dark_TextColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 }

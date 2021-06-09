@@ -10,10 +10,14 @@
   color: var(--toolbar-color) !important;
 }
 
+#urlbar > #urlbar-background {
+  display: none !important;
+}
+
 /*Urlbar Input Selection Color*/
 #urlbar-input::selection {
   background-color: #1a237e !important;
-  color: #fff !important;
+  color: var(--Dark_TextColor) !important;
 }
 
 /* Remove 'Search with google or enter address' from url bar */
@@ -33,22 +37,28 @@
   display: none !important;
 }
 
-/* Remove border after tracking protection container */
-#tracking-protection-icon-container,
-#identity-box {
-  border: none !important;
-  margin-top: 0px !important;
+/* Page action-buttons "slide in" when cursor is on top of them and don't reserve space when not used */
+/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/page_action_buttons_on_hover.css */
+
+#page-action-buttons > *[class^="urlbar-icon"] {
+  margin-inline-end: -15px;
+  opacity: 0;
+  transition: margin-inline-end 100ms linear, opacity 200ms linear;
+}
+
+#page-action-buttons:hover > *[class^="urlbar-icon"],
+#page-action-buttons > *[class^="urlbar-icon"][open],
+#page-action-buttons > *[class^="urlbar-icon"][open] ~ *[class^="urlbar-icon"] {
+  opacity: 1;
+  margin-inline-end: 0px !important;
 }
 
 /*+++++ URL Bar Search Mode Indicator +++++*/
 
 /*Modify background and color*/
-#urlbar-search-mode-indicator,
-#urlbar-label-box {
-  background-color: #181818 !important;
-  outline: 1px solid #181818 !important;
-  color: #fff !important;
-  margin-top: 8px !important;
+#urlbar-search-mode-indicator {
+  background-color: var(--Dark_ActiveColor) !important;
+  color: var(--Dark_TextColor) !important;
   font-size: 0.9rem !important;
 }
 
@@ -56,32 +66,41 @@
   background-color: transparent !important;
 }
 
-/*Make Close Icon smaller*/
-#urlbar-search-mode-indicator-close {
-  height: 6px !important;
-  border-radius: var(--toolbarbutton-border-radius);
+/*Reduce Size and Inline Margin of Container Indicator */
+#userContext-icons,
+#urlbar-zoom-button {
+  margin-inline: 2px !important;
 }
 
-/*+++++ Container Labels on urlbar +++++*/
-
-/*Reduce size and opacity of label*/
-#userContext-label {
-  margin: 0;
-  color: var(--identity-tab-color);
-  transform: scale(0.9) !important;
-  opacity: 0.8 !important;
-}
-
-/*Reduce size and opacity of icon*/
 #userContext-indicator {
-  height: 16px;
-  width: 16px;
-  margin-inline-start: 3px;
-  transform: scale(0.7) !important;
-  opacity: 0.8 !important;
+  height: 14px !important;
+  width: 14px !important;
+  margin-inline-start: 2px !important;
+}
+
+#userContext-label {
+  font-size: 1rem !important;
+  margin-top: 1px !important;
+}
+
+/*UrlBar Zoom Button*/
+
+#urlbar-zoom-button {
+  padding: 4px !important;
+  background-color: var(--Dark_ActiveColor) !important;
+}
+
+#urlbar-zoom-button > .toolbarbutton-text {
+  margin-top: 1px !important;
 }
 
 /*+++++ URL BAR RESULTS VIEW +++++*/
+
+/*Rounded corners on Bottom*/
+.urlbarView {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
 
 /*Specify Color, font size and face for results*/
 .urlbarView-results {
@@ -105,7 +124,7 @@
   font-family: "Fira Sans" !important;
   color: #64b5f6 !important;
   margin-left: 5px !important;
-  margin-top: 3px !important;
+  /*margin-top: 3px !important;*/
 }
 
 /* Remove 'Try searching with...' */
@@ -128,113 +147,49 @@
 .urlbarView-type-icon {
   margin-bottom: -4px;
   margin-inline-start: 8px !important;
-  fill: blue !important;
+  fill: #999 !important;
 }
 
 /*URL Bar Results Highlight Background Color*/
 .urlbarView-row-inner {
-  border-right: 5px solid #000 !important;
+  border-right: 5px solid transparent !important;
   margin-left: 5px !important;
   border-radius: 0px !important;
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
   > .urlbarView-row-inner:hover {
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"]):hover
   > .urlbarView-row-inner {
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
 }
 
 /*Indicate selected result in urlbar, with a border on the right*/
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
   > .urlbarView-row-inner {
-  background: #000 !important;
+  background: var(--Dark_BackgroundColor) !important;
   border-right: 5px solid #24324d /*1a237e*/ !important;
 }
 
-/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/urlbar_full_width.css */
-
-/* Hide dropdown placeholder */
-#urlbar-container:not(:hover) .urlbar-history-dropmarker {
-  margin-inline-start: -28px;
-}
-
-/* Fix customization view */
-#customization-panelWrapper > .panel-arrowbox > .panel-arrow {
-  margin-inline-end: initial !important;
-}
-
-#urlbar:focus-within {
-  min-width: var(--uc-urlbar-min-width, none) !important;
-}
-
 /* Make urlbar popup appear full size like it did before urlbar re-design */
-
-#urlbar-container,
-#urlbar {
-  display: -moz-box !important;
-}
+/*https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/urlbar_popup_full_width.css*/
 
 .urlbarView {
   position: absolute !important;
   margin: 0px !important;
   margin-top: 0px !important;
   width: 70vw !important;
-  border: 1px solid #181818 !important;
+  border: 1px solid var(--Dark_ActiveColor) !important;
   border-top: none !important;
   top: var(--urlbar-toolbar-height);
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   z-index: 4;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
 }
 
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border-top: none !important;
-}
-
-#urlbar-input {
-  background-color: transparent;
-  border: 1px solid #181818 !important;
-  padding: 10px !important;
-  margin-top: 6px !important;
-}
-
-#urlbar > #urlbar-input-container {
-  padding: 0px !important;
-  width: auto !important;
-  height: auto !important;
-}
-
-#urlbar > #urlbar-background {
-  display: none !important;
-}
-
-/* This may seem pretty weird, but it gets around an issue where the height of urlbar may suddenly change when one starts typing into it */
-/* If you are otherwise modifying the urlbar height then you might need to modify the height of this too */
-#urlbar > #urlbar-input-container::before {
-  content: "";
-  display: -moz-box;
-  height: 16px;
-}
-
-/*URL BAR RESULTS IN TWO ROWS*/
-/* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/urlbar_results_in_two_rows.css */
-
-.urlbarView-row-inner {
-  flex-wrap: wrap !important;
-}
-
-.urlbarView-title[title] {
-  flex-grow: 1;
-}
-
-.urlbarView-row > .urlbarView-row-inner > .urlbarView-url {
-  min-width: 95%;
-}
-
-.urlbarView-row[has-url]:not([type="switchtab"]) .urlbarView-title-separator {
-  display: none;
 }

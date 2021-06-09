@@ -20,8 +20,8 @@
 /*Bottom Border, Font Face, Font-Size, Max Height for Downloading/Downloaded Item*/
 #downloadsListBox > richlistitem {
   border-bottom: 1px solid var(--panel-separator-color) !important;
-  color: #fff !important;
-  background: #000 !important;
+  color: var(--Dark_TextColor) !important;
+  background: var(--Dark_BackgroundColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 1.2rem !important;
   max-height: 63px !important;

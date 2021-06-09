@@ -925,3 +925,62 @@
     margin-top: 5px !important;
   }
 }
+
+/*uBlock Element Picker*/
+#ublock0-epicker aside {
+  background-color: var(--Dark_BackgroundColor) !important;
+  border: 1px solid #181818 !important;
+  bottom: 2px;
+  box-sizing: border-box;
+  cursor: default;
+  display: none;
+  max-height: calc(100vh - 4px);
+  max-width: 36rem;
+  min-width: 24rem;
+  overflow-y: auto;
+  padding: 10px !important;
+  position: fixed;
+  right: 2px;
+  width: calc(40% - 2px);
+  color: var(--Dark_TextColor) !important;
+  font-family: fira sans !important;
+}
+
+#ublock0-epicker #candidateFilters .changeFilter li:hover {
+  background-color: #181818 !important;
+}
+
+#ublock0-epicker #candidateFilters .changeFilter li {
+  border: 1px solid transparent;
+  cursor: pointer;
+  direction: ltr;
+  font: 12px monospace !important;
+  white-space: nowrap;
+  margin: 2px !important;
+}
+
+#ublock0-epicker section {
+  border: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px !important;
+}
+
+#ublock0-epicker section > div:first-child {
+  border: 1px solid #181818 !important;
+  margin: 0;
+  position: relative;
+  margin-bottom: 10px !important;
+}
+
+#ublock0-epicker button {
+  background-color: var(--button-surface);
+  border: 1px solid var(--Dark_BorderColor) !important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: none;
+  color: var(--button-ink);
+  cursor: pointer;
+  padding: 0.4em 0.8em;
+}

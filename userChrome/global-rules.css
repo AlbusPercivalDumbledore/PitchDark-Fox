@@ -1,21 +1,21 @@
 /*+++++ Autocomplete Textboxes +++++*/
 .autocomplete-richlistbox > richlistitem {
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
 }
 
 richlistitem[selected="true"] {
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
 }
 
 /*+++++ Buttons +++++*/
 
 button {
   -moz-appearance: none !important;
-  color: #fff !important;
-  background-color: #000 !important;
-  border: 1px solid #212121 !important;
+  color: var(--Dark_TextColor) !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  border: 1px solid var(--Dark_BorderColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 1.1rem !important;
   font-weight: normal !important;
@@ -32,7 +32,7 @@ tab:focus-visible > .tab-middle > .tab-text {
   outline: 0 !important;
   outline-offset: 0 !important;
   -moz-outline-radius: 0 !important;
-  margin-top: 10px !important;
+  margin-top: 0 !important;
   font-family: "Fira Sans" !important;
 }
 
@@ -41,7 +41,7 @@ tab:focus-visible > .tab-middle > .tab-text {
 .expander-down {
   transform: scale(0.7) !important;
   border: 0 !important;
-  background: #000 !important;
+  background: var(--Dark_BackgroundColor) !important;
 }
 
 /*+++++ Folder Icons +++++*/
@@ -54,7 +54,7 @@ treechildren::-moz-tree-image(container) {
 /*Make remaining folder icons invisible*/
 .bookmark-item[container],
 .folder-icon {
-  fill: #000 !important;
+  fill: var(--Dark_BackgroundColor) !important;
 }
 
 /*+++++ Panel headings +++++*/
@@ -74,8 +74,8 @@ treechildren::-moz-tree-row(selected, hover),
 treechildren::-moz-tree-cell(selected),
 treechildren::-moz-tree-cell(hover),
 treechildren::-moz-tree-cell(selected, hover) {
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: var(--Dark_BackgroundColor) !important;
+  color: var(--Dark_TextColor) !important;
   outline: none !important;
   border: none !important;
 }
@@ -92,10 +92,10 @@ treechildren::-moz-tree-cell(selected) {
 #searchFilter,
 input:not(#urlbar-input) {
   -moz-appearance: none !important;
-  background-color: #000 !important;
+  background-color: var(--Dark_BackgroundColor) !important;
   padding: 2px !important;
   color: white !important;
-  border: 1px solid #000 !important;
+  border: 1px solid var(--Dark_BackgroundColor) !important;
   font-family: "Fira Sans" !important;
   font-size: 1.1rem !important;
 }

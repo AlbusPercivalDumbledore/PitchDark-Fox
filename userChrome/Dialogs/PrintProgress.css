@@ -5,8 +5,8 @@
 @-moz-document url("chrome://global/content/printProgress.xhtml")
 {
   dialog {
-    color: #fff !important;
-    background: #000 !important;
+    color: var(--Dark_TextColor) !important;
+    background: var(--Dark_BackgroundColor) !important;
     font-family: "Fira Sans" !important;
     font-size: 1.2rem !important;
   }
@@ -17,8 +17,8 @@
 @-moz-document url-prefix("chrome://global/content/print.html")
 {
   body {
-    color: #fff !important;
-    background: #000 !important;
+    color: var(--Dark_TextColor) !important;
+    background: var(--Dark_BackgroundColor) !important;
     font-family: "Fira Sans" !important;
     font-size: 1.2rem !important;
   }
@@ -40,11 +40,11 @@
   html|input[type="color"]:hover,
   xul|button:not([disabled="true"]):hover,
   xul|menulist:not([disabled="true"]):hover {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   html|select:not([size], [multiple]) {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
     font-family: "Fira Sans" !important;
     font-size: 1.1rem !important;
   }
@@ -56,7 +56,7 @@
 
   #button-container > button {
     font-family: "Fira Sans" !important;
-    border: 1px solid #212121 !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 
   * {

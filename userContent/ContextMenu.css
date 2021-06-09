@@ -5,38 +5,27 @@
 
   /*Context Menu Background*/
   .menupopup-arrowscrollbox {
-    background-color: #000 !important;
-    border: 1px solid #181818 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    border: 1px solid var(--Dark_ActiveColor) !important;
     border-radius: 4px !important;
     padding-block: 6px !important;
     overflow: hidden;
   }
 
-  /*Reduce Padding, increase margins, change font*/
-  menupopup > menuitem,
-  menupopup > menu {
-    padding-block: 3px !important;
-    padding-inline-start: 15px !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-    font-family: "Fira Sans" !important;
-    font-size: 1.1rem !important;
-    color: #fff !important;
-    background: #000 !important;
-  }
+  /*Rules To Reduce Padding, increase margins, change font are in Menus.css*/
 
   /*Hover Color*/
   menuitem:hover,
   menu:hover,
   menu[open="true"],
   menuitem[_moz-menuactive="true"] {
-    background: #181818 !important;
+    background: var(--Dark_ActiveColor) !important;
   }
 
   /*Modify Separator Color*/
   menuseparator {
     appearance: none;
-    border-top: 1px solid #181818 !important;
+    border-top: 1px solid var(--Dark_ActiveColor) !important;
     border-bottom: none;
     padding: 0;
     margin: 2px 15px !important;
@@ -65,8 +54,12 @@
   /*Reduce Size of twisty icon*/
   .menu-right {
     transform: scale(0.75) !important;
-    margin-left: -10px !important;
     margin-right: 0px !important;
+  }
+
+  #contentAreaContextMenu .menu-right,
+  #tabContextMenu .menu-right {
+    margin-left: -30px !important;
   }
 
   /*Fix position of items introduced by Private Tab Script*/
@@ -123,6 +116,9 @@
   #_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-menuitem-_open-tab-then-discard,
   #_74145f27-f039-47ce-a470-a662b129930a_-menuitem-_copy-link-to-clipboard,
   #ublock0_raymondhill_net-menuitem-_uBlock0-blockElement,
+  menu[label="Windscribe - Free Proxy and Ad Blocker"],
+  #_windscribeff-menuitem-_view-debug-log,
+  menu[label="SingleFile"],
   #treestyletab_piro_sakura_ne_jp-menuitem-_separatprBeforetreestyletab,
   #treestyletab_piro_sakura_ne_jp-menuitem-_context_closeTab,
   #treestyletab_piro_sakura_ne_jp-menuitem-_context_reloadTab,

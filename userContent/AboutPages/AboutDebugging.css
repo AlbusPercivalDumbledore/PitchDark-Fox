@@ -3,31 +3,31 @@
 @-moz-document url-prefix("about:debugging") {
   /*Sidebar*/
   .sidebar {
-    background-color: #000 !important;
+    background-color: var(--Dark_BackgroundColor) !important;
   }
 
   .sidebar-item {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
     font-size: 1.15rem !important;
     font-family: "Fira Sans" !important;
   }
 
   /*Sidebar Separator*/
   .separator {
-    border-color: #212121 !important;
+    border-color: var(--Dark_BorderColor) !important;
   }
 
   /*Background color of Page*/
   .app__content {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
     font-size: 1.15rem !important;
     font-family: "Fira Sans" !important;
   }
 
   .app {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   /*Reduce Padding of cards, in Setup section*/
@@ -46,9 +46,9 @@
 
   /*Network locations input*/
   #about-debugging-network-locations-host-input {
-    background: #000 !important;
-    color: #fff !important;
-    border: 1px solid #212121 !important;
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+    border: 1px solid var(--Dark_BorderColor) !important;
   }
 
   /*Remove Padding above Network locations input, in Setup section*/
@@ -59,7 +59,7 @@
   /*Background color of Cards in This Firefox section*/
   .debug-target-list.qa-debug-target-list li {
     background-color: #121212 !important;
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
     font-size: 1.15rem !important;
     font-family: "Fira Sans" !important;
   }
@@ -88,7 +88,7 @@
   /*Buttons*/
   .default-button,
   .primary-button {
-    color: #fff !important;
+    color: var(--Dark_TextColor) !important;
     background-color: black !important;
     font-family: "Fira Sans" !important;
     font-size: 1.1rem !important;
@@ -96,8 +96,8 @@
 
   /*Warning Message*/
   .message.message--level-warning.qa-message {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
   }
 
   .technical-text {

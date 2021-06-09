@@ -1,0 +1,6 @@
+/*+++++ Extension Options Menu +++++*/
+
+/*Reduce Width of Popup*/
+#PanelUI-eom {
+  width: 250px !important;
+}

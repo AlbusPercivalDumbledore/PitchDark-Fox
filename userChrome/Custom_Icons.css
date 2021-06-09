@@ -14,7 +14,7 @@
 }
 
 #navigator-toolbox #reload-button {
-  list-style-image: url("Icons/reload1.svg") !important;
+  list-style-image: url("Icons/reload.svg") !important;
 }
 
 #navigator-toolbox #tabs-newtab-button,
@@ -59,11 +59,6 @@
 }
 
 #navigator-toolbox #nav-bar-overflow-button {
-  list-style-image: url("Icons/chevron.svg") !important;
-  opacity: 0.9 !important;
-}
-
-#navigator-toolbox #PanelUI-menu-button {
   list-style-image: url("Icons/menu.svg") !important;
   opacity: 0.9 !important;
 }
@@ -102,9 +97,9 @@
   list-style-image: url("Icons/rss.svg") !important;
 }
 
-#navigator-toolbox #addon_darkreader_org-browser-action {
+/*#navigator-toolbox #addon_darkreader_org-browser-action {
   list-style-image: url("Icons/flashlight.svg") !important;
-}
+}*/
 
 #navigator-toolbox #tabsaside_xfox111_net-browser-action {
   list-style-image: url("Icons/aside.svg") !important;
@@ -113,6 +108,10 @@
 #navigator-toolbox #_breadcrumbus-browser-action,
 #navigator-toolbox #pageAction-urlbar-_breadcrumbus {
   list-style-image: url("Icons/url.svg") !important;
+}
+
+#navigator-toolbox #_windscribeff-browser-action {
+  list-style-image: url("Icons/vpn.svg") !important;
 }
 
 /*Cancel Download, and Retry button on right of Downloads Menu*/
@@ -129,19 +128,34 @@
   list-style-image: url("Icons/close.svg") !important;
 }
 
+/*extensionOptionsPanel.uc.js*/
+#eom-button {
+  list-style-image: url("Icons/addon.svg") !important;
+}
+
 /* +++++ Change those (ugly) globe favicons +++++*/
 /*https://old.reddit.com/r/FirefoxCSS/comments/bv3ies/change_those_ugly_globe_favicons_and_menu/ 
 https://old.reddit.com/r/FirefoxCSS/comments/k5v3u4/replacing_black_fox_and_globe_icon/ */
 
 /* Keep the globe and change globe color */
-/*.tab-icon-image:not([src]) { fill: #181818 !important; }
-.bookmark-item:not([container]){ fill: #181818 !important;} */
+/*.tab-icon-image:not([src]) { fill: var(--Dark_ActiveColor) !important; }*/
+.bookmark-item:not([container]) {
+  fill: var(--Dark_BackgroundColor) !important;
+}
 
 /* Replace globe with firefox icon*/
 .tab-icon-image:not([src]),
-.bookmark-item:not([src]),
+/*.bookmark-item:not([src]),*/
 .all-tabs-item:not([src]),
 .all-tabs-button,
 .all-tabs-button:not([src]) {
   list-style-image: url(chrome://branding/content/icon32.png) !important;
+}
+
+#PersonalToolbar .bookmark-item:not([src]) {
+  list-style-image: url("Icons/bookmarkfolder.svg") !important;
+}
+
+.bookmark-item:not([src]) {
+  fill: var(--Dark_ActiveColor) !important;
 }

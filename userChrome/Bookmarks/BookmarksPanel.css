@@ -22,6 +22,11 @@
   display: none !important;
 }
 
+/*Left Padding for Content Area*/
+#editBookmarkPanelContent {
+  padding-left: 7px !important;
+}
+
 /*Modify labels*/
 #editBookmarkPanelContent label[control] {
   font-size: 1.05rem !important;

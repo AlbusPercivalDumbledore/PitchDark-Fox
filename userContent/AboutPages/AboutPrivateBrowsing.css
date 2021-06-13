@@ -2,13 +2,12 @@
 
 @-moz-document url("about:privatebrowsing") {
   .info,
-  /*#private-browsing-vpn-link,*/
   #private-browsing-vpn-text,
   #private-browsing-myths,
   .search-inner-wrapper,
   .logo-and-wordmark,
   .logo,
-  .wordmark, 
+  .wordmark,
   #private-browsing-vpn-link {
     display: none !important;
   }

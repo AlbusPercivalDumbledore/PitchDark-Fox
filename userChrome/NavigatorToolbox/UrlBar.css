@@ -7,7 +7,7 @@
 #urlbar {
   font-size: 1.05rem !important;
   font-family: "Fira Sans" !important;
-  color: var(--toolbar-color) !important;
+  /*color: var(--toolbar-color) !important;*/
 }
 
 #urlbar > #urlbar-background {
@@ -40,15 +40,19 @@
 /* Page action-buttons "slide in" when cursor is on top of them and don't reserve space when not used */
 /* https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/page_action_buttons_on_hover.css */
 
-#page-action-buttons > *[class^="urlbar-icon"] {
+#page-action-buttons {
+  padding-inline-start: 0px;
+}
+
+.urlbar-page-action:not(#star-button-box) {
   margin-inline-end: -15px;
   opacity: 0;
   transition: margin-inline-end 100ms linear, opacity 200ms linear;
 }
 
-#page-action-buttons:hover > *[class^="urlbar-icon"],
-#page-action-buttons > *[class^="urlbar-icon"][open],
-#page-action-buttons > *[class^="urlbar-icon"][open] ~ *[class^="urlbar-icon"] {
+#page-action-buttons:hover > .urlbar-page-action,
+.urlbar-page-action[open],
+.urlbar-page-action[open] ~ .urlbar-page-action {
   opacity: 1;
   margin-inline-end: 0px !important;
 }
@@ -98,8 +102,8 @@
 
 /*Rounded corners on Bottom*/
 .urlbarView {
-  border-bottom-left-radius: 15px !important;
-  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
 }
 
 /*Specify Color, font size and face for results*/
@@ -181,6 +185,7 @@
   position: absolute !important;
   margin: 0px !important;
   margin-top: 0px !important;
+  margin-left: 0px !important;
   width: 70vw !important;
   border: 1px solid var(--Dark_ActiveColor) !important;
   border-top: none !important;

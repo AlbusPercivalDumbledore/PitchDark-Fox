@@ -1,21 +1,12 @@
-# PitchDark-Fox
-
-Pitch Black Ultra Compact Stylesheet for Firefox. For my personal use. Tested on Firefox Nightly 98.0a1 (2022-01-22), for Windows 10.
+# Pitch-Black Ultra-Compact Stylesheet for Firefox (Nightly) 98.0a1, Windows 10
 
 ![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/PitchDarkFox.png)
 
 ![AboutFirefox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AboutFirefox.png)
 
-### NOTE
-
-1. This is NOT a 'release' of custom-css for Firefox. Its a collection of stylesheets I've put together for my own use. I've merrily tweaked/hidden elements, based on how I'd like them to be.
-2. Much of it is based on others' hardwork. [**See Credits**](https://github.com/im-hm/PitchDark-Fox#credits)
-3. I only have a working knowledge of css. Consequently, I haven't followed CSS Best Practices. Ex, avoiding use of universal selector (\*)
-
 ## USAGE
 
-1. Stylesheets and Folders in this repo need to be placed directly inside chrome folder in firefox profile.
-2. Rules from TreeStyleTabs-TextArea.css (inside userContent -> Addons folder) need to be pasted in text area provided by TreeStyleTabs Addon in about:preferences. Choose 'No Decoration' under Appearance -> Themes in Tree Style Tabs Settings
+1. Rules from TreeStyleTabs-TextArea.css (inside userContent -> Addons folder) need to be pasted in text area provided by TreeStyleTabs Addon in about:preferences. Choose 'No Decoration' under Appearance -> Themes in Tree Style Tabs Settings
 
 ### REQUIREMENTS
 

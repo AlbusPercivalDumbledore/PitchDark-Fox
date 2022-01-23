@@ -4,10 +4,6 @@
 
 ![AboutFirefox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AboutFirefox.png)
 
-## USAGE
-
-1. Rules from TreeStyleTabs-TextArea.css (inside userContent -> Addons folder) need to be pasted in text area provided by TreeStyleTabs Addon in about:preferences. Choose 'No Decoration' under Appearance -> Themes in Tree Style Tabs Settings
-
 ### REQUIREMENTS
 
 1. Fira Sans Font https://github.com/mozilla/Fira/releases/
@@ -24,6 +20,7 @@
 
 1. Themes for Addons are contained in 'userContent -> Addons' folder.
 2. Internal UUID of Addons is required. It can be found at 'This Firefox' section of 'about:debugging'. It needs to be pasted in addon's stylesheet, in place of 'Paste Internal UUID here'.
+3. Rules from TreeStyleTabs-TextArea.css (inside userContent -> Addons folder) need to be pasted in text area provided by TreeStyleTabs Addon in about:preferences. Choose 'No Decoration' under Appearance -> Themes in Tree Style Tabs Settings
 
 ### STYLED ADDONS
 

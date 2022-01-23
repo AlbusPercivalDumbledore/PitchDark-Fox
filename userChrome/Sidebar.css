@@ -12,12 +12,16 @@
   font-family: "Fira Sans" !important;
   margin-bottom: -5px !important;
   font-variant-caps: petite-caps !important;
-  margin-left: -25px !important;
 }
 
 /*Sidebar Header Icon*/
 #sidebar-box > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
   opacity: 0 !important;
+}
+
+/*Sidebar Header Title*/
+#sidebar-box > #sidebar-header > #sidebar-switcher-target > #sidebar-title {
+  margin-left: -25px !important;
 }
 
 /*Sidebar Close Button*/
@@ -117,7 +121,7 @@ scrollbar {
 #sidebar-box {
   --uc-sidebar-width: 1px;
   --uc-sidebar-hover-width: 300px;
-  --uc-autohide-sidebar-delay: 200ms; /* Wait 0.6s before hiding sidebar */
+  --uc-autohide-sidebar-delay: 400ms; /* Wait 0.6s before hiding sidebar */
   position: relative;
   min-width: var(--uc-sidebar-width) !important;
   width: var(--uc-sidebar-width) !important;
@@ -148,14 +152,15 @@ scrollbar {
 }
 
 #sidebar {
-  transition: min-width 1ms linear var(--uc-autohide-sidebar-delay) !important;
+  transition: min-width 200ms ease var(--uc-autohide-sidebar-delay) !important;
   min-width: var(--uc-sidebar-width) !important;
   will-change: min-width;
 }
 
 #sidebar-box:hover > #sidebar {
   min-width: var(--uc-sidebar-hover-width) !important;
-  transition-delay: 0ms !important;
+  /*transition-delay: 0ms !important;*/
+  transition: 70ms ease !important;
 }
 
 /* Add sidebar divider*/

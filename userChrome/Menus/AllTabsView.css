@@ -38,3 +38,49 @@
   /*font-size: 1rem !important;*/
   height: 26px !important;
 }
+
+/*++++++++++ Vertical Tabs Pane ++++++++++*/
+
+#vertical-tabs-pane {
+  border-color: #000 !important;
+}
+
+/*Fix Change in Height on Hover*/
+#vertical-tabs-list .all-tabs-item {
+  height: 24px !important;
+  max-height: 24px !important;
+  font-family: Fira Sans !important;
+}
+
+/*Change Font of 'New Tab' Text Label*/
+#vertical-tabs-new-tab-button > .toolbarbutton-text {
+  font-family: Fira Sans !important;
+  margin-top: 3px !important;
+}
+
+/*Change container indicator width*/
+#vertical-tabs-list
+  .all-tabs-item:is([selected], [multiselected], [usercontextid]:is(:hover, [_moz-menuactive]))
+  .all-tabs-button {
+  background-image: linear-gradient(
+    to right,
+    var(--main-stripe-color) 0,
+    var(--main-stripe-color) 3px,
+    transparent 3px
+  ) !important;
+}
+
+/*Make background of close button black, to taper over black dot behind it*/
+#vertical-tabs-list .all-tabs-item .all-tabs-secondary-button > .toolbarbutton-icon {
+    background: black !important;
+}
+
+/*Move Favicon to the left*/
+#vertical-tabs-pane .subviewbutton-iconic > .toolbarbutton-icon {
+  -moz-context-properties: fill, fill-opacity;
+  -moz-box-ordinal-group: 0 !important;
+}
+
+:root #vertical-tabs-pane .all-tabs-item .all-tabs-button::before {
+  padding-left: 8px !important;
+}

@@ -4,6 +4,7 @@
 @import url(userContent/ChromePages.css);
 @import url(userContent/ContextMenu.css);
 @import url(userContent/ErrorPages.css);
+@import url(userContent/InContentNotifications.css);
 @import url(userContent/InWindowLibrary.css);
 @import url(userContent/PDFviewer.css);
 @import url(userContent/ReaderView.css);
@@ -44,4 +45,78 @@ url-prefix("chrome://"),
       background-color: var(--Dark_BackgroundColor) !important;
     }
   }
+}
+
+/*Custom Startpage*/
+@-moz-document url-prefix(file:///)
+{
+  html,
+  body,
+  body :not(iframe) {
+    background-color: /*#181a1b*/ #000 !important;
+  }
+}
+
+/*Firefox Screenshots*/
+.highlight-buttons > button {
+  box-shadow: 0 0 0 1px rgba(12, 12, 13, 0.1), 0 2px 8px rgba(12, 12, 13, 0.1);
+  background: var(--Dark_BackgroundColor) !important;
+  border: 1px solid var(--Dark_BorderColor) !important;
+  color: var(--Dark_TextColor) !important;
+  padding: 5px !important;
+  height: 30px !important;
+  font-size: 13px !important;
+  font-family: Fira Sans !important;
+}
+
+.highlight-buttons > button > img {
+  height: 14px !important;
+  width: 14px !important;
+  filter: invert(0.4) !important;
+}
+
+.mover-target .mover {
+  background-color: #dc2430 !important;
+}
+
+.preview-overlay .cancel-shot {
+  padding: 5px 10px !important;
+  border: 2px solid #dc2430 !important;
+  font-family: Fira Sans !important;
+  font-size: 14px !important;
+}
+
+.preview-overlay .preview-instructions {
+  font-family: Fira Sans !important;
+  font-size: 22px !important;
+  padding-top: 40px !important;
+  font-variant: all-petite-caps !important;
+  line-height: 26px !important;
+}
+
+.all-buttons-container {
+  background: transparent !important;
+}
+
+.all-buttons-container .visible {
+  background-image: url("moz-extension://0d07c488-7765-4b75-8cd8-2eaf899b2084/icons/menu-visible.svg");
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: Fira Sans !important;
+  border: 1px solid #212121 !important;
+  font-size: 14px !important;
+  font-variant: petite-caps !important;
+  padding: 50px 10px 5px !important;
+}
+
+.all-buttons-container .full-page {
+  background-image: url("moz-extension://0d07c488-7765-4b75-8cd8-2eaf899b2084/icons/menu-fullpage.svg");
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: Fira Sans !important;
+  border: 1px solid #212121 !important;
+  font-size: 14px !important;
+  padding: 50px 10px 5px !important;
+  background-size: 40px 35px;
+  font-variant: petite-caps !important;
 }

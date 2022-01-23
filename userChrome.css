@@ -1,8 +1,10 @@
 @import url(global-colors.css);
 @import url(userChrome/global-rules.css);
 @import url(userChrome/Bookmarks.css);
-@import url(userChrome/ContextMenu.css);
-@import url(userChrome/ContextMenuCustomLabels.css);
+/*@import url(userChrome/ContextMenu.css);*/
+/*@import url(userChrome/ContextMenuCustomLabels.css);*/
+@import url(userChrome/ContextMenusWithCustomWindowsTheme.css);
+@import url(userChrome/ContextMenuIcons.css);
 @import url(userChrome/Ctrl+Tab_View.css);
 @import url(userChrome/Custom_Icons.css);
 @import url(userChrome/Dialogs.css);
@@ -55,4 +57,12 @@ panelview {
 /*+++++ Scale down PiP icon +++++*/
 .pip-wrapper {
   transform: scale(0.5) !important;
+}
+
+/*Make height of tab label container sane again*/
+
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+
+    height: 2em !important;
+
 }

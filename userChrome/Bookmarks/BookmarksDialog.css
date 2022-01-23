@@ -1,11 +1,62 @@
 /*++++++++++ Bookmarks Dialog (opens on pressing Bookmarks Toolbar button) +++++++++++*/
 
-/*Increase left margin for submenus of Bookmarks dialog*/
-#BMB_bookmarksPopup menupopup[placespopup="true"] {
+/*Increase left margin for submenus of Bookmarks popups*/
+menupopup[placespopup="true"] {
   margin-left: 10px !important;
 }
 
-/*Remove 'Show All Bookmarks' Button on Bottom*/
-#BMB_bookmarksShowAll {
+/*Remove frivolous options*/
+#bookmarks-menu-button #BMB_viewBookmarksSidebar,
+#bookmarks-menu-button #BMB_bookmarksShowAllTop,
+#bookmarks-menu-button #BMB_bookmarksShowAllTop + menuseparator,
+#bookmarks-menu-button #BMB_bookmarksShowAll,
+#bookmarks-menu-button #BMB_bookmarksToolbar #BMB_viewBookmarksToolbar,
+#bookmarks-menu-button
+  #BMB_bookmarksToolbar
+  #BMB_viewBookmarksToolbar
+  + menuseparator,
+#bookmarks-menu-button .openintabs-menuitem.subviewbutton,
+#bookmarks-menu-button .bookmarks-actions-menuseparator {
   display: none !important;
+}
+
+/*Modify color of Top Level Bookmark folders*/
+#bookmarks-menu-button #BMB_bookmarksToolbar > .menu-iconic-text,
+#bookmarks-menu-button #BMB_unsortedBookmarks > .menu-iconic-text,
+#bookmarks-menu-button #BMB_mobileBookmarks > .menu-iconic-text {
+  color: gold !important;
+  font-variant: petite-caps;
+  font-size: 14px !important;
+}
+
+#bookmarks-menu-button #BMB_bookmarksToolbar {
+  margin-bottom: 5px !important;
+  border-bottom: 1px solid #212121 !important;
+  height: 30px !important;
+}
+
+#bookmarks-menu-button #BMB_unsortedBookmarks {
+  -moz-box-ordinal-group: 2 !important;
+  border-top: 1px solid #212121 !important;
+  margin-top: 5px !important;
+  height: 30px !important;
+}
+
+#bookmarks-menu-button #BMB_mobileBookmarks {
+  -moz-box-ordinal-group: 3 !important;
+  /*Hide Mobile Bookmarks for now*/
+  display: none !important;
+}
+
+/*Insert Bookmarks Menu heading*/
+#BMB_mobileBookmarks + menuseparator::after {
+  content: "Bookmarks Menu" !important;
+  color: gold !important;
+  font-variant: petite-caps;
+  font-size: 14px !important;
+  visibility: visible !important;
+}
+
+#BMB_mobileBookmarks + menuseparator {
+  visibility: hidden !important;
 }

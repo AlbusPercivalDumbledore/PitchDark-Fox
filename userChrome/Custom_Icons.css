@@ -23,12 +23,13 @@
   opacity: 0.9 !important;
 }
 
-#navigator-toolbox #bookmarks-menu-button {
+#navigator-toolbox #bookmarks-menu-button,
+#navigator-toolbox #bookmarks-panel-button {
   list-style-image: url("Icons/bookmark_menu.svg") !important;
 }
 
 #navigator-toolbox #history-panelmenu {
-  list-style-image: url("Icons/history.svg") !important;
+  list-style-image: url("Icons/history.png") !important;
 }
 
 #pageAction-panel-bookmark,
@@ -81,7 +82,7 @@
 }
 
 #navigator-toolbox #_c607c8df-14a7-4f28-894f-29e8722976af_-browser-action {
-  list-style-image: url("Icons/temp_container.svg") !important;
+  list-style-image: url("Icons/plus.svg") !important;
 }
 
 #navigator-toolbox #_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action {
@@ -158,4 +159,23 @@ https://old.reddit.com/r/FirefoxCSS/comments/k5v3u4/replacing_black_fox_and_glob
 
 .bookmark-item:not([src]) {
   fill: var(--Dark_ActiveColor) !important;
+}
+
+/*++++++++++ Change Website Favicons ++++++++++*/
+
+/*about:PrivateBrowsing*/
+.toolbarbutton-icon[src="chrome://browser/skin/privatebrowsing/favicon.svg"]
+{
+  background-image: url("Icons/incognito.svg") !important;
+  background-size: 16px !important;
+  background-repeat: no-repeat !important;
+  padding-right: 20px !important;
+}
+
+/*Reddit (last part of Data:Uri)*/
+.toolbarbutton-icon[src$="gIA9QAAAABJRU5ErkJggg=="] {
+  background-image: url("Icons/reddit1.svg") !important;
+  background-size: 16px !important;
+  background-repeat: no-repeat !important;
+  padding-right: 20px !important;
 }

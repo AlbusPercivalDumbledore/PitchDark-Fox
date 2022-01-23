@@ -19,7 +19,7 @@
 
 /*Specify Width of Tabs when window is maximized*/
 :root .tabbrowser-tab:not([pinned]) {
-  min-width: 419px !important;
+  min-width: 459px !important;
 }
 
 /*Specify Width of Tabs when window is not maximized*/
@@ -29,7 +29,7 @@
 
 /*Specify Width of Tabs in Private Browsing Mode*/
 :root[privatebrowsingmode] .tabbrowser-tab:not([pinned]) {
-  min-width: 455px !important;
+  min-width: 495px !important;
 }
 
 /*Remove Tab Loading Indicator*/

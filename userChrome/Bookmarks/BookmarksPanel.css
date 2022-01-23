@@ -3,7 +3,18 @@
 /*Reduce Panel Width*/
 #editBookmarkPanel {
   font-size: var(--panel-font-size);
-  width: 280px !important;
+  width: 320px /*280*/ !important;
+  margin-top: 6px !important;
+}
+
+#editBMPanel_namePicker {
+  width: 250px !important;
+}
+
+/*Reduce Panel Header Padding*/
+#editBookmarkPanel .panel-header {
+  padding: 4px !important;
+  padding-bottom: 0px !important;
 }
 
 /*Modify Panel Title*/
@@ -22,15 +33,30 @@
   display: none !important;
 }
 
-/*Left Padding for Content Area*/
-#editBookmarkPanelContent {
-  padding-left: 7px !important;
+/*Align ItemsHorizontally*/
+#editBookmarkPanel #editBookmarkPanelRows > vbox {
+  -moz-box-orient: horizontal !important;
+}
+
+:root #editBookmarkPanel #editBMPanel_folderTreeRow {
+  -moz-box-orient: vertical !important;
+}
+
+/*Fix Padding of Content Area*/
+#editBookmarkPanel #editBookmarkPanelRows {
+  padding: 6px !important;
 }
 
 /*Modify labels*/
-#editBookmarkPanelContent label[control] {
-  font-size: 1.05rem !important;
+#editBookmarkPanel #editBookmarkPanelContent label[control] {
+  font-size: 1.1rem !important;
   font-family: "Fira Sans" !important;
+  color: #ddd !important;
+  font-variant: petite-caps !important;
+  z-index: 1 !important;
+  position: absolute !important;
+  margin-top: 3px !important;
+  margin-inline: 6px !important;
 }
 
 /*Modify Folder Select Dropdown*/
@@ -62,6 +88,16 @@ dropmarker:not([native]) {
   transform: scale(0.7) !important;
 }
 
+/*Fix Margins of New Folder Button*/
+#editBookmarkPanel #editBMPanel_newFolderBox {
+  margin-bottom: 10px !important;
+}
+
+#editBookmarkPanel #editBMPanel_newFolderButton {
+  height: 24px !important;
+  border-radius: 4px !important;
+}
+
 /*Autocomplete list that appears on typing existing tags*/
 #editBMPanel_tagsAutocomplete {
   padding: 5px !important;
@@ -86,9 +122,14 @@ dropmarker:not([native]) {
   opacity: 0.2 !important;
 }
 
-/*Reduce Top Margin of Tags Row*/
-#editBMPanel_tagsRow {
+/*Reduce Top Margin of Tags Row, and boxes in Tags + Folder Rows*/
+#editBookmarkPanel #editBMPanel_tagsRow {
   margin-top: -5px !important;
+}
+
+#editBookmarkPanel #editBMPanel_folderRow > hbox,
+#editBookmarkPanel #editBMPanel_tagsRow > hbox {
+  margin-top: -6px !important;
 }
 
 /*Remove Keywords Row*/

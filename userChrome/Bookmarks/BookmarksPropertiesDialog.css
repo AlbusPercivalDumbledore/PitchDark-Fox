@@ -1,6 +1,47 @@
 /*++++++++++ Bookmark Properties Dialog (Bookmark item in Right Click Context Menu) ++++++++++*/
 /* Most of it gets styled by rules meant for Bookmarks Panel*/
 
+@-moz-document url(chrome://browser/content/places/bookmarkProperties.xhtml)
+{
+  dialog#bookmarkpropertiesdialog {
+    background: var(--Dark_BackgroundColor) !important;
+    color: var(--Dark_TextColor) !important;
+  }
+
+  #editBMPanel_keywordRow,
+  #tags-field-info {
+    display: none !important;
+  }
+
+  .dialog-button-box {
+    display: flex;
+    margin: 0 !important;
+    justify-content: center !important;
+    background: var(--Dark_BackgroundColor) !important;
+    font-size: 1rem !important;
+  }
+
+  #bookmarkproperties {
+    min-width: 0px !important;
+    background: var(--Dark_BackgroundColor) !important;
+  }
+
+  .titleIcon {
+    display: none !important;
+  }
+
+  /*Center Align Title Text, and make it bigger*/
+  #titleText {
+    font-variant-caps: petite-caps !important;
+    font-size: 1.4rem !important;
+  }
+
+  #titleContainer {
+    text-align: center !important;
+    display: block !important;
+  }
+}
+
 @-moz-document url(chrome://browser/content/places/bookmarkProperties2.xhtml)
 {
   /*Make minimum width null*/
@@ -38,7 +79,7 @@
 
   /*Reduce left margin of folder list*/
   #editBMPanel_folderMenuList {
-    margin-left: -29px !important;
+    margin-left: -24px !important;
   }
 
   /*Remove Keyword and Tag field descriptions*/

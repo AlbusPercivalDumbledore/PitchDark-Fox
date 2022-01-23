@@ -32,7 +32,7 @@
     font-variant-caps: petite-caps !important;
     font-family: "Fira Sans" !important;
     font-size: 1.1rem !important;
-    text-align: center !important;
+    text-align: left !important;
   }
 
   #contentView treecol {
@@ -81,6 +81,8 @@
   treechildren::-moz-tree-image {
     width: 12px !important;
     height: 12px !important;
+    margin-left: 10px !important;
+    margin-right: 5px !important;
   }
 
   /*Reduce left indentation of sub-folders*/

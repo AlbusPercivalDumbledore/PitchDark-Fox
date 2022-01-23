@@ -1,16 +1,17 @@
 /*+++++ Print Preview +++++*/
+/*Styled through userchrome.ag.css in resources folder*/
 
 .dialogOverlay {
   background-color: transparent !important;
 }
 
-.printPreviewBrowser {
+/*.printPreviewBrowser {
   opacity: 0.6 !important;
 }
 
 .previewStack {
   background: var(--Dark_BackgroundColor) !important;
-}
+}*/
 
 .toolbarButton,
 .toolbarCenter {

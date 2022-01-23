@@ -1,6 +1,11 @@
 /*+++++ Downloads Menu +++++*/
 
 /*Reduce Width of menu*/
+#downloadsPanel-multiView {
+  width: 260px !important;
+  min-width: 260px !important;
+}
+
 #downloadsPanel-multiView > .panel-viewcontainer,
 #downloadsPanel-multiView > .panel-viewcontainer > .panel-viewstack {
   max-width: 250px !important;
@@ -105,4 +110,33 @@
 /*Show All Downloads Button is Styled Universally in global-rules.css as its a button*/
 #downloadsFooterButtons {
   border-top: none !important;
+}
+
+#downloadsFooterButtons > toolbarseparator {
+  display: none !important;
+}
+
+#downloadsFooterButtons > #downloadsHistory {
+  padding: 5px !important;
+  border-radius: 4px !important;
+}
+
+/*Clear Downloads Button - from clearDownloadsButton.uc.js*/
+#downloadsFooterButtons > #clearDownloadsPanel {
+  margin-left: 5px !important;
+}
+
+#downloadsFooterButtons
+  > #clearDownloadsPanel
+  > .box-inherit.button-box
+  > .button-text {
+  display: none !important;
+}
+
+#downloadsFooterButtons
+  > #clearDownloadsPanel
+  > .box-inherit.button-box::before {
+  content: "Clear Items" !important;
+  text-align: center !important;
+  display: -moz-box !important;
 }

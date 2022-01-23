@@ -1,6 +1,6 @@
 # Pitch-Black Ultra-Compact Stylesheet for Firefox (Nightly) 98.0a1, Windows 10
 
-![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/PitchDarkFox.png)
+![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/Pitch-DarkFox.png)
 
 ![AboutFirefox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/AboutFirefox.png)
 

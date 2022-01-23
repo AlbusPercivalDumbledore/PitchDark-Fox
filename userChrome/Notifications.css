@@ -14,6 +14,50 @@
   font-family: "Fira Sans" !important;
   background-color: var(--Dark_BackgroundColor) !important;
   color: var(--Dark_TextColor) !important;
+  padding: 5px !important;
+  padding-bottom: 0 !important;
+}
+
+.popup-notification-button-container.panel-footer {
+  padding: 5px !important;
+  padding-top: 0 !important;
+}
+
+/*Progress Bars, including Addon Download Progress Bar*/
+/*https://github.com/aminomancer/uc.css.js/blob/master/uc-misc.css#L128*/
+/*https://github.com/aminomancer/uc.css.js/blob/master/uc-panels.css#L503*/
+
+#addon-progress-notification-progressmeter {
+  margin-top: -5px !important;
+  margin-bottom: 5px !important;
+}
+
+progress {
+  appearance: none !important;
+  border: 0 !important;
+  margin-block: 3px !important;
+  margin-inline-start: 0 !important;
+  border-radius: 0px !important;
+  height: 2px !important;
+  background-color: blue !important;
+  overflow: hidden;
+}
+
+progress[paused] {
+  background-color: #404040 !important;
+}
+
+progress:not([value="0"])::-moz-progress-bar {
+  margin: 0;
+  height: 100%;
+}
+
+progress::-moz-progress-bar {
+  background-color: red !important;
+}
+
+progress[paused]::-moz-progress-bar {
+  background-color: #404040 !important;
 }
 
 /*Notifications that appear horizontally below navigation toolbox +++++*/

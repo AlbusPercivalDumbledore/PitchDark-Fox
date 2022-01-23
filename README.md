@@ -1,8 +1,6 @@
 # PitchDark-Fox
 
-NOT MAINTAINED. Won't be able to update anymore.
-
-Pitch Black Ultra Compact Stylesheet for Firefox. For my personal use. Tested on Firefox Nightly 91.09a1, for Windows 10.
+Pitch Black Ultra Compact Stylesheet for Firefox. For my personal use. Tested on Firefox Nightly 98.0a1 (2022-01-22), for Windows 10.
 
 ![PitchDarkFox](https://github.com/im-hm/PitchDark-Fox/blob/main/Previews/PitchDarkFox.png)
 

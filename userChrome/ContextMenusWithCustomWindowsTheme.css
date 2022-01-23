@@ -1,0 +1,99 @@
+menupopup > menuitem,
+menupopup > menu {
+  font-family: "Fira Sans" !important;
+  font-size: 1.1rem !important;
+  color: var(--Dark_TextColor) !important;
+}
+
+/*Hover Color*/
+menuitem:hover,
+menu:hover,
+menu[open="true"],
+menuitem[_moz-menuactive="true"] {
+  background: var(--Dark_ActiveColor) !important;
+}
+
+/*twisty icon*/
+#contentAreaContextMenu .menu-right,
+#tabContextMenu .menu-right,
+#toolbar-context-menu .menu-right {
+  margin-left: -20px !important;
+}
+
+/*Fix position of items introduced by Private Tab Script*/
+#toggleTabPrivateState {
+  /*margin-left: -4px !important;*/
+  display: none !important;
+}
+
+/*+++++ Remove frivolous options from context menu +++++*/
+/*#toolbar-context-menu,*/
+#context-navigation,
+#context-sep-navigation,
+#context-viewsource,
+#context-viewinfo,
+#context-sep-viewsource,
+#context-inspect-a11y,
+#context-sep-sendpagetodevice,
+#context-sep-sendlinktodevice,
+#context-sep-screenshots,
+#context-sep-setbackground,
+#context-sep-ctp,
+#context-sep-selectall,
+#inspect-separator,
+#customize-context-moveToPanel,
+#customize-context-removeFromToolbar,
+#toggle_toolbar-menubar,
+#viewCustomizeToolbar,
+#context-viewbgimage,
+#context-sendimage,
+#context-setDesktopBackground,
+#context_reloadTab,
+#context_bookmarkTab,
+#context_closeTab,
+#context_undoCloseTab,
+#tabContextUndoList + * + menuseparator,
+#treestyletab_piro_sakura_ne_jp-menuitem-_treestyletab,
+#_644e8eb0-c710-47e9-b81c-5dd69bfcf86b_-menuitem-_parent,
+#context_shareTabURL,
+#context_selectAllTabs,
+#context_toggleMuteTab,
+#context-savepage,
+#context_openANewTab,
+#context_openANewTab + menuseparator,
+#context_duplicateTabs + menuseparator,
+#context-viewpartialsource-selection,
+#context-inspect,
+#context-media-eme-separator,
+#context-searchselect,
+#context-searchselect-private + menuseparator,
+#context-savelink,
+#_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-menuitem-_open-tab-then-discard,
+#_74145f27-f039-47ce-a470-a662b129930a_-menuitem-_copy-link-to-clipboard,
+#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement,
+menu[label="Windscribe - Free Proxy and Ad Blocker"],
+#_windscribeff-menuitem-_view-debug-log,
+menu[label="SingleFile"],
+#treestyletab_piro_sakura_ne_jp-menuitem-_separatprBeforetreestyletab,
+#treestyletab_piro_sakura_ne_jp-menuitem-_context_closeTab,
+#treestyletab_piro_sakura_ne_jp-menuitem-_context_reloadTab,
+#treestyletab_piro_sakura_ne_jp-menuitem-_context_undoCloseTab,
+#treestyletab_piro_sakura_ne_jp-menuitem-_context_sendTabsToDevice,
+#treestyletab_piro_sakura_ne_jp-menuitem-_context_separator\:afterCollapseExpand {
+  display: none !important;
+}
+
+:root[privatebrowsingmode] #context_pinTab {
+  display: none;
+}
+
+/*Remove options other than Manage Extension and Debug Extension (introduced by script) from Toolbar Context Menu*/
+#toolbar-context-menu > menuitem:not(.customize-context-manageExtension),
+#toolbar-context-menu > menu:not(.customize-context-debugExtension),
+#toolbar-context-menu > menuseparator {
+  display: none !important;
+}
+
+#context-openlinkinunloadedtab {
+  -moz-box-ordinal-group: 0 !important;
+}

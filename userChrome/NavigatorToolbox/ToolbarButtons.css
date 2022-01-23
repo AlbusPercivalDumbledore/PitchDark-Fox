@@ -11,6 +11,7 @@
   padding-left: 3px !important;
   padding-right: 3px !important;
   padding-top: 7px !important;
+  background-color: #000 !important;
 }
 
 #TabsToolbar > .titlebar-buttonbox-container {
@@ -63,6 +64,8 @@
 #nav-bar toolbarbutton:is(#stop-button) > .toolbarbutton-icon {
   width: 16px !important;
   height: 16px !important;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
 }
 
 #nav-bar
@@ -87,7 +90,7 @@
   height: 14px !important;
 }
 
-/*Scale Down Tracking Protection Icon*/
+/*Scale Down Tracking Protection Icon, change its background when active*/
 .sharing-icon,
 #identity-icon,
 #permissions-granted-icon,
@@ -97,7 +100,43 @@
   height: 13px !important;
 }
 
+#tracking-protection-icon-container {
+  margin-right: 5px !important;
+}
+
+#tracking-protection-icon-box {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+.identity-box-button:hover:active,
+.identity-box-button[open="true"],
+#tracking-protection-icon-container:hover:active,
+#tracking-protection-icon-container[open="true"] {
+  background-color: var(--Dark_ActiveColor) !important;
+}
+
 /*+++++ Invert Colors of RES UrlBar Icon +++++*/
 #pageAction-urlbar-jid1-xufzosoflzsoxg_jetpack {
   filter: invert(1) !important;
+}
+
+/*Move Overflow menu button to left*/
+#PlacesChevron,
+#nav-bar-overflow-button {
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  -moz-box-ordinal-group: 0 !important;
+}
+
+/*Insert Profile Name before overflow menu*/
+#nav-bar-overflow-button::before {
+  content: "Main Profile" !important;
+  text-align: center !important;
+  font-family: Fira Sans !important;
+  padding: 4px !important;
+  border-radius: 2px !important;
+  display: inherit !important;
+  margin-left: 5px !important;
+  color: #fff !important;
+  background: #8d130c !important;
 }

@@ -26,12 +26,18 @@ scrollbar {
   scrollbar-width: thin !important;
 }
 
+/*Input Boxes*/
+input[type="checkbox"],
+input[type="radio"] {
+  filter: invert(1) !important;
+}
+
 /*+++++ Global Colors +++++*/
 
 * {
   font-weight: normal !important;
   outline: none !important;
-  scrollbar-width: none !important;
+  scrollbar-width: thin !important;
   scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
   text-decoration: none !important;
   --attention-icon-color: #1a237e !important;
@@ -41,7 +47,7 @@ scrollbar {
 :root {
   font-weight: normal !important;
   outline: none !important;
-  scrollbar-width: none !important;
+  scrollbar-width: thin !important;
   scrollbar-color: rgb(24, 24, 24) rgb(0, 0, 0) !important;
   text-decoration: none !important;
   --attention-icon-color: #1a237e !important;
@@ -93,6 +99,7 @@ scrollbar {
   --buttons-primary-button-hover-bgcolor: var(--Dark_ActiveColor) !important;
   --buttons-primary-button-active-bgcolor: var(--Dark_ActiveColor) !important;
   --buttons-primary-button-color: var(--Dark_TextColor) !important;
+  --button-primary-hover-bgcolor: var(--Dark_ActiveColor) !important;
 
   /*Addon Cards*/
   --card-outline-color: var(--Dark_ActiveColor) !important;
@@ -544,7 +551,7 @@ body {
     --in-content-border-hover: var(--Dark_ActiveColor) !important;
     --in-content-border-invalid: var(--Dark_ActiveColor) !important;
 
-    --in-content-button-background: var(--Dark_BackgroundColor) !important;
+    --in-content-button-background: var(--Dark_ActiveColor) !important;
     --in-content-button-background-active: var(--Dark_ActiveColor) !important;
     --in-content-button-background-hover: var(--Dark_ActiveColor) !important;
     --in-content-button-border-radius: 2px !important;

@@ -46,9 +46,10 @@
 /*Reduce size of favicons, remove background*/
 .ctrlTab-favicon[src] {
   background-color: transparent !important;
-  width: 20px !important;
+  transform: scale(0.6);
+  /*width: 20px !important;
   height: 20px !important;
-  padding: 0px !important;
+  padding: 0px !important;*/
 }
 
 /*Remove those hideos broken image icons, that appear in place of previews, when webpage hasn't finished loading*/

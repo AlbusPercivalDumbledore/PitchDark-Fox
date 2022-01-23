@@ -51,3 +51,16 @@
   clip: rect(24px, 2600px, 26px, 0px);
   position: absolute !important;
 }
+
+/*Autohide Navigator Toolbox*/
+/*https://github.com/furycd001/dots/blob/master/Firefox/webview.css*/
+/*#navigator-toolbox {
+  margin-top: -26px;
+  transition: margin-top 0.2s ease 400ms;
+}
+
+#navigator-toolbox:hover,
+#navigator-toolbox:focus-within {
+  margin-top: 0px;
+  transition: margin-top 0.2s;
+}*/

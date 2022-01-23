@@ -17,19 +17,6 @@
   margin-top: 6px !important;
 }
 
-/*Reduce Padding, increase margins, change font*/
-menupopup > menuitem,
-menupopup > menu {
-  padding-block: 3px !important;
-  padding-inline-start: 15px !important;
-  margin-left: 5px !important;
-  margin-right: 5px !important;
-  font-family: "Fira Sans" !important;
-  font-size: 1.1rem !important;
-  color: var(--Dark_TextColor) !important;
-  background: var(--Dark_BackgroundColor) !important;
-}
-
 /*+++++ Fix for Panel Subview Blank Space and smoothen animations (u/MotherStylus)+++++ */
 
 :root {
